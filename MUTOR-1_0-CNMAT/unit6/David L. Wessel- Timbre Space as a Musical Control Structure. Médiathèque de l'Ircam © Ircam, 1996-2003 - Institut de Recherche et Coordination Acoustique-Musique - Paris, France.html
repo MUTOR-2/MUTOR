@@ -1,0 +1,1163 @@
+<HTML>
+
+<!-- Copyright (c) 1999 by IRCAM -->
+<!-- 25-Aug-1999 - Vincent Gourson -->
+
+<HEAD>
+<TITLE>David L. Wessel: Timbre Space as a Musical Control Structure. Médiathèque de l'Ircam © Ircam, 1996-2003 - Institut de Recherche et Coordination Acoustique/Musique - Paris, France
+</TITLE>
+<META NAME="description" CONTENT="David L. Wessel: Timbre Space as a Musical Control Structure.">
+<META NAME="keywords" CONTENT="ircam, wessel, musique contemporaine, contemporary music, musicologie, musicology">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../style.css">
+<SCRIPT LANGUAGE="JavaScript" SRC="../notes-script.js">
+</SCRIPT>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</HEAD>
+
+<BODY BGCOLOR=#FFFFFF LINK=#5500FF VLINK=#5500FF onLoad="init();" onResize="init();">
+
+<table width=100% colspacing=0 cellpadding=0>
+<tr><td valign=top><img src="/images/ircam.gif" ALT="IRCAM - Centre Pompidou" clear=ALL></td><td valign=top align=right><font style="font-family:arial;font-size=8pt;align:right">Serveur © IRCAM - CENTRE POMPIDOU 1996-2005.<br>Tous droits réservés pour tous pays. <I>All rights reserved.</I></FONT></td></td>
+</table>
+       
+
+
+
+
+
+
+<CENTER>
+<!-- TIT --><H1>Timbre Space as a Musical Control Structure.</H1>
+<!-- AUT -->David L. Wessel
+<P CLASS=ni></P>
+<!-- PUB --><B>Rapport Ircam 12/78, 1978</B><BR>
+<!-- COP -->Copyright © Ircam - Centre Georges-Pompidou 1978, 1999
+</CENTER>
+
+
+
+<HR>
+
+<P CLASS=ni ALIGN=JUSTIFY>
+<I>The following text is a rewrite of the original article entitled "Low 
+dimensional control of musical timbre". It is an improved 
+version and covers the same material as the original text.
+This text was published in volume 3 Number 2 of the Computer Music Journal in 
+June of 1979, The Computer Music 
+Journal is now published by the M.I.T. Press, Cambridge, Massachusetts.
+</I>
+</P>
+
+<H2 ALIGN=CENTER>Introduction</H2>
+
+<P ALIGN=JUSTIFY>
+<SPAN CLASS=fl>R</SPAN>esearch on musical timbre typically seeks representations of the perceptual 
+structure inherent in a set of sounds that 
+have implications for expressive control over the sounds in composition and 
+performance. With digital analysis-based 
+sound synthesis and with experiments on tone quality perception, we can obtain 
+representations of sounds that 
+suggest ways to provide low-dimensional control over their perceptually 
+important properties.
+</P>
+
+<P ALIGN=JUSTIFY>
+In this paper, we will describe a system for taking subjective measures of 
+perceptual contrast between sound objects 
+and using this data as input to some computer programs. The computer programs 
+use multidimensional scaling 
+algorithms to generate geometric representations from the input data. In the 
+timbral spaces that result from the scaling 
+programs, the various tones can be represented as points and a good statistical 
+relationship can be sought between 
+the distances in the space and the contrast judgments between the corresponding 
+tones. The spatial representation is 
+given a psychoacoustical interpretation by relating its dimensions to the 
+acoustical properties of the tones. Controls are 
+then applied directly to these properties in synthesis. The control schemes to 
+be described are for additive synthesis 
+and allow for the manipulation of the evolving spectral energy distribution and 
+various temporal features of the tones. Tests of the control schemes have been carried out in musical 
+contexts. Particular emphasis will be given here to the 
+construction of melodic lines in which the timbre is manipulated on a note-to-note 
+basis. Implications for the design of 
+human control interfaces and of software for real-time digital sound 
+synthesizers will be discussed.
+</P>
+
+<H2 ALIGN=CENTER>Musical Timbre</H2>
+
+<P ALIGN=JUSTIFY>
+Timbre refers to the "color" or quality of sounds, and is typically divorced 
+conceptually from pitch and loudness. 
+Perceptual research on timbre has demonstrated that the spectral energy 
+distribution and temporal variation in this 
+distribution provide the acoustical determinants of our perception of sound 
+quality (See <A HREF="#note14" onMouseOver="donote(event, 'note14d');" onMouseOut="undonote();">Grey&nbsp;: 1975</A>) for a thorough 
+review). With one notable exception (<A HREF="#note13" onMouseOver="donote(event, 'note13d');" onMouseOut="undonote();">Erickson&nbsp;: 1975</A>), music theorists have 
+directed little attention towards the 
+compositional control of timbre. The primary emphasis has been on harmony and 
+counterpoint. The reason for this 
+probably ties in the fact that most acoustical instruments provide for very 
+accurate control over pitch but provide little in 
+the way of compositionally specifiable manipulation of timbre. With the 
+potential of electroacoustic instruments the 
+situation is quite different. Indeed one can now think in terms of providing 
+accurate specifications for, by way of 
+example, sequences of notes that change timbre one after another. It is this  
+note-to-note change of timbre that will 
+concern us in this paper.
+</P>
+
+<H2 ALIGN=CENTER>Synthesis Technology</H2>
+
+<P ALIGN=JUSTIFY>
+Digital technology offers powerful, general, and flexible sound synthesizers. A 
+number of such synthesis machines 
+have already been constructed and are producing musical results. Notable 
+examples include the digital synthesis and 
+processing system designed by 
+<A HREF="#note35" onMouseOver="donote(event, 'note35d');" onMouseOut="undonote();">Peter Samson (1977)</A> now in operation at the 
+Stanford Center for Computer Research 
+in Music and Acoustics, the 256 digital oscillator bank designed and constructed 
+by <A HREF="#note11" onMouseOver="donote(event, 'note11d');" onMouseOut="undonote();">G. DiGiugno (1976)</A> and the digital 
+synthesizer of <A HREF="#note3" onMouseOver="donote(event, 'note3d');" onMouseOut="undonote();">Hal Alles and DiGiugno (1977)</A>, both in operation at IRCAM&nbsp;; 
+the Alles (<A HREF="#note1" onMouseOver="donote(event, 'note1d');" onMouseOut="undonote();">1977 a</A>, 
+<A HREF="#note2" onMouseOver="donote(event, 'note2d');" onMouseOut="undonote();">b</A>) synthesizer at Bell 
+Labs&nbsp;; and the Dartmouth digital synthesizer (<A HREF="#note4" onMouseOver="donote(event, 'note4d');" onMouseOut="undonote();">Alonso <I>et al.</I>&nbsp;: 1975</A>). 
+Some of these devices offer the alluring possibility of 
+using a "brute force" additive approach to the synthesis of complex and 
+musically rich time-variant spectra. In this 
+report we will concentrate on this form of additive synthesis, because of its 
+generality, and with the accompanying 
+problem of providing direct control over the perceptual properties of the 
+synthesized sounds.
+</P>
+
+<P ALIGN=JUSTIFY>
+Before beginning a description of a procedure for developing controls that could 
+facilitate the musically expressive 
+manipulation of complex time-variant spectra, we will examine the nature of both 
+the acoustical and perceptual data 
+bases involved. Additive synthesis requires a considerable if not overwhelming 
+amount of explicit information, and we 
+shall explore ways to reduce this quantity of data without sacrificing richness 
+in the sonic result. On the other hand, the 
+data that we can obtain about our perceptual experience of timbre has quite a 
+different character from the physical 
+data of acoustics, and so we shall also examine such notions as subjective 
+scales, perceptual dimensions, and 
+structural representations of subjective data. We shall then see the extent to 
+which we can give an account of the 
+subjective experience by examining the relationship between the acoustical and 
+the perceptual data bases. We seek a 
+psychoacoustics of timbre that has implications for timbral control in musical 
+contexts.
+</P>
+
+<H2 ALIGN=CENTER>Additive Synthesis and Possibilities for Data Reduction</H2>
+
+<P ALIGN=JUSTIFY>
+In the additive model for sound synthesis, a tone is represented by the sum of 
+sinusoidal components, each of which 
+has time-varying amplitude and frequency. <A HREF="#note27" onMouseOver="donote(event, 'note27d');" onMouseOut="undonote();">Moorer (1977)</A> gives an excellent 
+account of the details. To synthesize a 
+sound, one specifies a number of software or hardware sinusoidal oscillators, 
+each with its own amplitude and 
+frequency control envelopes. Additive synthesis of this form has two important 
+advantages. First, it is general, that is, 
+with a sufficient number of independently controllable oscillators a very large 
+and highly varied class of signals can be 
+generated. At some sacrifice in computational efficiency and with an increase in 
+the quantity of data for specifying the 
+envelopes, one can mimic FM synthesis (<A HREF="#note10" onMouseOver="donote(event, 'note10d');" onMouseOut="undonote();">Chowning&nbsp;: 1973</A>) and other non 
+linear techniques (<A HREF="#note5" onMouseOver="donote(event, 'note5d');" onMouseOut="undonote();">Arfib&nbsp;: 1977</A>&nbsp;; 
+<A HREF="#note7" onMouseOver="donote(event, 'note7d');" onMouseOut="undonote();">Beauchamp&nbsp;: 1975</A>&nbsp;; 
+<A HREF="#note21" onMouseOver="donote(event, 'note21d');" onMouseOut="undonote();">Le Brun&nbsp;: 1979</A>&nbsp;; 
+<A HREF="#note25" onMouseOver="donote(event, 'note25d');" onMouseOut="undonote();">Moorer&nbsp;: 1976</A>). Of course, one can 
+produce effects not possible with these techniques. 
+Second, one can analyze existing sounds and obtain data that can be used to 
+resynthesize exactly the signal that was 
+analyzed. <A HREF="#note26" onMouseOver="donote(event, 'note26d');" onMouseOut="undonote();">Moorer (1976)</A> has described the application of the phase vocoder 
+(<A HREF="#note32" onMouseOver="donote(event, 'note32d');" onMouseOut="undonote();">Portnoff&nbsp;: 1976</A>) to the analysis and 
+synthesis of musical sounds. The phase vocoder is an advance over methods like 
+the heterodyne filter (<A HREF="#note6" onMouseOver="donote(event, 'note6d');" onMouseOut="undonote();">Beauchamp&nbsp;: 1969</A>&nbsp;; 
+<A HREF="#note24" onMouseOver="donote(event, 'note24d');" onMouseOut="undonote();">Moorer&nbsp;: 1975</A>) in that the 
+analysis does not have to be pitch synchronous nor do the waveforms have to contain 
+more or less harmonic components, thus permitting the analysis of tones with 
+pitch variation as well as inharmonic 
+tones like those produced by percussion instruments. The method also guarantees 
+that when the analysis data is not 
+modified, the original signal is recovered exactly.
+</P>
+
+<P ALIGN=JUSTIFY>
+Let us say that we want to synthesize, using data from phase vocoder analysis, a 
+musical instrument timbre with 25 
+harmonics. In this case 25 amplitude and 25 frequency envelopes will be 
+required. Storing these functions in full detail 
+demands considerable memory, and if we are using a computer-controlled digital 
+synthesizer like those mentioned at 
+the start of this article, then transfer of the envelopes may exceed the 
+bandwidth of the link between the computer and 
+the synthesizer. Furthermore, if the shapes of the envelope functions are to be 
+modified, the computation time required 
+to rescale every point of the functions may easily exceed the capabilities of 
+real-time manipulation. Clearly some form 
+of data reduction is required, if one wants to work in real time.
+</P>
+
+<P ALIGN=JUSTIFY>
+A particularly attractive procedure that produces a significant reduction in the 
+quantity of data involved is to 
+approximate curvilinear envelope functions with functions composed of a series 
+of straight line segments (such as 
+those given in (<A HREF="#note27" onMouseOver="donote(event, 'note27d');" onMouseOut="undonote();">Moorer&nbsp;: 1977</A>)). Such straight-line-segment approximations 
+can be stored in terms of the coordinates of 
+the break points of the function, thus greatly reducing memory demands. 
+Furthermore, the digital synthesizers 
+constructed by Alles, DiGiugno, and Samson provide digital oscillators that 
+include straight-line ramp controls for both 
+amplitude and frequency. In working with these oscillators, one provides as data 
+the starting value for a ramp, its 
+slope, and a terminating value or time that indicates when a new slope is 
+required. The actual generation of the values 
+along the specified line segments is provided within the oscillator itself. In 
+supplying control data from the computer's 
+memory to these synthesizers, the break points of the line-segment 
+approximations can be passed directly from the 
+computer to the synthesizer, thus greatly reducing the data rate demands on the 
+interface. Finally, the 
+straight-line-segment approximations make possible rapid modification of the 
+function shapes, as only the coordinates 
+of the break points need be modified. But can we get away with such a drastic 
+data reduction&nbsp;? If we approximate 
+curvilinear functions with a small number of connected straight lines, will high 
+audio quality and timbral richness be 
+maintained&nbsp;?
+</P>
+
+<P ALIGN=JUSTIFY>
+Indications that the straight line segment approximations would provide 
+satisfactory results have been obtained for 
+brass tones described in (<A HREF="#note33" onMouseOver="donote(event, 'note33d');" onMouseOut="undonote();">Risset and Mathews&nbsp;: 1969</A>) and by 
+(<A HREF="#note6" onMouseOver="donote(event, 'note6d');" onMouseOut="undonote();">Beauchamp&nbsp;: 1969</A>). 
+<A HREF="#note2" onMouseOver="donote(event, 'note14d');" onMouseOut="undonote();">Grey (1975)</A> carried out a carefully 
+controlled perceptual discrimination experiment to determine the extent to which 
+the tones with completely detailed 
+amplitude and frequency functions could be discriminated from those with line-segment 
+approximations consisting of 
+from five to seven segments per envelope (also <A HREF="#note15" onMouseOver="donote(event, 'note15d');" onMouseOut="undonote();">Grey and Moorer&nbsp;: 1977</A>). 
+Grey used 16 different orchestral instrument 
+tones, and in general he found the discriminations to be extremely difficult. 
+His findings strongly suggest that it is not 
+necessary to retain the highly complex temporal microstructure of the amplitude 
+and frequency functions in order to 
+preserve timbral quality. It would appear that the line-segment approximations 
+can be 
+made with little harm. Besides the resulting data reduction, an important 
+advantage of such 
+approximations is that the resulting tones have more clearly defined acoustical 
+properties. This will prove especially 
+important when we wish to determine those physical properties that are 
+especially important for perception.
+</P>
+
+<H2 ALIGN=CENTER>Representation of Timbre Dissimilarities</H2>
+
+<P ALIGN=JUSTIFY>
+In the next sections we will first describe a method for characterizing the 
+structure of the relationships inherent in a set of 
+sounds differing in timbre. We will then show how such representations of the 
+timbres can be related to the underlying 
+acoustical properties of the tones. We will also show that the representations 
+can be used to compose timbral patterns 
+with perceptual properties predictable from the structure of the representation. 
+Finally it will be argued that when this is 
+accomplished we have in some sense designed a systematic control scheme for the 
+perceptually important acoustic 
+properties of the sounds.
+</P>
+
+<P ALIGN=JUSTIFY>
+From a quantitative point of view, data from subjective judgments has a peculiar 
+if not uncertain status (<A HREF="#note23" onMouseOver="donote(event, 'note23d');" onMouseOut="undonote();">Luce&nbsp;: 1972</A>). The 
+notion of a unit of measurement such as the decibel or hertz is difficult if not 
+impossible to establish for subjective scales. 
+We can of course choose units for subjective scales like "sones" or "mels" as 
+Stevens (1959) has done, but the so-called 
+unit derived in one experimental context fails to remain fixed in other 
+contexts. In fact, the "sone", the unit for subjective 
+loudness, is not invariant across the two ears of individuals with normal 
+hearing (<A HREF="#note22" onMouseOver="donote(event, 'note22d');" onMouseOut="undonote();">Levelt, <I>et al.</I>&nbsp;: 1972</A>). Such units are useful 
+in that they provide a common language for discussing the auditory abilities of 
+a population of listeners, but they cannot 
+justifiably be treated with the algebra of dimensional analysis that underlies 
+measurement in the physical sciences. I think it 
+right to be pessimistic about the possibility of subjective scales being 
+elevated to the same form of measurement as 
+physical measurement. But subjective judgments, if collected over a sufficient 
+number of objects, in this case sounds, can 
+have a representable structure, and this structure can in turn be related to 
+various acoustical parameters.
+</P>
+
+<P ALIGN=JUSTIFY>
+Perceptual judgments tend to be relative in nature. With few exceptions, we tend 
+to judge an object in terms of the 
+relationships it has with other objects. Relational judgments are of great 
+interest in music, because music involves patterns 
+composed of a variety of sounds, and it is the relational structure within and 
+between the patterns that is of primary 
+importance. Judgments of the extent of perceptual similarity or dissimilarity 
+between two sounds can be made in a very 
+intuitive fashion. One can say that sound <I>A</I> is more similar to sound <I>B</I> than to 
+sound <I>C</I> without having to name or 
+otherwise identify explicitly the attributes that were involved in the judgment. 
+Research groups at IRCAM, at Michigan State 
+University, and at the Stanford Center for Research in Music and Acoustics have 
+been using perceptual dissimilarity 
+judgments in a variety of musical and otherwise audio-related contexts. One of 
+the general techniques is to represent the 
+perceptual dissimilarities as <I>distances</I> in a spatial configuration. One begins 
+with a set of dissimilarity judgments typically 
+taken for all pairs of sounds that can be formed from the set. This matrix of 
+dissimilarities is then processed by one of a 
+variety of multidimensional scaling programs such as KYST 
+(<A HREF="#note19" onMouseOver="donote(event, 'note19d');" onMouseOut="undonote();">Kruskal&nbsp;: 1964 a</A>, 
+<A HREF="#note20" onMouseOver="donote(event, 'note20d');" onMouseOut="undonote();">b</A>). The multidimensional scaling programs 
+produce an n-dimensional spatial arrangement of points that represent the 
+various sound objects. The programs operate 
+to maximize a goodness-of-fit function relating the distances between the points 
+to the corresponding dissimilarity ratings 
+between the sounds.
+</P>
+
+<P ALIGN=JUSTIFY>
+Perhaps at this point it would be best to show how the multidimensional scaling 
+experiments were carried out. At IRCAM 
+we have recently developed a set of programs that greatly facilitate the design, 
+execution, and interpretation of such 
+experiments. In the following example we use the same set of sounds used in both 
+(<A HREF="#note14" onMouseOver="donote(event, 'note14d');" onMouseOut="undonote();">Grey&nbsp;: 1975</A>) and 
+(<A HREF="#note17" onMouseOver="donote(event, 'note17d');" onMouseOut="undonote();">Grey and Gordon&nbsp;: 
+1978</A>) and presented in the series "Lexicon of Analyzed Tones" 
+(<A HREF="#note28" onMouseOver="donote(event, 'note28d');" onMouseOut="undonote();">Moorer, <I>et al.</I>&nbsp;: 1977</A>, 
+<A HREF="#note30" onMouseOver="donote(event, 'note30d');" onMouseOut="undonote();">1978</A>). This set consists of 16 
+synthetic orchestral instrument timbres and a group of eight hybrid instrument 
+timbres produced by exchanging spectral 
+envelopes between members of the original set. The goal of our experiment will 
+be to provide a representation of these 24 
+timbres as points in a Euclidian space as well as an interpretation of this 
+representation in terms of the acoustical 
+properties of the tones.
+</P>
+
+<H2 ALIGN=CENTER>General Method</H2>
+
+<P ALIGN=JUSTIFY>
+The procedure that provides an interpreted representation of the sounds involves 
+the following five steps&nbsp;:
+</P>
+
+<OL>
+<LI>Selection of materials for study&nbsp;;
+<LI>Collection of the dissimilarity judgments&nbsp;; 
+<LI>Representation of the dissimilarity judgments with spatial and other schemes such 
+as clusters and graphs&nbsp;;
+<LI>Psychoacoustical interpretation of the structure&nbsp;;
+<LI>Verification of the interpretation in musical situations.
+</OL>
+
+<H2 ALIGN=CENTER>Selecting the Materials for Study</H2>
+
+<P ALIGN=JUSTIFY>
+In preparing the sounds that we wish to represent, attention must be paid to (A) 
+the number of sound elements, (B) the 
+problem of equalizing the sounds with respect to parameters we wish to ignore, 
+and (C) the range of variation within the 
+set of sounds.
+</P>
+
+<H3>A. The Number of Sound Elements</H3>
+
+<P ALIGN=JUSTIFY>
+To obtain a meaningful representation, a certain minimal number of sound 
+elements is required, in order that the 
+dissimilarities impose a sufficient amount of constraint for fixing accurately 
+the locations of the points in a space. Some of 
+the multidimensional scaling programs, like KYST, operate with only qualitative 
+or "ordinal" constraints on the distances in 
+the space. These algorithims seek arrangements of the points such that the rank 
+order of the interpoint distances in the 
+space matches, in terms of a well-defined goodness-of-fit measure, the rank 
+order of the dissimilarities between the 
+corresponding stimuli. If we begin with interpoint distances from a known 
+configuration of points, the programs provide a 
+very accurate recovery of the positions of the points even when the distances 
+are subjected to radical monotonic 
+(transformations or perturbations due to random error <A HREF="#note36" onMouseOver="donote(event, 'note36d');" onMouseOut="undonote();">Shepard&nbsp;: 1966</A>). It 
+is hard to set down a precise rule of thumb for 
+determining the minimum number of elements to use. The choice depends on the 
+number of dimensions and the 
+distribution of the points in the space, an issue to which we shall return 
+below. In most psychological research using 
+multidimensional scaling, 10 points have seemed sufficient for two dimensions 
+and 15 for three. In our recent research we 
+have tended to encourage the use of between 20 to 30 points for spaces of two 
+and three dimensions, respectively.
+</P>
+
+<H3>B. Equalizing the Tones-with Respect to Extraneous Parameters</H3>
+
+<P ALIGN=JUSTIFY>
+If possible, the tones should be equalized with respect to the properties that 
+are not to influence the judgments. When 
+studying timbre, the usual procedure is to equalize the pitch, subjective 
+duration, loudness, and room information 
+aspects of the tones. On the other hand, if we are studying room information 
+(that is, reverberation structure), then we 
+probably want to use a standard source and manipulate only the reverberation 
+parameters. Attention should also be 
+paid to just what is being equalized. If we are equalizing with respect to 
+loudness, for example, and the tones in the set 
+have different spectral shapes and attack rates, then simply matching sound 
+pressure level (in terms of decibels) will 
+not provide the appropriate equalization. In this case we are without a 
+satisfactory model for the perception of the 
+(loudness of complex time-variant spectra <A HREF="#note24" onMouseOver="donote(event, 'note24d');" onMouseOut="undonote();">Moorer&nbsp;: 1975</A>) and we must resort 
+to making empirical matches. <A HREF="#note14" onMouseOver="donote(event, 'note14d');" onMouseOut="undonote();">Grey (1975)</A> provides a good example of such subjective matching procedures for pitch, 
+duration, and loudness.
+</P>
+
+<H3>C. Controlling the Range of Variation Within the Set</H3>
+
+<P ALIGN=JUSTIFY>
+The range of variation in the timbres of the sounds will certainly differ from 
+one type of study to another. In some 
+instances we will want to investigate a timbral domain having a broad range of 
+variation including perhaps inharmonic 
+percussion sounds as well as sounds with more or less harmonic components. In 
+other situations more restrictions are 
+imposed on the range of variation, as in, for example, the study to be described 
+in this paper where we use only 
+sounds derived from standard orchestral instruments played in a conventional 
+manner. For even more refined 
+investigations of timbral nuance one might use a very limited range of sounds.
+</P>
+
+<P ALIGN=JUSTIFY>
+Once a general range of variation has been determined, some attention must be 
+paid to the homogeneity of variation 
+within the set. Consider the following example. If we choose eight distinctively 
+percussive timbres and eight distinctively 
+non-percussion timbres but provide no linking elements between the two domains, 
+then it is likely that all the subjective 
+dissimilarities that are made for pairs that cut across the two classes of 
+sounds are larger than all the intra-class 
+dissimilarities. In situations like this, some of the multidimensional scaling 
+programs give what are called degenerate 
+solutions and the intra-class structure is not fully displayed. 
+<A HREF="#note15" onMouseOver="donote(event, 'note38d');" onMouseOut="undonote();">Shepard (1974)</A> 
+provides a detailed discussion of this 
+problem and prospects for its solution. In addition, in such a situation I find 
+that in making the judgments I have a 
+difficult time concentrating on the relatively subtle differences for pairs 
+within a class in the context of the much larger 
+dissimilarities for the pairs spanning the two categories. Unfortunately, since 
+we will most often deal with timbral 
+domains about which we have little knowledge, clear rules for the preliminary 
+selection of the variation in the material 
+are hard to set down. Selection procedures depend ultimately on our specific 
+interests and desires for control.
+</P>
+
+<P ALIGN=JUSTIFY>
+To facilitate the preliminary screening and selection of the sounds, we have 
+developed an interactive random access 
+audio playback program on IRCAM's DEC - 10 computer. This program is called KEYS 
+and was written by Bennett 
+Smith (<A HREF="#note43" onMouseOver="donote(event, 'note43d');" onMouseOut="undonote();">Wessel and Smith&nbsp;: 1977</A>). One supplies KEYS with a list of the 
+sounds written out as a list of the names of the 
+files in which each sound element is stored. Each sound file in the list is then 
+related to a character that can be typed 
+on the terminal keyboard. The relationships between the characters and the 
+sounds are listed on the computer 
+terminal's CRT display. When a character is typed the corresponding sound file 
+is played through the digital-to-analog 
+converters and the playing action is indicated by an increase in the brightness 
+of the character-file name entry in the 
+table displayed on the CRT. This program permits rapid auditory comparisons 
+among a large number of different 
+sounds. Currently the limit is 100 files of arbitrary length.
+</P>
+
+<H2 ALIGN=CENTER>Collecting the Timbre Dissimilarity Judgements</H2>
+
+<P ALIGN=JUSTIFY>
+Though there exist a variety of ways to collect perceptual dissimilarities, we 
+have found simple ratings of the extent of 
+dissimilarity to be the most efficient and least tedious way to make the 
+judgments. At IRCAM we have been using 
+direct estimates of the dissimilarity between two tones. Our listening judge, 
+using a program written by Bennett Smith 
+called ESQUISSE, sits before a CRT display terminal and an audio system fed by 
+the computer's digital-to-analog 
+converters. The two sounds in a pair are related to the terminal keys "m" and 
+"n", allowing the listener to play the 
+sounds at will. After listening, the judge enters a rating with one of the keys 
+"0" through "9" on the terminal. Immediately 
+after the judgment is entered, the next pair of tones is ready to be played from 
+the keyboard. The sequencing of the 
+judgment trials is random, and all of the <I>n</I>(<I>n</I> - 1)/2 pairs are used, where n is 
+the number of sounds under study. After 
+all the pairs have been judged, the random sequence is unscrambled and a matrix 
+of dissimilarities is formed.
+</P>
+
+<P ALIGN=JUSTIFY>
+The data collection program includes what we call a "coffee-break" feature that 
+allows the judgment session to be 
+interrupted either by machine failure or human fatigue. The listener can then 
+return to the experiment at a later time 
+and continue from the point in the sequence where the interruption occurred. 
+With this program, one is able to listen to 
+the sounds rapidly and freely, and the judgments can be entered with ease.
+</P>
+
+<H2 ALIGN=CENTER>A Two-dimensional Representation of 24 Orchestral Instrument Timbres</H2>
+
+<P ALIGN=JUSTIFY>
+I served as a judge using the dissimilarity data collection program on a set of 
+24 orchestral instrument timbres that 
+were obtained from John Grey. These sounds were synthesized using line segment 
+envelopes and were equalized 
+subjectively for pitch, loudness, and duration, A two-dimensional representation 
+of the sounds provided by the KYST 
+program is shown in <A HREF="#fig1">Figure 1</A>, along with an interpretation of the dimensions of 
+this space. The vertical axis is related 
+to the <I>spectral energy distribution</I> of the tones, and the horizontal, to the 
+<I>nature of the onset transient</I>. The sounds at 
+the top of plot are bright in character, and as one moves towards the bottom the 
+timbres become progressively more 
+mellow. In a number of studies on timbre spaces (<A HREF="#note40" onMouseOver="donote(event, 'note40d');" onMouseOut="undonote();">Wedin and Goude&nbsp;: 
+1972</A>&nbsp;; <A HREF="#note41" onMouseOver="donote(event, 'note41d');" onMouseOut="undonote();">Wessel&nbsp;: 1973</A>&nbsp;; 
+<A HREF="#note14" onMouseOver="donote(event, 'note14d');" onMouseOut="undonote();">Grey&nbsp;: 1975</A>&nbsp;; 
+<A HREF="#note12" onMouseOver="donote(event, 'note12d');" onMouseOut="undonote();">Ehresman and Wessel&nbsp;: 1978</A>&nbsp;; 
+<A HREF="#note17" onMouseOver="donote(event, 'note17d');" onMouseOut="undonote();">Grey and Gordon&nbsp;: 1978</A>&nbsp;; 
+<A HREF="#note42" onMouseOver="donote(event, 'note42d');" onMouseOut="undonote();">Wessel and Grey&nbsp;: 1978</A>) this dimension related to the spectral energy 
+distribution has appeared. A consistent, quantitative, acoustical interpretation 
+has also been provided by calculating an 
+excitation pattern for the spectrum provided by Zwicker's model for loudness 
+(<A HREF="#note45" onMouseOver="donote(event, 'note45d');" onMouseOut="undonote();">Zwicker and Scharf&nbsp;: 1965</A>). This 
+transformation on the acoustical spectrum compensates for certain properties of the auditory 
+system like critical bands and the 
+asymmetric spread of masking from low to high frequencies. The centroid or mean 
+of this compensated spectral 
+energy distribution is then calculated and correlated with projections of the 
+points on the axis assumed to be related to 
+brightness. In all of the studies these correlations have been very high.
+</P>
+
+<A NAME="fig1"></A>
+<BLOCKQUOTE>
+<B>Figure 1.</B>
+<BR>
+<IMG SRC="fig1.jpg" ALT="figure 1">
+<P CLASS=smallni>
+Two-dimensional timbre space representation of 24 instrument-like 
+sounds obtained from Grey. The space 
+was produced by the KYST multidimensional scaling program from dissimilarity 
+judgements made by Wessel. The 
+lower-case letters identify the sounds as recorded on a cassette-tape prepared 
+to accompany this paper and 
+distributed by IRCAM. The uppercase subscripts at each point identify the tones 
+as reported in (<A HREF="#note14" onMouseOver="donote(event, 'note14d');" onMouseOut="undonote();">Grey&nbsp;: 1975</A>, 
+<A HREF="#note16" onMouseOver="donote(event, 'note16d');" onMouseOut="undonote();">1977</A>), 
+(<A HREF="#note17" onMouseOver="donote(event, 'note17d');" onMouseOut="undonote();">Grey and Gordon&nbsp;: 1978</A>) and 
+(<A HREF="#note17" onMouseOver="donote(event, 'note17d');" onMouseOut="undonote();">Gordon and Grey&nbsp;: 1978</A>). 
+The original analyzed tones upon which these synthesized 
+versions are based are being presented in the <I>Computer Music Journal</I> series 
+"Lexicon of Analyzed Tones."
+</P>
+<P CLASS=smallni>
+Abbreviations for stimulus points&nbsp;: 01, 02 = oboes, FH = French horn, BN = 
+bassoon, C1 = E-flat clarinet, C2 = bass 
+clarinet, FL = flute, X1  X2, X3 = saxophones, TP = trumpet, EH = English horn, 
+S1 = cello played <I>sul ponticello</I>, S2 = 
+cello played normally, S3 = cello played muted sul tasto, FHZ = modified FH with 
+spectral envelope, BNZ = modified 
+BN with FH spectral envelope, S1Z = modified S1 with S2 spectral envelope, S2Z = 
+modified S2 with S1 spectral 
+envelope, TMZ = modified TM with TP spectral envelope, BCZ = modified C2 with 01 
+spectral envelope, 01Z modified 
+01 with C2 spectral envelope.
+</P>
+</BLOCKQUOTE>
+
+<P ALIGN=JUSTIFY>
+The horizontal dimension is related to the quality of the "bite" in the attack. 
+Possibilities for quantification of this 
+dimension are discussed in the next section on timbre patterns formed in the 
+space.
+</P>
+
+<H2 ALIGN=CENTER>Predictions About Timbre Patterns</H2>
+
+<P ALIGN=JUSTIFY>
+To a large extent, music consists of syntactic patterns. It is the nature of the 
+relationships among the elements of the 
+patterns that is of primary importance in their perception. In the next series 
+of examples I would like to show that when 
+note-to-note timbral changes are organized in terms of the timbre space which we 
+just examined, then predictable 
+perceptual organizations of timbre patterns can be obtained.
+</P>
+
+<P ALIGN=JUSTIFY>
+First we will examine some auditory effects that we can relate to the dimensions 
+of the space and the distances 
+spanned. In the following patterns the sequence of notes will alternate between 
+two differing timbres, but otherwise the 
+pitch sequence and rhythmic timing will remain fixed. The pitch sequence is the 
+simple, repeating, three-note 
+ascending fine shown in <A HREF="#fig2">Figure 2</A>. The alternating timbre sequence is shown by 
+the alternating notes marked 
+respectively with "0" and "C". When the timbral distance between the adjacent 
+notes is small, the repeating ascending 
+pitch lines dominate our perception. However, when the timbre difference is 
+enlarged along the "spectral energy 
+distribution" axis, the perceptual organization of the pattern is radically 
+altered. The line now splits at the wide timbral 
+intervals and for many listeners two interwoven descending lines are formed, 
+each with its own timbral identity. This 
+type of effect is called "melodic fission" or "auditory stream segregation" in 
+the psychoacoustic literature (<A HREF="#note8" onMouseOver="donote(event, 'note8d');" onMouseOut="undonote();">Bregman and Campbell&nbsp;: 1971</A>&nbsp;; 
+<A HREF="#note39" onMouseOver="donote(event, 'note39d');" onMouseOut="undonote();">Van Noorden&nbsp;: 1975</A>) and is a consequence of the 
+large spectral energy distribution between the 
+alternating timbres.
+</P>
+
+<A NAME="fig2"></A>
+<BLOCKQUOTE>
+<B>Figure 2.</B>
+<BR>
+<IMG SRC="fig2.jpg" ALT="figure 2">
+<P CLASS=smallni>
+Ascending pitch patterns in "three" with two alternating timbres ("0" 
+and "X"). If the timbral difference 
+between adjacent notes is large, then one tends to perceive interleaved 
+descending lines formed by the notes of the 
+same timbral type.
+</P>
+</BLOCKQUOTE>
+
+<P ALIGN=JUSTIFY>
+A different effect is obtained by moving along the dimension we interpreted as 
+relating to the onset characteristics of 
+the sounds. When this is done we obtain a perceptually irregular rhythm even 
+though the acoustical onset times of the 
+notes are the same. This observation has some important implications for the 
+control of sound in synthesis. When we 
+alter the properties of the attack of the tone, we are also likely to influence 
+the temporal location of the perceived onset 
+of the tone. This lack of accord between physical onset time and subjective 
+onset time has been observed with speech 
+sounds by <A HREF="#note31" onMouseOver="donote(event, 'note31d');" onMouseOut="undonote();">Morton, <I>et al.</I> (1976)</A>. Morton's experimental procedure offers the 
+possibility of determining the relative 
+perceived onset times for a set of notes. The procedure uses a simple <I>ABAB...AB</I> 
+alternating sequence similar to 
+those just described. The listener adjusts the shift in onset for all the <I>B</I>'s in 
+the sequence until the sequence is 
+perceived as regular, and the temporal displacement in the physical onset is then noted. Perhaps with the application of such a method to musical tirnbres 
+and with the employment of a good 
+mode of auditory temporal integration of complex time-varying spectra, we will 
+be able to predict more precisely where 
+the perceived onsets of tones with differing spectral evolutions will occur. 
+<I>Nevertheless, both the fine tuning of rhythm 
+in music and psychoacoustic research will benefit greatly if the control 
+software of our synthesis systems allows easy 
+and flexible adjustment of physical onset times in complex musical contexts</I>.
+</P>
+
+<P ALIGN=JUSTIFY>
+With the previous examples we have further verified the interpretation of the 
+timbre space and have demonstrated that 
+to sonic extent the properties of the space retain their validity in richer 
+musical situations. In the next example involving 
+timbral analogies I hope to demonstrate that other properties of the geometry of 
+the timbre space allow us to make 
+predictions about pattern perception as well.
+</P>
+
+<H2 ALIGN=CENTER>Timbral Analogies</H2>
+
+<P ALIGN=JUSTIFY>
+Composers frequently make transpositions of pitch patterns. It seemed natural to 
+ask if <I>transpositions of timbral 
+sequences</I> work as well. To get some preliminary indications regarding this 
+possibility David Ehresman and I 
+(<A HREF="#note12" onMouseOver="donote(event, 'note12d');" onMouseOut="undonote();">Ehresman and Wessel&nbsp;: 1978</A>) tested a parallelogram model of analogies 
+developed by <A HREF="#note34" onMouseOver="donote(event, 'note34d');" onMouseOut="undonote();">Rumelhart and Abramson (1973)</A>. The basic idea is illustrated in 
+<A HREF="#fig3">figure 3</A>. If we make a two-note timbral 
+pattern, the sequence <I>A,B</I> in <A HREF="#fig3">figure 3</A>, 
+and wish to make an analogous (or, for our purposes, transposed) sequence 
+beginning on timbre <I>C</I>, then we choose 
+the note <I>D</I> that best completes a parallelogram in the space.
+</P>
+
+<P ALIGN=JUSTIFY>
+To test this idea we presented listeners with four different solutions to 
+timbral analogies of the form <I>A</I> -> <I>B</I> as <I>C</I> -> <I>D</I><SUB><FONT SIZE=-1>i</FONT></SUB>. 
+They were asked to order the alternative analogies indicating the best formed, 
+the next best formed, and so forth. The 
+idea was to check if the listeners' ranking of the goodnes of the analogy would 
+be inversely related to the distance 
+between the various alternative solutions, D<SUB><FONT SIZE=-1>i</FONT></SUB>'s, and the ideal solution point 
+specified by the parallelogram in the timbre 
+space. In constructing the analogy problems we chose the alternatives so they 
+would fall at graded distances from the 
+ideal solution point. We selected 40 different analogy problems from a timbre 
+space similar to the one just described. 
+Our laboratory computer system allowed us to synthesize and store the tones and 
+then to automate and analyze the 
+experiment. One important feature of the system was that the listeners had 
+essentially random access to the four 
+alternative formations of an analogy problem and were able to make rapid 
+auditory comparisons among them.
+</P>
+
+<P ALIGN=JUSTIFY>
+<A HREF="#table1">Table 1</A> shows the results of this experiment for nine listeners who each ordered 
+the solutions for 40 different analogy 
+problems. The entries in the table indicate the proportion of times, averaged 
+over listeners and analogies, for which the 
+<I>I</I><SUB><FONT SIZE=-1>th</FONT></SUB> closest alternative to the ideal analogy point was ranked as the 
+<I>J</I><SUB><FONT SIZE=-1>th</FONT></SUB> best 
+solution, where <I>I</I> is the row index and <I>J</I> is 
+the column index. Column 1 of this table shows that the prediction was indeed 
+fulfilled. In fact, the distance between an 
+alternative and ideal analogy point predicts not only the best solution but the 
+rank ordering of most of the alternatives. 
+Though more research needs to be done, the notion of transposing a sequence of 
+timbres by forming another 
+sequence geometrically parallel to it in timbre space thus appears to be a 
+reasonable and musically viable idea.
+</P>
+
+<A NAME="fig3"></A>
+<BLOCKQUOTE>
+<B>Figure 3.</B>
+<BR>
+<IMG SRC="fig3.jpg" ALT="figure 3">
+<P CLASS=smallni>
+Parallelogram model of timbre analogies. <I>A</I> -> <I>B</I> is a given change in 
+timbre&nbsp;; <I>C</I> -> <I>D</I> is a desired timbral 
+analogy, with <I>C</I> given. <I>D</I> is the ideal solution point <I>D<SUB><FONT SIZE=-1>1</FONT></SUB>, 
+D<SUB><FONT SIZE=-1>2</FONT></SUB>, D<SUB><FONT SIZE=-1>3</FONT></SUB>, and 
+D<SUB><FONT SIZE=-1>4</FONT></SUB></I> are the actual solutions offered to the listeners.
+</P>
+</BLOCKQUOTE>
+
+<A NAME="table1"></A>
+<BLOCKQUOTE>
+<B>Table 1</B>
+<BR>
+<TABLE BORDER=0 CELLPADDING=5>
+
+<TR>
+<TD></TD>
+<TD COLSPAN=4>Listener-Assigned Rank (<I>J</I>)</TD>
+</TR>
+
+<TR>
+<TD CLASS=center ALIGN=CENTER>Rank Distance<BR>of the Alternative<BR>from
+the Ideal Solution (<I>I</I>)
+</TD>
+<TD CLASS=center ALIGN=CENTER>1</TD>
+<TD CLASS=center ALIGN=CENTER>2</TD>
+<TD CLASS=center ALIGN=CENTER>3</TD>
+<TD CLASS=center ALIGN=CENTER>4</TD>
+</TR>
+
+<TR>
+<TD CLASS=center ALIGN=CENTER>1</TD>
+<TD>.422</TD>
+<TD>.303</TD>
+<TD>.156</TD>
+<TD>.119</TD>
+</TR>
+
+<TR>
+<TD CLASS=center ALIGN=CENTER>2</TD>
+<TD>.322</TD>
+<TD>.283</TD>
+<TD>.217</TD>
+<TD>.178</TD>
+</TR>
+
+<TR>
+<TD CLASS=center ALIGN=CENTER>3</TD>
+<TD>.169</TD>
+<TD>.267</TD>
+<TD>.358</TD>
+<TD>.206</TD>
+</TR>
+
+<TR>
+<TD CLASS=center ALIGN=CENTER>4</TD>
+<TD>.086</TD>
+<TD>.147</TD>
+<TD>.269</TD>
+<TD>.497</TD>
+</TR>
+
+</TABLE>
+<P CLASS=smallni>
+Rank order data averaged over nine listeners and all 40 analogies. Cf. 
+<A HREF="#fig3">figure 3</A>.
+</P>
+</BLOCKQUOTE>
+
+<P ALIGN=JUSTIFY>
+The idea of transposing timbral patterns suggests another procedure for 
+representing important perceptual 
+relationships. Using a technique called simultaneous linear equation scaling 
+(<A HREF="#note9" onMouseOver="donote(event, 'note9d');" onMouseOut="undonote();">Carroll and Chang&nbsp;: 1972</A>) one can derive 
+distance estimates directly from the analogy quality judgments and then use the 
+standard multidimensional scaling 
+algorithms on these distances. Though we have yet to try this scheme, it seems 
+promising.
+</P>
+
+<H2 ALIGN=CENTER>Designing Control Systems from the Perceptual Representations</H2>
+
+<P ALIGN=JUSTIFY>
+The timbre space representation suggests relatively straightforward schemes for 
+controlling timbre. The basic idea is 
+that by specifying coordinates in a particular timbre space, one could hear the 
+timbre represented by those 
+coordinates. If these coordinates should fall between existing tones in the 
+space, we would want this interpolated 
+timbre to relate to the other sounds in a manner consistent with the structure 
+of the space. Evidence that such 
+interpolated sounds are consistent with the geometry of the space has been 
+provided by <A HREF="#note14" onMouseOver="donote(event, 'note14d');" onMouseOut="undonote();">Grey (1975)</A>. Grey used 
+selected pairs of sounds from his timbre space and formed sequences of 
+interpolated sounds by modifying the 
+envelope break points of the two sounds with a simple linear interpolation 
+scheme. These interpolated sequences of 
+sounds were perceptually smooth and did not exhibit abrupt changes in timbre. 
+Members of the original set of sounds 
+and the newly created interpolated timbres were then used in a dissimilarity 
+judgment experiment to determine a new 
+timbre space. This new space had essentially the same structure as the original 
+space with the interpolated tones 
+appropriately located between the sounds used to construct them. It would appear 
+from these results that the regions 
+between the existing sounds in the space can be filled out, and that smooth, 
+finely graded timbral transitions can be 
+formed.
+</P>
+
+<P ALIGN=JUSTIFY>
+The most natural way to move about in the timbral space would be to attach the 
+handles of control directly to the 
+dimensions of the space. I examined such a control scheme in a real-time context 
+(<A HREF="#note44" onMouseOver="donote(event, 'note44d');" onMouseOut="undonote();">Wessel&nbsp;: 1976</A>). A two-dimensional 
+timbre space was represented on the graphics terminal of the computer that 
+controlled the DiGiugno oscillator bank at 
+IRCAM. One dimension of this space was used to manipulate the shape of the 
+spectral energy distribution. This was 
+accomplished by appropriately scaling the line segment amplitude envelopes 
+according to a shaping function. The 
+other axis of the space was used to control either the attack rate or the extent 
+of synchronicity among the various 
+components. Overall, the timbral trajectories in these spaces were smooth and 
+otherwise perceptually well-behaved. 
+To facilitate more complex forms of control, an efficient computer language for 
+dealing with envelopes is needed. Grey 
+and his colleagues at Stanford have developed a language for this purpose 
+(<A HREF="#note18" onMouseOver="donote(event, 'note18d');" onMouseOut="undonote();">Kahrs&nbsp;: 1977</A>), and our group at IRCAM is 
+making a similar effort The basic idea behind such a language is to provide a 
+flexible control structure that permits 
+specification, sequencing, and combination of various procedures that create and 
+modify envelopes. These 
+procedures would include operations like stretching or shortening duration, 
+changing pitch, reshaping spectrum, 
+synchronizing or desynchronizing spectral components, and so forth. With such a 
+language it will be possible to tie the 
+operations on the envelope collections directly to the properties of the 
+perceptual representations of the material.
+</P>
+
+<H2 ALIGN=CENTER>Acknowledgments</H2>
+
+<P ALIGN=JUSTIFY>
+I would like to thank John Grey and John Gordon for their tones and comments, 
+and Gerald Bennett, Andy Moorer, 
+Wayne Slawson, and John Strawn for their comments and critical reading of the 
+manuscript.
+</P>
+
+<HR>
+
+<H3>References</H3>
+
+<DL CLASS=ref>
+
+<A NAME="note1"></A>
+<DT>Alles, H. G. (1977a)
+<DD>"A Portable Digital Sound Synthesis System." <I>Computer Music 
+Journal</I>, Vol. 1, N° 4, pp. 5 -6.
+
+<A NAME="note2"></A>
+<DT>Alles, H. G.(1977b)
+<DD>"A Modular Approach to Building Large Digital Synthesis 
+Systems." <I>Computer Music Journal</I>, Vol. 1, N° 4, pp. 10-13.
+
+<A NAME="note3"></A>
+<DT>Alles, H. G., and DiGiugno, G. (1977c)
+<DD>"A One Card, 64 Channel Digital 
+Synthesizer." <I>Computer Music Journal</I>, Vol.1, N° 4, pp. 7-9.
+
+<A NAME="note4"></A>
+<DT>Alonso, S., Appleton, J. H., Jones, C. (1975)
+<DD>"A Special Purpose Digital System for the Instruction, Composition, and 
+Performance of Music." <I>Proc. of the 1975 Conference on Computers in 
+Undergraduate Curricula</I>, 6,17-22.
+
+<A NAME="note5"></A>
+<DT>Arfib, D. (1977)
+<DD>"Digital Synthesis of Complex Spectra by Means of Non-Linear 
+Distortion of Sine Waves an Amplitude 
+Modulation." Paper presented at the 1977 International Computer Music 
+Conference, Center for Music Experiment, 
+University of California et San-Diego, La Jolla.
+
+<A NAME="note6"></A>
+<DT>Beauchamp, J. W. (1969)
+<DD>"A computer System for Timbre Variant Harmonic Analysis 
+and Synthesis of Musical Tones", in <I>Music by Computers</I>, edited by H. von Foerster and J. W. Beauchamp. 
+John Wiley and Sons, Inc., New York.
+
+<A NAME="note7"></A>
+<DT>Beauchamp, J. W. (1975)
+<DD>"Analysis and Synthesis of Cornet Tones Using Nonlinear 
+Interharmonic Relationships." <I>Journal of the Audio Engineering Society</I>, Vol. 23. pp.778-795.
+
+<A NAME="note8"></A>
+<DT>Bregman, A. S., and Campbell, J. (1971)
+<DD>"Primary Auditory Stream Segregation and Perception of Order in Rapid 
+Sequences of Tones." <I>Journal of Experimental Psychology</I>, Vol. 89, pp. 244-249.
+
+<A NAME="note9"></A>
+<DT>Carroll, J. D., and Chang, J. J. (1972)
+<DD>"Simules&nbsp;: Simultaneous Linear Equation Scaling." <I>Proceedings, 80th Annual 
+Convention of American Psychological Association</I>.
+
+<A NAME="note10"></A>
+<DT>Chowning, J. M. (1973)
+<DD>"The Synthesis of Complex Audio Spectra by Means of 
+Frequency Modulation." <I>Journal of the Audio Engineering Society</I>, Vol. 21, pp. 526-534. Reprinted in 
+<I>Computer Music Journal</I>, Vol.1 N° 2, pp. 46-54, 1977.
+
+<A NAME="note11"></A>
+<DT>DiGiugno, G. (1976)
+<DD>"A 256 Digital Oscillator Bank." Paper presented at the 1976 International Computer Music 
+Conference, Massachusetts Institute of Technology, Cambridge.
+
+<A NAME="note12"></A>
+<DT>Ehresman, D., and Wessel, D. L. (1978)
+<DD>"Perception of timbral Analogies." IRCAM Technical Report N° 13.
+
+<A NAME="note13"></A>
+<DT>Erickson, R. (1975)
+<DD><I>Sound Structure in Music</I>. University of California Press, 
+Berkeley and Los Angeles.
+
+<A NAME="note14"></A>
+<DT>Grey, J. M. (1975)
+<DD><I>Exploration of Musical Timbre</I>. Stanford Univ. Dept. of Music Tech. Rep. STAN-M-2.
+
+<A NAME="note15"></A>
+<DT>Grey, J. M., and Moorer, J. A. (1977)
+<DD>"Perceptual Evaluations of Synthesized Musical Instrument Tones." <I>Journal of 
+the Acoustical Society of America</I>, Vol. 62, pp. 454-62,1977.
+
+<A NAME="note16"></A>
+<DT>Grey, J. M. (1977)
+<DD>"Multidimensional Perceptual Scaling of Musical Timbre." <I>Journal of the Acoustical Society of 
+America</I>, Vol. 61, pp. 1270-1277, 1977.
+
+<A NAME="note17"></A>
+<DT>Gordon, J., and Grey, J. M. (1978)
+<DD>"Perceptual Effects of Spectral Modifications on Orchestral Instrument Tones." 
+<I>Computer Music Journal</I>, Vol. 2, N° 1, pp. 24-31.
+
+<A NAME="note18"></A>
+<DT>Kahrs. M. (1977)
+<DD>"A Computer Language for Psychoacoustic Study and Musical 
+Control of Timbre." Paper presented at the 1977 International Computer Music Conference. Center for Music 
+Experiment, University of California at San 
+Diego, La Jolla.
+
+<A NAME="note19"></A>
+<DT>Kruskal, J.B. (1964a)
+<DD>"Multidimensional Scaling by Optimizing Goodness of Fit to 
+a Nonmetric Hypothesis." <I>Psychometrika</I>, Vol. 29, pp. 1 -27.
+
+<A NAME="note20"></A>
+<DT>Kruskal, J.B. (1964b)
+<DD>"Nonmetric Multidimensional Scaling A Numerical Method." Psychometrika, Vol. 29, pp. 115-129.
+
+<A NAME="note21"></A>
+<DT>Le Brun, M. (1979)
+<DD>"Waveshaping Synthesis," <I>Joumal of the Audio Engineering Society</I>, Vol. 27, N° 4, pp. 250-266.
+
+<A NAME="note22"></A>
+<DT>Levelt, W.J. M., Riemersma, J.B., and Bunt, A.A. (1972)
+<DD>"Binaural Additivity of Loudness," <I>British Journal of 
+Mathematical and Statistical Psychology</I>, Vol. 25, pp. 51-68.
+
+<A NAME="note23"></A>
+<DT>Luce, R. D. (1972)
+<DD>"What Sort of Measurement is Psychophysical Measurement&nbsp;?" <I>American Psychologist</I>, February, 
+pp. 96-106.
+
+<A NAME="note24"></A>
+<DT>Moorer, J.A. (1975)
+<DD>"On the Loudness of Complex, TimeVariant Tones." Stanford 
+University, Department of Music, Tech Report STAN-M-4.
+
+<A NAME="note25"></A>
+<DT>Moorer, J.A. (1976)
+<DD>"The Synthesis of Complex Audio Spectra by Means of Discrete 
+Summation Formulae." <I>Joumal of the Audio Engineering Society</I>, Vol.24, pp.717-727.
+
+<A NAME="note26"></A>
+<DT>Moorer, J. A. (1976)
+<DD>"The Use of the Phase Vocoder in Computer Music 
+Applications." Presented at the 55th 
+Convention of the Audio Engineering Society&nbsp;; available as Preprint N° 1146 (E1).
+
+<A NAME="note27"></A>
+<DT>Moorer, J. A. (1977)
+<DD>"Signal Processing Aspects of Computer Music -- A Survey." 
+<I>Proceeding of the IEEE</I>, Vol. 65, N° 8, pp. 1108-1137, and <I>Computer Music Journal</I>, Vol.1, N° 1, pp. 4-38.
+
+<A NAME="note28"></A>
+<DT>Moorer, J.A., Grey, J.M., and Snell, JAI., (1977)
+<DD>"Lexicon of Analyzed Tones (Part I&nbsp;: Violin Tone)", <I>Computer Music 
+Joumal</I>, Vol. 1, N° 2, pp. 39 -45.
+
+<A NAME="note29"></A>
+<DT>Moorer, J.A., Grey, J.M., and Strawn, J. (1977)
+<DD>"Lexicon of Analyzed Tones (Part II&nbsp;:Clarinet and Oboe Tones)", 
+<I>Computer Music Joumal</I>, Vol. 1, N° 3, pp. 12-29.
+
+<A NAME="note30"></A>
+<DT>Moorer, J.A., Grey, J.M., and Strawn, J. (1978)
+<DD>"Lexicon of Analyzed Tones (Part III: the Trumpet)", <I>Computer Music 
+Joumal</I>, Vol. 2, N° 2, pp. 23-31.
+
+<A NAME="note31"></A>
+<DT>Morton, J., Marcus, S., and Frankish, C. (1976)
+<DD>"Perceptual Centers (P-Centers)" <I>Psychological Review</I>, Vol. 83, N° 5, pp. 405-408.
+
+<A NAME="note32"></A>
+<DT>Portnoff, M.R. (1976)
+<DD>"Implementation of the Digital Phase Vocoder Using the 
+Fast Fourier Transform." <I>IEEE Transactions on Acoustics, Speech, and Signal Processing</I>, Vol. ASSP-24, pp. 243-
+248.
+
+<A NAME="note33"></A>
+<DT>Risset, J. C. and Mathews, M.V. (1969)
+<DD>"Analysis of Musical Instrument Tones." <I>Physics Today</I>, Vol. 22, pp. 23-30.
+
+<A NAME="note34"></A>
+<DT>Rumelhart, D.E., and Abrahamson, A.A. (1973)
+<DD>"Toward a Theory of Analogical Reasoning." <I>Cognitive Psychology</I>, 
+Vol. 5, pp. 1-28.
+
+<A NAME="note35"></A>
+<DT>Samson, Peter (1977)
+<DD>"Systems Concepts Digital Synthesizer Specifications." Available from Systems Concepts, 520 
+Third Street, San Francisco, California 94107.
+
+<A NAME="note36"></A>
+<DT>Shepard, R. N. (1966)
+<DD>"Metric Structures in Ordinal Data." <I>Journal of 
+Mathematical Psychology</I>, Vol. 3, pp. 287 315.
+
+<A NAME="note37"></A>
+<DT>Shepard, R. N. (1972)
+<DD>"Psychological Representation of Speech Sounds," in <I>Human 
+Communication</I>, edited by EX. Davis and P.B. Denes. Mc Graw -Hill, New York.
+
+<A NAME="note38"></A>
+<DT>Shepard, R.N. (1974)
+<DD>"Representations of Structure in Similarity Data&nbsp;: Problems 
+and Prospects." <I>Psychometrika</I> 39, 373-421.
+
+<A NAME="note39"></A>
+<DT>van Noorden, L. (1975)
+<DD>"Temporal Coherence in the Perception of Tone Sequences." Instituut voor Perceptie 
+Onderzoek, Eindhoven, Holland.
+
+<A NAME="note40"></A>
+<DT>Wedin, L. and Goude, G. (1972)
+<DD>"Dimension Analysis of the Perception of Instrumental Timbre." <I>Scandinavian Journ. 
+Psych.</I>, Vol.13, pp. 228-240.
+
+<A NAME="note41"></A>
+<DT>Wessel, D.L. (1973)
+<DD>"Psychoacoustics and Music&nbsp;: A Report from Michigan 
+State University." <I>PAGE&nbsp;: Bulletin of the 
+Computers Arts Society</I>, Vol. 30.
+
+<A NAME="note42"></A>
+<DT>Wessel, D.L. and Grey, J.M. (1978)
+<DD>"Conceptual Structures for the Representation 
+of Musical Material." IRCAM Technical Report #14.
+
+<A NAME="note43"></A>
+<DT>Wessel, D.L. and Smith, B. (1977)
+<DD>"Psychoacoustic Aids for the Musician's 
+Exploration of New Material." Paper 
+presented at the 1977 International Computer Music Conference, Center for Music 
+Experiment, University of California 
+at San Diego, La Jolla.
+
+<A NAME="note44"></A>
+<DT>Wessel, D.L. (1976)
+<DD>"Perceptually Based Controls for Additive Synthesis." Paper 
+presented at the 1976 International 
+Computer Music Conference, Massachusetts Institute of Technology.
+
+<A NAME="note45"></A>
+<DT>Zwicker, E. and Sharf, B. (1965)
+<DD>"A Model of Loudness Summation." <I>Psych. Review</I>, 
+Vol. 72(1), pp. 3-26.
+
+</DL>
+
+
+<P CLASS=ni><FONT SIZE=2>____________________________<BR><B><A HREF="/index.html" TARGET=_top>Serveur</A> © <A HREF=http://www.ircam.fr/ TARGET=_top>IRCAM-CGP</A>, 1996-2003</B> - document mis à jour le  20/06/1997 à 11h03m40s.</FONT></P>
+
+
+</BODY>
+</HTML>
+

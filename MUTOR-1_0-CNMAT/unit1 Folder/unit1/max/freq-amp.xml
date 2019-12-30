@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+
+<pattrstorage name = "freq-amp">
+	<slot number = "1">
+		<pattr name = "multiSlider" value = "0.15" />
+		<pattr name = "multiSlider[1]" value = "50.747517" />
+		<pattr name = "multiSlider[2]" value = "0." />
+	</slot>
+	<slot number = "2">
+		<pattr name = "multiSlider" value = "0.15" />
+		<pattr name = "multiSlider[1]" value = "50.747517" />
+		<pattr name = "multiSlider[2]" value = "1." />
+	</slot>
+</pattrstorage>
+

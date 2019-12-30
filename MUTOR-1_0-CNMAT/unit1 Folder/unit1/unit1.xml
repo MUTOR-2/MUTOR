@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+<channel>
+<title>MUTOR TiddlyWiki</title>
+<link>ftp://bach.cnmat.berkeley.edu/music108/unit1/unit1a.html
+
+config.options.chkHttpReadOnly = false;
+config.options.chkftpReadOnly = false;</link>
+<description>Text for Unit 1 on The Auditory Stimulus</description>
+<language>en-us</language>
+<copyright>Copyright 2006 PsycheLoui</copyright>
+<pubDate>Thu, 25 May 2006 02:13:13 GMT</pubDate>
+<lastBuildDate>Thu, 25 May 2006 02:13:13 GMT</lastBuildDate>
+<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+<generator>TiddlyWiki 2.0.11</generator>
+<item>
+<title>PureTones</title>
+<description>''What are “pure” tones?'' &lt;br /&gt;A //pure tone// is the sound produced by a single sine wave. It has only one frequency and is constant in amplitude. It is expressed by the formula:&lt;br /&gt;&lt;&lt;&lt;&lt;br /&gt;{{{y = Asin(wt+b)}}}&lt;br /&gt;&lt;&lt;&lt;&lt;br /&gt;where A expresses amplitude, w expresses frequency, and b expresses the shift in phase relative to 0 (see FrequencyAmplitudePhase). Thus, a pure tone may vary in several ways: amplitude, frequency, and phase. To the first approximation, the frequency of a sine wave gives rise to the percept of pitch, whereas the amplitude of the sine wave gives rise to loudness (there are various ways in which this relationship may not hold; they will be discussed at a later unit.) &lt;br /&gt;When several sine waves of the same frequency but different phases and amplitudes are added together, the result is again a sine wave. &lt;br /&gt;The sine wave is the only waveform that results in itself when several sine waves of the same frequency are added at any phase angle, the result is one of a sine wave again. This is a unique property of sinusoidal waveforms.&lt;br /&gt;&lt;br /&gt;[img[adding sine waves|addsine.gif]]&lt;br /&gt;</description>
+<category>Unit1</category>
+<link>ftp://bach.cnmat.berkeley.edu/music108/unit1/unit1a.html
+
+config.options.chkHttpReadOnly = false;
+config.options.chkftpReadOnly = false;#PureTones</link>
+<pubDate>Thu, 25 May 2006 02:13:12 GMT</pubDate>
+</item>
+<item>
+<title>TheAuditoryStimulus</title>
+<description>Core Material:&lt;br /&gt;# TheAuditoryStimulus - Unit1Introduction&lt;br /&gt;# PhysicalDescriptionofSounds&lt;br /&gt;# PureTones&lt;br /&gt;# FrequencyAmplitudePhase&lt;br /&gt;# DifferentVisualRepresentations&lt;br /&gt;# SpecTrum&lt;br /&gt;&lt;br /&gt;# SumMary&lt;br /&gt;# LinksnDownloads&lt;br /&gt;# ReferenceS&lt;br /&gt;# QuizItems&lt;br /&gt;&lt;br /&gt;People:&lt;br /&gt;# JohnMac&lt;br /&gt;# PsycheLoui&lt;br /&gt;</description>
+<category>Unit1</category>
+<category>supplement</category>
+<link>ftp://bach.cnmat.berkeley.edu/music108/unit1/unit1a.html
+
+config.options.chkHttpReadOnly = false;
+config.options.chkftpReadOnly = false;#TheAuditoryStimulus</link>
+<pubDate>Thu, 25 May 2006 01:49:29 GMT</pubDate>
+</item>
+<item>
+<title>DifferentVisualRepresentations</title>
+<description>The waveforms that we have been looking at are representations of sound that exist in the time-domain.  Recall that the //x//-axis of a Cartesian coordinate system is often called the domain and since our //x//-axis represents time, we say that we are looking at a //time-domain// representation of sound which gives us information about the temporal evolution of the sound.  Another representation of sound that we will often encounter is the //frequency-domain// representation.  In Figure 1, the top graph shows a typical time-domain representation of a sinusoid with a frequency of 440Hz (A4--the A above middle C).  The bottom graph is a frequency-domain representation of the same sound.  Notice that the maximum of the plot is approximately 440Hz.&lt;br /&gt;&lt;br /&gt;[img[time vs freq domain|time-vs-freq-domain1.png]]&lt;br /&gt;Figure 1:  Time-domain (top) vs. frequency-domain (bottom).&lt;br /&gt;&lt;br /&gt;this is psyche's edit.</description>
+<category>Unit1</category>
+<link>ftp://bach.cnmat.berkeley.edu/music108/unit1/unit1a.html
+
+config.options.chkHttpReadOnly = false;
+config.options.chkftpReadOnly = false;#DifferentVisualRepresentations</link>
+<pubDate>Thu, 25 May 2006 01:46:00 GMT</pubDate>
+</item>
+<item>
+<title>FrequencyAmplitudePhase</title>
+<description>A sinusoid can be described using three parameters: frequency, amplitude, and phase. Figure 1 shows the period and amplitude of a sinusoid.  The period represents how long it takes for the waveform to repeat itself—in this example, it takes 1 unit of time.   Often we will want to know how many periods there will be in one second which can be found by taking the inverse of the period—this is the frequency and has units of Hertz (Hz).&lt;br /&gt;&lt;br /&gt;[img[sine tone|sin-amp-period.png]]&lt;br /&gt;Figure 1: A sinusoid showing the period and amplitude.&lt;br /&gt;&lt;br /&gt;Phase is a slightly more complex topic.  In order to discuss phase, we need to introduce the concept of the unit circle (figure 2).&lt;br /&gt;&lt;br /&gt;[img[unit circle|unitcir.png]]&lt;br /&gt;Figure 2:  The unit circle.&lt;br /&gt;&lt;br /&gt;Recall from trigonometry that a sinusoid simply traces the distance along the //y//-axis as a point moves counter-clockwise along the unit circle starting at [1, 0](figure 3).&lt;br /&gt;&lt;br /&gt;[img[sine + unit circle|Sine.gif]]&lt;br /&gt;Figure 3: A sinusoid.&lt;br /&gt;&lt;br /&gt;If we follow the distance along the //x//-axis, the result is a cosine (figure 4).&lt;br /&gt;&lt;br /&gt;[img[cosine + unit circle|Cosine.gif]]&lt;br /&gt;Figure 4: A cosine.&lt;br /&gt;&lt;br /&gt;The difference between the sine and cosine is a //phase// shift of 90°.  Why is that?  A sine starts at 0 while a cosine starts at 1.  In order for a sine to have a value of 1, the point must travel a quarter of the unit circle, or 90° (figures 5 &amp; 6).&lt;br /&gt;&lt;br /&gt;[img[sine + cosine 90°|sin-cos-90phase.png]]&lt;br /&gt;Figure 5:  A cosine is a 90° phase-shifted sine.&lt;br /&gt;&lt;br /&gt;[img[90° on unit circle|unit-cir-90deg.png]]&lt;br /&gt;Figure 6:  90° on the unit circle.</description>
+<category>Unit1</category>
+<link>ftp://bach.cnmat.berkeley.edu/music108/unit1/unit1a.html
+
+config.options.chkHttpReadOnly = false;
+config.options.chkftpReadOnly = false;#FrequencyAmplitudePhase</link>
+<pubDate>Thu, 25 May 2006 01:27:00 GMT</pubDate>
+</item>
+<item>
+<title>AirPressureChanges</title>
+<description>The human auditory system is sensitive to air pressure fluctuations at ''20-20,000Hz''. That is, the auditory system of a healthy, young human can detect waves (see LongitudinalWaves) with a frequency (see FrequencyAmplitudePhase) between 20 and 20,000 cycles per second. This leads to the 20-20KHz range being defined as the ExistenceRegion of pitch.&lt;br /&gt;&lt;br /&gt;While the healthy ear is sensitive to 20-20KHz, aging individuals, as well as persons with HearingLoss, may often have decreased sensitivity at high frequency ranges. &lt;br /&gt;&lt;br /&gt;Although the ExistenceRegion is 20-20KHz, we may occasionally still be able to sense vibrations both below 20Hz and above 20,000Hz. In particular, when presented with two sufficiently-loud tones of different frequencies, one may perceive a third DifferenceTone of a much lower frequency. The frequency of the DifferenceTone may be below 20Hz. </description>
+<category>supplement</category>
+<link>ftp://bach.cnmat.berkeley.edu/music108/unit1/unit1a.html
+
+config.options.chkHttpReadOnly = false;
+config.options.chkftpReadOnly = false;#AirPressureChanges</link>
+<pubDate>Thu, 25 May 2006 00:03:00 GMT</pubDate>
+</item>
+<item>
+<title>LongitudinalWaves</title>
+<description>[img[wavelong|wavelong.gif]] LongitudinalWaves&lt;br /&gt;[img[wavetrans|wavetrans.gif]] Transverse wave</description>
+<category>supplement</category>
+<link>ftp://bach.cnmat.berkeley.edu/music108/unit1/unit1a.html
+
+config.options.chkHttpReadOnly = false;
+config.options.chkftpReadOnly = false;#LongitudinalWaves</link>
+<pubDate>Wed, 24 May 2006 23:57:00 GMT</pubDate>
+</item>
+<item>
+<title>ExistenceRegion</title>
+<description>Given optimal conditions, the healthy young human auditory system is sensitive to the frequency spectrum of 20-20,000Hz. Natural environments, however, are generally noisier and do not allow optimal perception of tones at the two extremes of the audible spectrum. Pressnitzer et al. (2001) define the existence region of melodic pitch as 30Hz to 3.2 kHz; however, the exact range of the practical ExistenceRegion of //melodic// pitch is still under debate. &lt;br /&gt;&lt;br /&gt;Pressnitzer, D; Patterson, R; &amp; Krumbholtz. (2001). The lower limit of melodic pitch. JASA, 2076-2084. </description>
+<category>supplement</category>
+<link>ftp://bach.cnmat.berkeley.edu/music108/unit1/unit1a.html
+
+config.options.chkHttpReadOnly = false;
+config.options.chkftpReadOnly = false;#ExistenceRegion</link>
+<pubDate>Wed, 24 May 2006 23:57:00 GMT</pubDate>
+</item>
+<item>
+<title>DifferenceTone</title>
+<description>When two two sufficiently-loud tones of different frequencies are presented to one ear, we may occasionally perceive a third, additional tone, which is much lower in frequency than the two original tones. The frequency of this third tone is equal to the difference between the two original frequencies, thus it is called the DifferenceTone. For example, a tone at 1000Hz and another at 1500Hz, when presented simultaneously and sufficiently loudly, will produce a DifferenceTone of 500Hz.&lt;br /&gt;&lt;br /&gt;The DifferenceTone may be perceived at very low frequencies, even below the ExistenceRegion of pitch, which has a low cutoff of 20Hz. For instance, a police whistle, if blown loudly enough, will produce a difference tone which is heard as a low buzzing sound. &lt;br /&gt;&lt;br /&gt;(may also say sth about temporal envelope)</description>
+<category>supplement</category>
+<link>ftp://bach.cnmat.berkeley.edu/music108/unit1/unit1a.html
+
+config.options.chkHttpReadOnly = false;
+config.options.chkftpReadOnly = false;#DifferenceTone</link>
+<pubDate>Wed, 24 May 2006 23:35:00 GMT</pubDate>
+</item>
+<item>
+<title>PhysicalDescriptionofSounds</title>
+<description>''Physical Description of Sounds''&lt;br /&gt;&lt;br /&gt;Sound originates from the vibrations of particles through a medium. In our everyday world, sounds are most commonly transferred by vibrations of air molecules originating from a moving or vibrating source. These vibrations of air molecules cause small changes in air pressure, and our eardrum detects these minute modulations of air pressure and transmits it further along the auditory system, thus enabling the perception of sound.&lt;br /&gt;&lt;br /&gt;LongitudinalWaves and Transverse waves together give a picture of what these variations in air pressure look like. &lt;br /&gt;&lt;br /&gt;A sine wave is given by the following general equation:&lt;br /&gt;&lt;&lt;&lt;&lt;br /&gt;{{{y=Asin(wt+b)}}}&lt;br /&gt;&lt;&lt;&lt;&lt;br /&gt;&lt;br /&gt;[img[tuning fork wave|tuneforkwave.gif]] A tuning fork vibrates and thus emits waves of vibrations of air molecules around it, which propagate through the air&lt;br /&gt;&lt;br /&gt;[img[tuning fork compress|tuneforkcompress.gif]] //Compression// and //rarefaction// of air molecules from a tuning fork, producing sound waves.&lt;br /&gt;&lt;br /&gt;[img[pressure wave|pressurewave.gif]] The //compression// and //rarefaction// of air molecules form minute, but predictable, changes in the air pressure, which the ear drum then detects.&lt;br /&gt;&lt;br /&gt;[img[ear drum wave|eardrumwave.gif]] Changes in air pressure cause the ear drum to change its shape mechanically, thus transmitting the variations in air pressure to our auditory system.&lt;br /&gt;&lt;br /&gt;Thus, we see that AirPressureChanges are necessary for the auditory system to perceive sound.&lt;br /&gt;&lt;br /&gt;(pictures taken from: http://www.physicsclassroom.com)&lt;br /&gt;</description>
+<category>Unit1</category>
+<link>ftp://bach.cnmat.berkeley.edu/music108/unit1/unit1a.html
+
+config.options.chkHttpReadOnly = false;
+config.options.chkftpReadOnly = false;#PhysicalDescriptionofSounds</link>
+<pubDate>Wed, 24 May 2006 23:31:00 GMT</pubDate>
+</item>
+<item>
+<title>LinksnDownloads</title>
+<description>Transcribe! http://www.seventhstring.com/xscribe/screenshots.html &lt;br /&gt;Audacity http://audacity.sourceforge.net/ &lt;br /&gt;Peaq http://www.peaq.org/ &lt;br /&gt;Adobe Audition 1.5 http://www.adobe.com/products/audition/ &lt;br /&gt;~MetaSynth http://www.uisoftware.com/MetaSynth/index.html &lt;br /&gt;Coagula http://hem.passagen.se/rasmuse/Coagula.htm &lt;br /&gt;The Physics Classroom http://physicsclassroom.com </description>
+<category>Unit1</category>
+<link>ftp://bach.cnmat.berkeley.edu/music108/unit1/unit1a.html
+
+config.options.chkHttpReadOnly = false;
+config.options.chkftpReadOnly = false;#LinksnDownloads</link>
+<pubDate>Wed, 24 May 2006 23:13:00 GMT</pubDate>
+</item>
+<item>
+<title>Unit1Introduction</title>
+<description>Music is composed of sounds in the physical world. In this unit we will start with a physical description of sound, beginning by introductions to fundamental descriptors of sound waves (PhysicalDescriptionofSounds) such as frequency, amplitude, and phase (FrequencyAmplitudePhase). This will be followed by a discussion of the visual representations of sound (DifferentVisualRepresentations). Two useful ways to represent sound are through the time and frequency domains. We will discuss the kinds of information that each of these representations affords, as well as the methods that enable switching between the different conceptualizations of time and frequency. In particular, we will focus on the frequency representation and highlight how the spectrogram, which is a visualization of the SpecTrum of frequencies, allows us to visualize pitch, duration, timbre, and some aspects of harmony, which together encompass much of the basic materials of music.</description>
+<category>Unit1</category>
+<link>ftp://bach.cnmat.berkeley.edu/music108/unit1/unit1a.html
+
+config.options.chkHttpReadOnly = false;
+config.options.chkftpReadOnly = false;#Unit1Introduction</link>
+<pubDate>Wed, 24 May 2006 21:13:00 GMT</pubDate>
+</item>
+<item>
+<title>SiteUrl</title>
+<description>ftp://bach.cnmat.berkeley.edu/music108/unit1/unit1a.html&lt;br /&gt;&lt;br /&gt;config.options.chkHttpReadOnly = false;&lt;br /&gt;config.options.chkftpReadOnly = false;</description>
+<category>systemConfig</category>
+<link>ftp://bach.cnmat.berkeley.edu/music108/unit1/unit1a.html
+
+config.options.chkHttpReadOnly = false;
+config.options.chkftpReadOnly = false;#SiteUrl</link>
+<pubDate>Wed, 24 May 2006 20:43:00 GMT</pubDate>
+</item>
+<item>
+<title>GettingStarted</title>
+<description>To get started with this blank TiddlyWiki, you'll need to modify the following tiddlers:&lt;br /&gt;* Unit1 &amp; TheAuditoryStimulus: The title and subtitle of the site, as shown above (after saving, they will also appear in the browser title bar)&lt;br /&gt;* ContentsMenu: The menu (usually on the left)&lt;br /&gt;* DefaultTiddlers: Contains the names of the tiddlers that you want to appear when the TiddlyWiki is opened&lt;br /&gt;You'll also need to enter your username for signing your edits - sign in by entering your username to the right.&lt;br /&gt;Any word in ThisForm will get created as a new &quot;tiddler&quot;, which you can then click on and edit. Fun fun fun.&lt;br /&gt;&lt;br /&gt;MainMenu&lt;br /&gt;&lt;br /&gt;SiteTitle&lt;br /&gt;&lt;br /&gt;SiteSubtitle&lt;br /&gt;&lt;br /&gt;SiteUrl&lt;br /&gt;&lt;br /&gt;DefaultTiddlers</description>
+<category>features</category>
+<link>ftp://bach.cnmat.berkeley.edu/music108/unit1/unit1a.html
+
+config.options.chkHttpReadOnly = false;
+config.options.chkftpReadOnly = false;#GettingStarted</link>
+<pubDate>Wed, 24 May 2006 17:43:00 GMT</pubDate>
+</item>
+<item>
+<title>SiteTitle</title>
+<description>@@color(yellow):MUTOR@@ //~TiddlyWiki//</description>
+<category>system</category>
+<link>ftp://bach.cnmat.berkeley.edu/music108/unit1/unit1a.html
+
+config.options.chkHttpReadOnly = false;
+config.options.chkftpReadOnly = false;#SiteTitle</link>
+<pubDate>Wed, 24 May 2006 09:05:00 GMT</pubDate>
+</item>
+<item>
+<title>MainMenu</title>
+<description>TheAuditoryStimulus&lt;br /&gt;&lt;br /&gt;[[TiddlyWiki Homepage|http://www.tiddlywiki.com]]&lt;br /&gt;&lt;br /&gt;[[TiddlyWikiTutorial|http://www.blogjones.com/TiddlyWikiTutorial.html]]&lt;br /&gt;</description>
+<link>ftp://bach.cnmat.berkeley.edu/music108/unit1/unit1a.html
+
+config.options.chkHttpReadOnly = false;
+config.options.chkftpReadOnly = false;#MainMenu</link>
+<pubDate>Wed, 24 May 2006 08:56:00 GMT</pubDate>
+</item>
+<item>
+<title>DefaultTiddlers</title>
+<description>TheAuditoryStimulus</description>
+<category>system</category>
+<link>ftp://bach.cnmat.berkeley.edu/music108/unit1/unit1a.html
+
+config.options.chkHttpReadOnly = false;
+config.options.chkftpReadOnly = false;#DefaultTiddlers</link>
+<pubDate>Wed, 24 May 2006 08:55:00 GMT</pubDate>
+</item>
+<item>
+<title>SiteSubtitle</title>
+<description>Text for Unit 1 on The Auditory Stimulus</description>
+<category>system</category>
+<link>ftp://bach.cnmat.berkeley.edu/music108/unit1/unit1a.html
+
+config.options.chkHttpReadOnly = false;
+config.options.chkftpReadOnly = false;#SiteSubtitle</link>
+<pubDate>Wed, 24 May 2006 08:54:00 GMT</pubDate>
+</item>
+<item>
+<title>SpecTrum</title>
+<description>– ~DePaul and ~McAdams &lt;br /&gt;a) Max patch – additive synthesis &lt;br /&gt;i) Fig. 4&lt;br /&gt;ii) additive waveforms &lt;br /&gt;b) Spectrogram / sonogram / STFT (Short Time Fourier Transform), FFT (Fast Fourier Transform) &lt;br /&gt;i) How spectral representation can be time-varying (bringing spectrogram into picture)&lt;br /&gt;c) Introduce uncertainty in sampling between precision in frequency and time &lt;br /&gt;i) Nyquist, sampling artifacts&lt;br /&gt;d) components, partials, harmonic component (fall along harmonic series)&lt;br /&gt;i) fundamental must fall along existence region of pitch&lt;br /&gt;ii) overtones &amp; harmonics, numbering system are different: 1st overtone is 2nd harmonic &lt;br /&gt;iii) look at harmonic series projected over keyboard (Transcribe!)&lt;br /&gt;e) spectral envelope (Fig. 6)&lt;br /&gt;i) Quiz item&lt;br /&gt;(1) Which of the two sounds below would produce different percepts of timbre? &lt;br /&gt;(a) two sounds with similar spectral envelope, but different harmonics&lt;br /&gt;(b) two sounds with different spectral envelopes, but similar harmonics&lt;br /&gt;f) modulation spectrum &lt;br /&gt;</description>
+<category>Unit1</category>
+<link>ftp://bach.cnmat.berkeley.edu/music108/unit1/unit1a.html
+
+config.options.chkHttpReadOnly = false;
+config.options.chkftpReadOnly = false;#SpecTrum</link>
+<pubDate>Wed, 24 May 2006 08:45:00 GMT</pubDate>
+</item>
+<item>
+<title>ReferenceS</title>
+<description>~DePaul &amp; ~McAdams&lt;br /&gt;Fourier transform&lt;br /&gt;Short-time Fourier transform&lt;br /&gt;Nyquist theorem&lt;br /&gt;Wikipedia article on spectrogram http://en.wikipedia.org/wiki/Spectrogram &lt;br /&gt;</description>
+<link>ftp://bach.cnmat.berkeley.edu/music108/unit1/unit1a.html
+
+config.options.chkHttpReadOnly = false;
+config.options.chkftpReadOnly = false;#ReferenceS</link>
+<pubDate>Wed, 24 May 2006 08:39:00 GMT</pubDate>
+</item>
+<item>
+<title>SumMary</title>
+<description>Summary here.</description>
+<category>Unit1</category>
+<link>ftp://bach.cnmat.berkeley.edu/music108/unit1/unit1a.html
+
+config.options.chkHttpReadOnly = false;
+config.options.chkftpReadOnly = false;#SumMary</link>
+<pubDate>Wed, 24 May 2006 08:38:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+
+<pattrstorage name = "u091000008">
+	<slot number = "1">
+		<pattr name = "multiSlider" value = "1. 0.676768 0.434343 0.252525 0.131313 0.080808" />
+		<pattr name = "multiSlider[1]" value = "0. 0. 0. 0. 0. 0." />
+	</slot>
+	<slot number = "2">
+		<pattr name = "multiSlider" value = "1. 0.676768 0.434343 0.252525 0.131313 0.080808" />
+		<pattr name = "multiSlider[1]" value = "0.836735 0.142857 0.826531 0.132653 0.826531 0.122449" />
+	</slot>
+	<slot number = "3">
+		<pattr name = "multiSlider" value = "1. 0.676768 0.434343 0.252525 0.131313 0.080808" />
+		<pattr name = "multiSlider[1]" value = "1. 0.642857 0.397959 0.244898 0.122449 0.010204" />
+	</slot>
+	<slot number = "4">
+		<pattr name = "multiSlider" value = "1. 0.676768 0.434343 0.252525 0.131313 0.080808" />
+		<pattr name = "multiSlider[1]" value = "0.132653 0.295918 0.44898 0.244898 0.244898 1." />
+	</slot>
+</pattrstorage>
+
