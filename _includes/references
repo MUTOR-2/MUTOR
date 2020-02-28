@@ -1,0 +1,9 @@
+{% assign citations = citations | split: "," %}
+
+{% for c in citations %}
+{% for r in site.references %}
+{% if c == r.tag %}
+{{ r.ref }}
+{% endif %}
+{% endfor %}
+{% endfor %}

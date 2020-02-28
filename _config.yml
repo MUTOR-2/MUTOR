@@ -45,3 +45,4 @@ plugins:
 collections:
  units:
   output: true
+ references:

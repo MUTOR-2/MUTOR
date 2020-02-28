@@ -1,0 +1,1 @@
+{% assign citations = citations | append: include.ref | append: ","%}

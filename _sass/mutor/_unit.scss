@@ -1,0 +1,199 @@
+body {
+    counter-reset: section;
+    counter-reset: subsection;
+    counter-reset: subsubsection;
+}
+
+.unit-header {
+    margin-bottom: $spacing-unit;
+    dl {
+	//border: 3px double #ccc;
+	//padding: 0.5em;
+	margin-bottom: 0;
+    }
+    dt {
+	float: left;
+	clear: left;
+	width: 100px;
+	//text-align: right;
+	font-weight: bold;
+	//color: green;
+    }
+    dt::after {
+	content: ":";
+    }
+    dd {
+	//margin: 0 0 0 110px;
+	padding: 0 0 0.5em 0;
+    }
+}
+
+.unit-title {
+    @include relative-font-size(2.625);
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+	@include relative-font-size(2.25);
+    }
+}
+
+.unit-toc {
+    
+    h4:before {
+	content: none;
+	display: none;
+    }
+    h4 {
+	margin-bottom: 0px;
+    }
+
+    display: inline-block;
+    border: 1px solid black;
+    padding-left: $spacing-unit / 2;
+    padding-right: $spacing-unit / 2;
+}
+
+.unit-content {
+    
+    margin-bottom: $spacing-unit;
+    
+    h1 {
+	@include relative-font-size(2.5);
+
+	@include media-query($on-laptop) {
+	    @include relative-font-size(2.25);
+	}
+	counter-reset: subsection;
+	counter-increment: section;
+    }
+
+    h1:before {
+	content: counter(section) ". ";
+    }
+    
+    h2 {
+	@include relative-font-size(2);
+
+	@include media-query($on-laptop) {
+	    @include relative-font-size(1.75);
+	}
+	counter-reset: subsubsection;
+	counter-increment: subsection;
+    }
+    
+    h2:before {
+	content: counter(section) "." counter(subsection) " ";
+    }
+
+    h3 {
+	@include relative-font-size(1.625);
+
+	@include media-query($on-laptop) {
+	    @include relative-font-size(1.375);
+	}
+	counter-reset: subsubsubsection;
+	counter-increment: subsubsection;
+    }
+
+    h3:before {
+	content: counter(section) "." counter(subsection) "." counter(subsubsection) " ";
+    }
+
+    h4 {
+	@include relative-font-size(1.25);
+
+	@include media-query($on-laptop) {
+	    @include relative-font-size(1.125);
+	}
+	/* counter-increment: subsubsubsection; */
+    }
+
+    h4:before {
+	/* content: counter(section) "." counter(subsection) "." counter(subsubsection) "." counter(subsubsubsection) " "; */
+    }
+
+    figure figcaption:before {
+	counter-increment: figure;
+	content: "Figure " counter(section) "." counter(figure) ": ";
+    }
+    figure figcaption {
+	text-align: center;
+	font-weight: bold;
+	margin: $spacing-unit / 2;
+    }
+
+    figure {
+	display: inline-block;
+	text-align: center;
+    }
+}
+
+.unit-quiz {
+    margin-bottom: $spacing-unit;
+
+    h2 {
+	@include relative-font-size(2);
+
+	@include media-query($on-laptop) {
+	    @include relative-font-size(1.75);
+	}
+    }
+
+    h3 {
+	@include relative-font-size(1.625);
+
+	@include media-query($on-laptop) {
+	    @include relative-font-size(1.375);
+	}
+    }
+
+    h4 {
+	@include relative-font-size(1.25);
+
+	@include media-query($on-laptop) {
+	    @include relative-font-size(1.125);
+	}
+    }
+}
+
+.unit-references {
+    margin-bottom: $spacing-unit;
+
+    h2 {
+	@include relative-font-size(2);
+
+	@include media-query($on-laptop) {
+	    @include relative-font-size(1.75);
+	}
+    }
+
+    h3 {
+	@include relative-font-size(1.625);
+
+	@include media-query($on-laptop) {
+	    @include relative-font-size(1.375);
+	}
+    }
+
+    h4 {
+	@include relative-font-size(1.25);
+
+	@include media-query($on-laptop) {
+	    @include relative-font-size(1.125);
+	}
+    }
+
+    ol {
+	counter-reset: list;
+	margin-left: $spacing-unit / 2;
+	padding: 0;
+    }
+    ol > li {
+	list-style: none;
+    }
+    ol > li:before {
+	content: "[" counter(list) "] ";
+	counter-increment: list;
+    }
+}

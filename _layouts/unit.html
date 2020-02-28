@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<article class="unit">
+
+  {% include unit_list.md %}
+  
+  <header class="unit-header">
+    <h1 class="unit-title">Unit {{ page.number }}: {{ page.title | escape }}</h1>
+    <dl>
+      <dt>Authors</dt>
+      <dl>{{ page.authors }}</dl>
+      <dt>Summary</dt>
+      <dl>{{ page.summary }}</dl>
+      <dt>Topics</dt>
+      <dl>
+	{% for t in page.topics %}
+	  {{ t }}
+	  {%- if forloop.last != true -%}
+	    ,
+	  {% endif %}
+	{% endfor %}
+      </dl>
+    </dl>
+  </header>
+  
+  <div class="unit-content">
+    {{ content }}
+  </div>
+
+  <div class="unit-quiz">
+    <h2>Quiz:</h2>
+    <ol>
+      {% for q in page.test_questions %}
+        <li>{{ q }}</li>
+      {% endfor %}
+    </ol>
+  </div>
+  <p>
+
+  <div class="unit-references">
+    <h2>References:</h2>
+    <ol>
+      {% for r in page.references %}
+        <li>{{ r }}</li>
+      {% endfor %}
+    </ol>
+  </div>
+
+</article>
