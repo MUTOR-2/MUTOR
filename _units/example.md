@@ -302,9 +302,10 @@ and adds a caption and figure number:
 Tables use the regular Markdown table syntax enclosed in Liquid tags that
 format it as a figure with a table number and caption:
 
-	{% raw %}
 	{% include begin-table description="Some data" %}
-	{% endraw %}
+    | column 1 | column 2 | column 3 |
+    | 33%      | 0.33     | 33 1/3   |
+    {% include end-table %}
 
 {% include begin-table description="Some data" %}
 | column 1 | column 2 | column 3 |
