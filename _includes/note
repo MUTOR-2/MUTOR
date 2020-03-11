@@ -1,0 +1,22 @@
+{%- if include.author == "jm" or include.author == "JM" -%}
+<span class="note" style="color: blue">
+[{{ include.author | upcase }}: {{ include.text }}]
+</span>
+{%- elsif include.author == "gh" or include.author == "GH" -%}
+<span class="note" style="color: green">
+[{{ include.author | upcase }}: {{ include.text }}]
+</span>
+{%- elsif include.author == "pl" or include.author == "PL" -%}
+<span class="note" style="color: red">
+[{{ include.author | upcase }}: {{ include.text }}]
+</span>
+{%- elsif include.author == "vg"  or include.author == "VG"-%}
+<span class="note" style="color: cyan">
+[{{ include.author | upcase }}: {{ include.text }}]
+</span>
+{%- elsif include.author == "xf"  or include.author == "XF" or include.author == "fx"  or include.author == "FX" -%}
+<span class="note" style="color: magenta">
+[{{ include.author | upcase }}: {{ include.text }}]
+</span>
+{%- endif -%}
+

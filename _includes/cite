@@ -1,1 +1,10 @@
-{% assign citations = citations | append: include.ref | append: ","%}
+{%- assign citations = citations | append: include.ref | append: "," -%}
+{%- for r in site.references -%}
+{%- if include.ref == r.ref -%}
+{%- if r.authors.size == 1 -%}
+<a href="#{{ r.ref }}">({{ r.authors[0].lastname }}, {{ r.year }})</a>
+{%- else -%}
+<a href="#{{ r.ref }}">({{ r.authors[0].lastname }} et al., {{ r.year }})</a>
+{%- endif -%}
+{%- endif -%}
+{%- endfor -%}

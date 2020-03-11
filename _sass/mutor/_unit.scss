@@ -127,6 +127,16 @@ body {
 	display: inline-block;
 	text-align: center;
     }
+
+    dl {
+	margin-left: $spacing-unit / 2;
+    }
+    dt {
+	font-weight: bold;
+    }
+    dd {
+	text-indent: 1em;
+    }
 }
 
 .unit-quiz {

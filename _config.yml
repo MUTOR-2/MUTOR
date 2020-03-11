@@ -42,6 +42,9 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+exclude:
+ - _units/_*
+
 collections:
  units:
   output: true

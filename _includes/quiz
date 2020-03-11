@@ -1,0 +1,11 @@
+{% assign nq = page.test_questions | size %}
+{% if nq > 0 %}
+<div class="unit-quiz" markdown="1">
+# Quiz:
+<ol>
+{% for q in page.test_questions %}
+<li>{{ q }}</li>
+{% endfor %}
+</ol>
+</div>
+{% endif %}

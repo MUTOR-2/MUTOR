@@ -1,9 +1,29 @@
-{% assign citations = citations | split: "," %}
-
+{% assign citations = citations | split: "," | uniq %}
+{% assign nc = citations | size %}
+{% if nc > 0 %}
+<div class="unit-references" markdown="1">
+# References:
+<ol>
 {% for c in citations %}
 {% for r in site.references %}
-{% if c == r.tag %}
-{{ r.ref }}
+{% if c == r.ref %}
+<li><span id="{{ r.ref }}" markdown="1">
+{%- for a in r.authors -%}
+{{- a.lastname -}}, {{ a.firstname -}}
+{%- if forloop.last == true -%}
+{%- assign l = a.firstname | split: "" | last -%}
+{%- if l != "." -%}
+.
+{%- endif -%}
+{%- else %}
+&
+{% endif -%}
+{%- endfor %}
+{{ r.title }}. {{ r.year }}.
+</span></li>
 {% endif %}
 {% endfor %}
 {% endfor %}
+</ol>
+</div>
+{% endif %}
