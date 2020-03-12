@@ -284,6 +284,32 @@ link from here to the 6th unit, you would write
 `[click here for unit 6](/MUTOR/units/06.html)`, which produces
 [click here for unit 6](/MUTOR/units/06.html).
 
+## Typesetting Mathematical Formulas
+
+Typesetting of Mathematical formulas can be done using LaTeX notation, thanks
+to [MathJax](https://www.mathjax.org/). Formulas can be written inline
+by surrounding them in dollar signs, just as with LaTeX: `$r^2$ is $\frac 1 2$`
+($r^2$ is $\frac 1 2$).
+
+You can use the equation environment to produce an equation on its own
+line with an equation number, as well as a label to refer to it:
+
+	\begin{equation}
+	F(t)=\int_{-\infty}^{\infty}f(t)e^{-i2\pi xt}dt
+	\label{eq:fouriertransform}
+	\end{equation}
+	
+	Equation \eqref{eq:fouriertransform} is the Fourier Transform 
+	{% raw %}{% include cite ref="weisstein_fourier_transform" %}{% endraw %}.
+	
+\begin{equation}
+F(t)=\int_{-\infty}^{\infty}f(t)e^{-i2\pi xt}dt
+\label{eq:fouriertransform}
+\end{equation}
+
+Equation \eqref{eq:fouriertransform} is the Fourier Transform 
+{% include cite ref="weisstein_fourier_transform" %}.
+
 # Figures
 
 ## Images
@@ -374,18 +400,6 @@ You may then use the `ref` field to cite this publication inline like this:
 `{% raw %}{% include cite ref="weisstein_fourier_transform" %}{% endraw %}`, 
 which will produce this: 
 {% include cite ref="weisstein_fourier_transform" %}.
-
-# Typesetting Mathematical Formulas
-
-Typesetting of Mathematical formulas can be done using LaTeX notation, thanks
-to [MathJax](https://www.mathjax.org/)
-
-In N-dimensional simplex noise, the squared kernel summation radius $r^2$ is $\frac 1 2$
-for all values of N. This is because the edge length of the N-simplex $s = \sqrt {\frac {N} {N + 1}}$
-divides out of the N-simplex height $h = s \sqrt {\frac {N + 1} {2N}}$.
-The kerel summation radius $r$ is equal to the N-simplex height $h$.
-
-$$ r = h = \sqrt{\frac {1} {2}} = \sqrt{\frac {N} {N+1}} \sqrt{\frac {N+1} {2N}} $$
 
 # Misc
 
