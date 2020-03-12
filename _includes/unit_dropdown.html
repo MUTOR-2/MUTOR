@@ -1,0 +1,11 @@
+<div class="dropdown">
+  <button class="dropbtn">Units</button>
+  <div class="dropdown-content" style="left:0;">
+    {% for u in site.units %}
+    <a href="{{ site.baseurl }}{{ u.url }}">Unit {{ u.number }}: {{ u.title }}</a>
+    {% if forloop.last == false %}
+      <hr>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>

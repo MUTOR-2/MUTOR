@@ -1,0 +1,16 @@
+{% assign r = include.ref %}
+
+<span id="{{ r.ref }}" markdown="1">
+{%- for a in r.authors -%}
+{{- a.lastname -}}, {{ a.firstname -}}
+{%- if forloop.last == true -%}
+{%- assign l = a.firstname | split: "" | last -%}
+{%- if l != "." -%}
+.
+{%- endif -%}
+{%- else %}
+&
+{% endif -%}
+{%- endfor %}
+{{ r.title }}. {{ r.year }}.
+</span>

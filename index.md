@@ -1,7 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 ---
 
@@ -20,9 +17,16 @@ layout: home
 <!-- <\!-- </ul> -\-> -->
 <!-- </nav> -->
 
+{% comment %}
 {% include unit_list.md %}
 
 {% for unit in site.units %}
 <h2>{{ unit.number }}. {{ unit.title }}</h2>
 <p>{{ unit.short_description | markdownify }}</p>
 {% endfor %}
+{% endcomment %}
+
+
+
+
+
