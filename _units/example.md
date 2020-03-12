@@ -18,6 +18,7 @@ test_questions: []
 ###
 layout: unit
 citations: ""
+mathjax: true
 # published: false
 ---
 
@@ -373,6 +374,18 @@ You may then use the `ref` field to cite this publication inline like this:
 `{% raw %}{% include cite ref="weisstein_fourier_transform" %}{% endraw %}`, 
 which will produce this: 
 {% include cite ref="weisstein_fourier_transform" %}.
+
+# Typesetting Mathematical Formulas
+
+Typesetting of Mathematical formulas can be done using LaTeX notation, thanks
+to [MathJax](https://www.mathjax.org/)
+
+In N-dimensional simplex noise, the squared kernel summation radius $r^2$ is $\frac 1 2$
+for all values of N. This is because the edge length of the N-simplex $s = \sqrt {\frac {N} {N + 1}}$
+divides out of the N-simplex height $h = s \sqrt {\frac {N + 1} {2N}}$.
+The kerel summation radius $r$ is equal to the N-simplex height $h$.
+
+$$ r = h = \sqrt{\frac {1} {2}} = \sqrt{\frac {N} {N+1}} \sqrt{\frac {N+1} {2N}} $$
 
 # Misc
 
