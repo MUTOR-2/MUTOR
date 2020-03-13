@@ -1,0 +1,9 @@
+<div style="display: block; text-align: center; float: center">
+<figure class="fig">
+  <img src="{{ include.url }}" alt="{{ include.description }}">
+  {% capture figctr %}{% increment _figctr %}{% endcapture %}
+  {% assign figid = figctr | prepend: "figid" %}
+  <style>#{{- figid -}}:before { content: "Figure " "{{ page.number }}" "." "{{ figctr | plus: 1 }}" ": "; }</style>
+  <figcaption id="{{- figid -}}">{{ include.description }}</figcaption>
+</figure>
+</div>

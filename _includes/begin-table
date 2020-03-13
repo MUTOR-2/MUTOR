@@ -1,4 +1,7 @@
 <div style="display: block; text-align: center; float: center" markdown="1">
 <figure class="table">
-<figcaption>{{ include.description }}</figcaption>
-<div markdown="1">
+  {% capture tabctr %}{% increment _tabctr %}{% endcapture %}
+  {% assign tabid = tabctr | prepend: "tabid" %}
+  <style>#{{- tabid -}}:before { content: "Figure " "{{ page.number }}" "." "{{ tabctr | plus: 1 }}" ": "; }</style>
+  <figcaption id="{{- tabid -}}">{{ include.description }}</figcaption>
+  <div markdown="1">

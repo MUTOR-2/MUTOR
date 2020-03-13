@@ -2,8 +2,6 @@ body {
     counter-reset: section;
     counter-reset: subsection;
     counter-reset: subsubsection;
-    counter-reset: figure;
-    counter-reset: table;
 }
 
 .unit-header {
@@ -115,14 +113,11 @@ body {
 	/* content: counter(section) "." counter(subsection) "." counter(subsubsection) "." counter(subsubsubsection) " "; */
     }
 
-    figure.image figcaption:before {
-	counter-increment: figure;
-	content: "Figure " counter(section) "." counter(figure) ": ";
-    }
-    figure.table figcaption:before {
-	counter-increment: table;
-	content: "Table " counter(section) "." counter(table) ": ";
-    }
+    /* figure.fig figcaption:before { */
+    /* 	counter-increment: figure; */
+    /* 	/\* content: "Figure " $unit-number "." counter(figure) ": "; *\/ */
+    /* } */
+
     figure figcaption {
 	text-align: center;
 	font-weight: bold;

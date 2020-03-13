@@ -312,17 +312,34 @@ Equation \eqref{eq:fouriertransform} is the Fourier Transform
 
 # Figures
 
+## Generic Figure
+
+A figure of any sort can be added by enclosing the contents of the figure 
+in a pair of Liquid tags:
+
+	{% raw %}
+	{% include begin-figure description="This isn't a very useful figure..." %}
+	Figure goes here (<img>, something interactive, whatever...)
+	{% include end-figure %}
+	{% endraw %}
+	
+{% include begin-figure description="This isn't a very useful figure..." %}
+Figure goes here (img tag, something interactive, whatever...)
+{% include end-figure %}
+
 ## Images
 
 Markdown has a simple syntax for including images that **we will not be using**.
-Instead, images can be included using the following Liquid tag, centers it,
-and adds a caption and figure number:
+Instead, images can be included using the 
+`{% raw %}{% include begin-figure %}{% endraw %}` and 
+`{% raw %}{% include end-figure %}{% endraw %}` tags described above,
+or the slightly simpler syntax below:
 
 	{% raw %}
-	{% include figure url="/MUTOR/assets/img/sin-amp-period.png" description="Descriptive text" %}
+	{% include img-figure url="/MUTOR/assets/img/sin-amp-period.png" description="Descriptive text" %}
 	{% endraw %}
 	
-{% include figure url="/MUTOR/assets/img/sin-amp-period.png" description="Descriptive text" %}
+{% include img-figure url="/MUTOR/assets/img/sin-amp-period.png" description="Descriptive text" %}
 
 ## Tables
 

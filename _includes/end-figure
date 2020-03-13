@@ -1,0 +1,3 @@
+<figcaption id="{{- figid -}}">{{ figcaption }}</figcaption>
+</figure>
+</div>
