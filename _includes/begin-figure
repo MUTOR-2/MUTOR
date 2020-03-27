@@ -4,5 +4,5 @@
   {% assign figid = figctr | prepend: "figid" %}
   <style>#{{- figid -}}:before { content: "Figure " "{{ page.number }}" "." "{{ figctr | plus: 1 }}" ": "; }</style>
   {% assign figcaption = include.description %}
-  
+  <div style="text-align:">  
   

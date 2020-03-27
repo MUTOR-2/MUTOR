@@ -1,6 +1,8 @@
 <div style="display: block; text-align: center; float: center">
 <figure class="fig">
+  <div style="text-align:">
   <img src="{{ include.url }}" alt="{{ include.description }}">
+  </div>
   {% capture figctr %}{% increment _figctr %}{% endcapture %}
   {% assign figid = figctr | prepend: "figid" %}
   <style>#{{- figid -}}:before { content: "Figure " "{{ page.number }}" "." "{{ figctr | plus: 1 }}" ": "; }</style>
