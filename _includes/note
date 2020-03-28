@@ -11,7 +11,7 @@
 [{{ include.author | upcase }}: {{ include.text }}]
 </span>
 {%- elsif include.author == "vg"  or include.author == "VG"-%}
-<span class="note" style="color: cyan">
+<span class="note" style="color: purple">
 [{{ include.author | upcase }}: {{ include.text }}]
 </span>
 {%- elsif include.author == "xf"  or include.author == "XF" or include.author == "fx"  or include.author == "FX" -%}
