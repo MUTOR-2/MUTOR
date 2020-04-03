@@ -1,0 +1,871 @@
+Timestamp: 55542.973: IPAddress: 77.13.8.28 PACKET DRIFT: 2
+Timestamp: 55543.026: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.036: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.047: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.057: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.068: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.078: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.089: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.099: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.110: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.120: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.131: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.142: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.153: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.163: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.176: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.186: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.195: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.206: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.218: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.228: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.239: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.249: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.259: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.270: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.282: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.291: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.302: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.313: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.323: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.334: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.345: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.356: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.367: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.377: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.387: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.399: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.409: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.420: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.431: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.441: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.451: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.463: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.473: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.484: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.494: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.505: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.515: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.527: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.536: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.549: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.560: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.570: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.580: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.590: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.601: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.611: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.622: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.633: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.643: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.654: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.665: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.675: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.687: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.697: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.707: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.718: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.729: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.739: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.751: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.761: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.772: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.783: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.794: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.803: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.814: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.825: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.836: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.847: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.857: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.868: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.878: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.889: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.900: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.910: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.921: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.931: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.944: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.954: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.964: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.975: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.985: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55543.995: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.006: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.017: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.027: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.038: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.048: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.060: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.070: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.081: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.091: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.102: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.113: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.124: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.134: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.146: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.155: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.166: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.177: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.187: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.198: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.209: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.220: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.230: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.241: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.251: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.262: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.273: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.283: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.294: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55544.422: IPAddress: 77.13.8.28 Delay: 53.50 ms
+Timestamp: 55545.766: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55547.121: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55548.475: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55549.830: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55551.185: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55552.539: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55553.415: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55553.883: IPAddress: 77.13.8.28 Delay: 42.50 ms
+Timestamp: 55555.238: IPAddress: 77.13.8.28 Delay: 42.50 ms
+Timestamp: 55556.510: IPAddress: 2.202.185.180 PACKET DRIFT: 2
+Timestamp: 55556.563: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.574: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.585: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.593: IPAddress: 77.13.8.28 Delay: 42.50 ms
+Timestamp: 55556.595: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.606: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.617: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.627: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.638: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.649: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.660: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.670: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.681: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.691: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.702: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.713: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.723: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.734: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.745: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.755: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.766: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.778: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.787: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.798: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.809: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.819: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.830: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.841: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.851: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.862: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.873: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.883: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.894: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.905: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.915: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.927: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.936: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.947: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.958: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.969: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.979: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55556.990: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.000: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.013: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.021: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.033: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.044: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.054: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.064: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.075: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.086: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.097: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.108: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.118: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.130: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.139: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.150: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.161: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.171: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.182: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.193: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.203: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.214: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.224: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.235: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.246: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.257: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.268: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.279: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.289: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.299: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.310: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.321: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.332: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.342: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.352: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.363: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.374: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.384: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.395: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.406: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.417: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.427: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.438: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.449: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.460: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.470: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.480: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.492: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.502: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.513: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.524: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.534: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.545: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.556: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.566: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.576: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.587: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.598: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.609: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.620: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.630: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.641: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.651: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.662: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.672: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.683: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.694: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.705: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.715: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.726: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.737: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.748: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.758: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.769: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.780: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.790: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.801: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.812: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.822: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.833: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55557.948: IPAddress: 77.13.8.28 Delay: 42.50 ms
+Timestamp: 55557.969: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55559.302: IPAddress: 77.13.8.28 Delay: 42.50 ms
+Timestamp: 55559.313: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55560.657: IPAddress: 77.13.8.28 Delay: 43.00 ms
+Timestamp: 55560.667: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55560.753: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55561.095: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55561.990: IPAddress: 77.13.8.28 Delay: 32.00 ms
+Timestamp: 55562.022: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55562.943: IPAddress: 2.202.185.180 PACKET DRIFT: -97
+Timestamp: 55563.345: IPAddress: 77.13.8.28 Delay: 32.00 ms
+Timestamp: 55563.377: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55564.700: IPAddress: 77.13.8.28 Delay: 32.00 ms
+Timestamp: 55564.732: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55566.054: IPAddress: 77.13.8.28 Delay: 32.00 ms
+Timestamp: 55566.086: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55567.409: IPAddress: 77.13.8.28 Delay: 32.00 ms
+Timestamp: 55567.441: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55568.764: IPAddress: 77.13.8.28 Delay: 32.00 ms
+Timestamp: 55568.796: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55570.118: IPAddress: 77.13.8.28 Delay: 32.00 ms
+Timestamp: 55570.150: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55570.524: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55570.525: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55571.505: IPAddress: 2.202.185.180 Delay: 48.00 ms
+55571.505: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55572.860: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55572.860: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55574.214: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55574.214: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55575.569: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55575.569: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55576.924: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55576.924: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55578.278: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55578.279: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55579.633: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55579.633: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55579.687: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55580.679: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55580.967: IPAddress: 77.13.8.28 Delay: 37.50 ms
+Timestamp: 55580.988: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55582.321: IPAddress: 77.13.8.28 Delay: 37.50 ms
+Timestamp: 55582.343: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55583.676: IPAddress: 77.13.8.28 Delay: 37.50 ms
+Timestamp: 55583.697: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55584.926: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55585.020: IPAddress: 77.13.8.28 Delay: 32.00 ms
+Timestamp: 55585.052: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55585.417: IPAddress: 77.13.8.28 PACKET DRIFT: -44
+Timestamp: 55585.447: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55585.447: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55585.960: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55586.396: IPAddress: 77.13.8.28 Delay: 42.50 ms
+Timestamp: 55586.407: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55586.407: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55586.429: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55586.464: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55586.465: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55586.465: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55586.465: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55586.465: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55586.465: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55586.465: IPAddress: 77.13.8.28 OVERRUN
+Timestamp: 55587.772: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55587.772: IPAddress: 77.13.8.28 Delay: 53.50 ms
+Timestamp: 55588.009: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55588.466: IPAddress: 77.13.8.28 PACKET DRIFT: 2
+Timestamp: 55588.562: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55588.807: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55588.808: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55589.116: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55589.127: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55589.149: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55589.895: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55590.450: IPAddress: 77.13.8.28 Delay: 37.50 ms
+Timestamp: 55590.482: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55591.804: IPAddress: 77.13.8.28 Delay: 37.50 ms
+Timestamp: 55591.836: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55591.870: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55592.732: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55592.734: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55593.180: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55593.191: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55593.352: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55593.587: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55593.801: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55593.874: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55593.874: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55594.397: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55594.473: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55594.514: IPAddress: 77.13.8.28 Delay: 37.50 ms
+Timestamp: 55594.545: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55595.868: IPAddress: 77.13.8.28 Delay: 37.50 ms
+Timestamp: 55595.900: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55596.125: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55596.178: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55596.180: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55596.554: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55596.627: IPAddress: 77.13.8.28 PACKET DRIFT: 2
+Timestamp: 55597.212: IPAddress: 77.13.8.28 Delay: 32.00 ms
+Timestamp: 55597.255: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55597.330: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55597.330: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55597.352: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55597.416: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55597.469: IPAddress: 77.13.8.28 PACKET DRIFT: 2
+Timestamp: 55598.386: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55598.386: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55598.599: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55598.610: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55599.954: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55599.964: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55600.286: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55600.776: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55601.287: IPAddress: 77.13.8.28 Delay: 37.50 ms
+Timestamp: 55601.319: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55601.768: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55602.631: IPAddress: 77.13.8.28 Delay: 32.00 ms
+Timestamp: 55602.674: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55602.780: IPAddress: 77.13.8.28 Delay: 32.00 ms
+Timestamp: 55602.823: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55603.015: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55603.016: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55604.167: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55604.178: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55604.509: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55604.712: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55605.500: IPAddress: 77.13.8.28 Delay: 37.50 ms
+Timestamp: 55605.532: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55605.651: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55606.002: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55606.003: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55606.526: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55606.792: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55606.855: IPAddress: 77.13.8.28 Delay: 37.50 ms
+Timestamp: 55606.887: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55607.432: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55608.029: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55608.031: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55608.231: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55608.242: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55608.862: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55609.575: IPAddress: 77.13.8.28 Delay: 42.50 ms
+Timestamp: 55609.596: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55610.205: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55610.825: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55610.909: IPAddress: 77.13.8.28 Delay: 32.00 ms
+Timestamp: 55610.951: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55611.111: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55611.112: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55611.763: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55611.998: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55612.274: IPAddress: 77.13.8.28 Delay: 37.50 ms
+Timestamp: 55612.306: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55612.979: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55613.618: IPAddress: 77.13.8.28 Delay: 32.00 ms
+Timestamp: 55613.661: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55614.493: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55614.494: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55614.773: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55614.994: IPAddress: 77.13.8.28 Delay: 42.50 ms
+Timestamp: 55615.015: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55616.064: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55616.338: IPAddress: 77.13.8.28 Delay: 37.50 ms
+Timestamp: 55616.370: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55616.777: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55616.786: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55617.256: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55617.481: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55617.693: IPAddress: 77.13.8.28 Delay: 37.50 ms
+Timestamp: 55617.725: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55618.302: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55618.429: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55618.430: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55618.792: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55619.058: IPAddress: 77.13.8.28 Delay: 42.50 ms
+Timestamp: 55619.079: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55619.230: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55619.348: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55619.943: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55619.944: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55619.976: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55619.998: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55620.362: IPAddress: 2.202.185.180 PACKET DRIFT: 1
+Timestamp: 55620.423: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55620.423: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55620.472: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55620.542: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55621.385: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55621.746: IPAddress: 77.13.8.28 Delay: 32.00 ms
+Timestamp: 55621.778: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55622.706: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55622.707: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55622.739: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55622.782: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55623.122: IPAddress: 77.13.8.28 Delay: 42.50 ms
+Timestamp: 55623.133: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55624.309: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55624.466: IPAddress: 77.13.8.28 Delay: 37.50 ms
+Timestamp: 55624.487: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55625.821: IPAddress: 77.13.8.28 Delay: 37.50 ms
+Timestamp: 55625.842: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55625.843: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55626.280: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55626.281: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55627.197: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55627.197: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55627.251: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55628.212: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55628.360: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55628.520: IPAddress: 77.13.8.28 Delay: 32.00 ms
+Timestamp: 55628.551: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55628.711: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55628.713: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55628.734: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55629.086: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55629.247: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55629.885: IPAddress: 77.13.8.28 Delay: 37.50 ms
+Timestamp: 55629.906: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55630.570: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55630.792: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55630.793: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55631.261: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55631.261: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55631.807: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55631.935: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55632.011: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55632.584: IPAddress: 77.13.8.28 Delay: 32.00 ms
+Timestamp: 55632.616: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55632.850: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55632.852: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55632.980: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55633.235: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55633.523: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55633.938: IPAddress: 77.13.8.28 Delay: 32.00 ms
+Timestamp: 55633.970: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55634.066: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55634.067: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55634.206: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55635.314: IPAddress: 77.13.8.28 Delay: 42.50 ms
+Timestamp: 55635.325: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55636.669: IPAddress: 77.13.8.28 Delay: 42.50 ms
+Timestamp: 55636.670: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55636.680: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55636.809: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55636.882: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55636.884: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55637.707: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55638.024: IPAddress: 77.13.8.28 Delay: 42.50 ms
+Timestamp: 55638.034: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55638.068: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55638.217: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55638.930: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55638.932: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55639.294: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55639.378: IPAddress: 77.13.8.28 Delay: 42.50 ms
+Timestamp: 55639.389: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55639.550: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55639.625: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55639.741: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55639.742: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55639.796: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55640.404: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55640.722: IPAddress: 77.13.8.28 Delay: 37.50 ms
+Timestamp: 55640.744: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55640.949: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55642.024: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55642.026: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55642.098: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55642.098: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55642.303: IPAddress: 77.13.8.28 PACKET DRIFT: 126
+Timestamp: 55642.505: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55643.453: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55643.453: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55644.211: IPAddress: 2.202.185.180 PACKET DRIFT: 126
+Timestamp: 55644.221: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55644.808: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55644.808: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55646.162: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55646.163: IPAddress: 2.202.185.180 Delay: 48.00 ms
+Timestamp: 55646.163: 55647.528: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55648.883: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55648.883: IPAddress: 77.13.8.28 Delay: 53.50 ms
+Timestamp: 55649.150: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55649.652: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55650.078: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55650.205: IPAddress: 77.13.8.28 Delay: 37.50 ms
+Timestamp: 55650.237: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55651.560: IPAddress: 77.13.8.28 Delay: 37.50 ms
+Timestamp: 55651.592: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55652.915: IPAddress: 77.13.8.28 Delay: 37.50 ms
+Timestamp: 55652.947: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55653.085: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55653.086: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55653.449: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55654.291: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55654.301: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55655.646: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55655.656: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55657.000: IPAddress: 77.13.8.28 Delay: 48.00 ms
+Timestamp: 55657.011: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55657.716: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55658.344: IPAddress: 77.13.8.28 Delay: 42.50 ms
+Timestamp: 55658.365: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55659.699: IPAddress: 77.13.8.28 Delay: 42.50 ms
+Timestamp: 55659.720: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55661.054: IPAddress: 77.13.8.28 Delay: 43.00 ms
+Timestamp: 55661.075: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55661.341: IPAddress: 2.202.185.180 PACKET DRIFT: -81
+Timestamp: 55662.408: IPAddress: 77.13.8.28 Delay: 42.50 ms
+Timestamp: 55662.429: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55662.643: IPAddress: 77.13.8.28 Delay: 42.50 ms
+Timestamp: 55662.664: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55662.675: IPAddress: 77.20.251.152 Delay: 58.50 ms
+Timestamp: 55663.997: IPAddress: 77.13.8.28 Delay: 42.50 ms
+Timestamp: 55664.019: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55664.029: IPAddress: 77.20.251.152 Delay: 58.50 ms
+Timestamp: 55664.500: IPAddress: 77.13.8.28 PACKET DRIFT: -48
+Timestamp: 55665.172: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55665.342: IPAddress: 77.13.8.28 Delay: 37.50 ms
+Timestamp: 55665.374: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55665.374: IPAddress: 77.20.251.152 Delay: 53.50 ms
+Timestamp: 55665.832: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55665.834: IPAddress: 77.13.8.28 PACKET DRIFT: 1
+Timestamp: 55666.067: IPAddress: 77.13.8.28 UNDERRUN
+Timestamp: 55666.728: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55666.739: IPAddress: 77.20.251.152 Delay: 58.50 ms
+Timestamp: 55666.846: IPAddress: 77.20.251.152 UNDERRUN
+Timestamp: 55666.926: IPAddress: 91.97.113.205 PACKET DRIFT: 24
+Timestamp: 55666.979: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55666.990: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.007: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.011: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.022: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.027: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55667.033: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.048: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.054: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.065: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.075: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.086: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.097: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.107: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.118: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.129: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.140: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.150: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.160: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.172: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.182: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.193: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.204: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.217: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.228: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.238: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.246: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.259: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.267: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.279: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.288: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.300: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.310: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.321: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.331: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.342: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.352: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.363: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.374: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.387: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.395: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.406: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.418: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.428: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.440: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.449: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.460: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.470: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.481: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.491: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.502: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.513: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.523: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.534: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.544: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.557: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.567: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.577: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.588: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.598: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.609: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.619: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.630: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.641: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.652: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.662: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.673: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.683: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.694: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.705: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.715: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.726: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.736: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.750: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.760: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.770: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.780: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.790: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.801: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.813: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.822: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.834: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.843: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.854: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.864: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.875: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.886: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.897: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.908: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.918: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.928: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.939: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.952: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.962: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.971: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.983: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55667.993: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55668.003: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55668.014: IPAddress: 91.97.113.205 OVERRUN
+Timestamp: 55668.382: IPAddress: 91.97.113.205 Delay: 53.50 ms
+Timestamp: 55668.382: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55669.736: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55669.736: IPAddress: 91.97.113.205 Delay: 53.50 ms
+Timestamp: 55671.091: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55671.091: IPAddress: 91.97.113.205 Delay: 53.50 ms
+Timestamp: 55672.446: IPAddress: 91.97.113.205 Delay: 53.50 ms
+Timestamp: 55672.446: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55673.800: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55673.800: IPAddress: 91.97.113.205 Delay: 53.50 ms
+Timestamp: 55675.155: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55675.155: IPAddress: 91.97.113.205 Delay: 53.50 ms
+Timestamp: 55676.510: IPAddress: 91.97.113.205 Delay: 53.50 ms
+Timestamp: 55676.510: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55676.531: IPAddress: 2.202.185.180 OVERRUN
+Timestamp: 55677.864: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55677.875: IPAddress: 91.97.113.205 Delay: 58.50 ms
+Timestamp: 55679.219: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55679.230: IPAddress: 91.97.113.205 Delay: 58.50 ms
+Timestamp: 55680.574: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55680.584: IPAddress: 91.97.113.205 Delay: 58.50 ms
+Timestamp: 55681.928: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55681.939: IPAddress: 91.97.113.205 Delay: 58.50 ms
+Timestamp: 55683.283: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55683.294: IPAddress: 91.97.113.205 Delay: 58.50 ms
+Timestamp: 55684.638: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55684.649: IPAddress: 91.97.113.205 Delay: 58.50 ms
+Timestamp: 55685.993: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55686.003: IPAddress: 91.97.113.205 Delay: 58.50 ms
+Timestamp: 55686.309: IPAddress: 94.223.105.215 PACKET DRIFT: 29
+Timestamp: 55686.356: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55686.370: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55686.392: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.409: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55686.413: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.419: IPAddress: 91.97.113.205 Delay: 58.50 ms
+Timestamp: 55686.425: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.443: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55686.443: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.468: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.522: IPAddress: 94.223.105.215 PACKET DRIFT: 3
+Timestamp: 55686.522: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.551: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.573: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.594: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.628: IPAddress: 94.223.105.215 PACKET DRIFT: 5
+Timestamp: 55686.628: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.648: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55686.649: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.669: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55686.669: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.695: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.718: IPAddress: 94.223.105.215 PACKET DRIFT: 2
+Timestamp: 55686.718: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.733: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.756: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.764: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.813: IPAddress: 94.223.105.215 PACKET DRIFT: 3
+Timestamp: 55686.813: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.827: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.841: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.874: IPAddress: 94.223.105.215 PACKET DRIFT: 2
+Timestamp: 55686.874: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.903: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.925: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55686.925: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.967: IPAddress: 94.223.105.215 PACKET DRIFT: 3
+Timestamp: 55686.967: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55686.994: IPAddress: 94.223.105.215 PACKET DRIFT: 2
+Timestamp: 55686.995: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.015: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.044: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.065: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.096: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.117: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.147: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.169: IPAddress: 94.223.105.215 PACKET DRIFT: 4
+Timestamp: 55687.169: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.190: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.205: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.242: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55687.242: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.289: IPAddress: 94.223.105.215 PACKET DRIFT: 5
+Timestamp: 55687.289: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.322: IPAddress: 94.223.105.215 PACKET DRIFT: 2
+Timestamp: 55687.322: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.336: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.422: IPAddress: 94.223.105.215 PACKET DRIFT: 9
+Timestamp: 55687.422: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.450: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.472: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.492: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55687.492: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.556: IPAddress: 94.223.105.215 PACKET DRIFT: -121
+Timestamp: 55687.556: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.599: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55687.600: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.620: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.678: IPAddress: 94.223.105.215 PACKET DRIFT: 3
+Timestamp: 55687.678: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.699: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.763: IPAddress: 2.202.185.180 Delay: 53.50 ms
+Timestamp: 55687.773: IPAddress: 94.223.105.215 PACKET DRIFT: 6
+Timestamp: 55687.773: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.774: IPAddress: 91.97.113.205 Delay: 58.50 ms
+Timestamp: 55687.788: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55687.788: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.803: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.839: IPAddress: 94.223.105.215 PACKET DRIFT: 3
+Timestamp: 55687.839: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.852: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.910: IPAddress: 94.223.105.215 PACKET DRIFT: 4
+Timestamp: 55687.910: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.930: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55687.984: IPAddress: 94.223.105.215 PACKET DRIFT: 2
+Timestamp: 55687.984: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.022: IPAddress: 94.223.105.215 PACKET DRIFT: 3
+Timestamp: 55688.022: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.052: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.073: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.153: IPAddress: 94.223.105.215 PACKET DRIFT: 8
+Timestamp: 55688.153: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.184: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55688.184: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.221: IPAddress: 94.223.105.215 PACKET DRIFT: 3
+Timestamp: 55688.221: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.242: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.281: IPAddress: 94.223.105.215 PACKET DRIFT: 3
+Timestamp: 55688.281: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.310: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55688.310: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.332: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.339: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.353: IPAddress: 94.223.105.215 PACKET DRIFT: 2
+Timestamp: 55688.353: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.366: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.394: IPAddress: 94.223.105.215 PACKET DRIFT: 2
+Timestamp: 55688.394: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.409: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.436: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55688.436: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.450: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55688.450: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.462: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.484: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.500: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55688.500: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.522: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.542: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.557: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.572: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.592: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55688.592: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.624: IPAddress: 94.223.105.215 PACKET DRIFT: 2
+Timestamp: 55688.624: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.646: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.660: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55688.660: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.679: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55688.679: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.698: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.726: IPAddress: 94.223.105.215 PACKET DRIFT: 2
+Timestamp: 55688.726: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.733: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.746: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.772: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55688.772: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.801: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55688.801: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.841: IPAddress: 94.223.105.215 PACKET DRIFT: 2
+Timestamp: 55688.841: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.856: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55688.856: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.863: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.877: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.888: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55688.888: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.922: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55688.923: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.938: IPAddress: 94.223.105.215 PACKET DRIFT: 1
+Timestamp: 55688.939: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.967: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.980: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55688.993: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55689.001: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55689.029: IPAddress: 94.223.105.215 OVERRUN
+Timestamp: 55689.060: IPAddress: 94.223.105.215 PACKET DRIFT: 2
+Timestamp: 55689.060: IPAddress: 94.223.105.215 OVERRUN
