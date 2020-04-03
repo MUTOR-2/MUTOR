@@ -3,9 +3,11 @@
   <div style="text-align:">
   <img src="{{ include.url }}" alt="{{ include.description }}">
   </div>
-  {% capture figctr %}{% increment _figctr %}{% endcapture %}
-  {% assign figid = figctr | prepend: "figid" %}
-  <style>#{{- figid -}}:before { content: "Figure " "{{ page.number }}" "." "{{ figctr | plus: 1 }}" ": "; }</style>
+  {% comment %}{% capture figctr %}{% increment _figctr %}{% endcapture %}{% endcomment %}
+  {% assign _figctr = _figctr | plus: 1 %}
+  {% assign figid = _figctr | prepend: "figid" %}
+  {% capture fignum %}{{ page.number }}.{{ _figctr | plus: 1 }}{% endcapture %}
+  <style>#{{- figid -}}:before { content: "Figure " "{{ fignum }}" ": "; }</style>
   <figcaption id="{{- figid -}}">{{ include.description }}</figcaption>
 </figure>
 </div>

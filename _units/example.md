@@ -5,8 +5,13 @@
 ###
 title: Formatting Examples and Stylesheet for MUTOR Units
 number: -1
-short_description: A style guide and formatting examples to be used when designing MUTOR units
-summary: This page contains examples of the basic formatting options available when creating a MUTOR unit. The rendered document (_site/units/example.html) contains information about how to format your unit, and is itself, along with its source file example.md, an example of how to construct a unit.
+short_description: A style guide and formatting examples to be used when 
+  designing MUTOR units
+summary: This page contains examples of the basic formatting options 
+  available when creating a MUTOR unit. The rendered document 
+  (_site/units/example.html) contains information about how to 
+  format your unit, and is itself, along with its source file example.md, 
+  an example of how to construct a unit.
 authors: 
  - John MacCallum
 topics: [Markdown, Liquid, HTML, MUTOR Units]
@@ -23,6 +28,8 @@ mathjax: true
 ---
 
 {% include unit_preamble.md %}
+
+{% increment _figctr %}
 
 # Structure of the Document
 
@@ -336,10 +343,10 @@ Instead, images can be included using the
 or the slightly simpler syntax below:
 
 	{% raw %}
-	{% include img-figure url="/MUTOR/assets/img/sin-amp-period.png" description="Descriptive text" %}
+	{% include img-figure url="/MUTOR/assets/images/sin-amp-period.png" description="Descriptive text" %}
 	{% endraw %}
 	
-{% include img-figure url="/MUTOR/assets/img/sin-amp-period.png" description="Descriptive text" %}
+{% include img-figure url="/MUTOR/assets/images/sin-amp-period.png" description="Descriptive text" %}
 
 ## Tables
 
@@ -366,6 +373,94 @@ table formatting options.
 Interactive examples are planned for the future, but not currently available.
 For the moment, where you feel there should be an interactive example,
 please post a screenshot of a Max patch that shows the basic functionality.
+
+Here's a simple test of drawing SVG directly in the browser.
+
+{% include begin-figure description="SVG test" %}
+<div id="svg-axis-test">
+
+<svg width="220" height="220">
+ <line x1="100" y1="0" x2="100" y2="200" style="stroke:black;stroke-width:1"/>
+ <line x1="0" y1="100" x2="200" y2="100" style="stroke:black;stroke-width:1"/>
+</svg>
+
+</div>
+{% include end-figure %}
+
+{% include begin-figure description="SVG test" %}
+<div id="svg-axis-test-js">
+<svg width="200" height="200"></svg>
+</div>
+<script type="text/javascript">
+var xxx = document.getElementById("svg-axis-test-js").children[0];
+var width = 200;
+var height = 200;
+
+var xaxis = document.createElementNS("http://www.w3.org/2000/svg", "line");
+
+xaxis.setAttribute('x1', 0);
+xaxis.setAttribute('y1', height / 2);
+
+xaxis.setAttribute('x2', width);
+xaxis.setAttribute('y2', height / 2);
+
+xaxis.setAttribute('style', "stroke:black;stroke-width:1");
+
+xxx.appendChild(xaxis);
+
+var yaxis = document.createElementNS("http://www.w3.org/2000/svg", "line");
+
+yaxis.setAttribute('x1', width / 2);
+yaxis.setAttribute('y1', 0);
+
+yaxis.setAttribute('x2', width / 2);
+yaxis.setAttribute('y2', height);
+
+yaxis.setAttribute('style', "stroke:black;stroke-width:1");
+
+xxx.appendChild(yaxis);
+
+for(i = 1; i <= 200; i++){
+var x1 = ((i - 1) / (width / 2)) - 1;
+var y1 = Math.sin(2. * Math.PI * x1);
+var x2 = (i / (width / 2)) - 1;
+var y2 = Math.sin(2. * Math.PI * x2);
+
+var line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+line.setAttribute('x1', i - 1);
+line.setAttribute('x2', i);
+line.setAttribute('y1', height - (((y1 + 1) / 2) * height));
+line.setAttribute('y2', height - (((y2 + 1) / 2) * height));
+line.setAttribute('style', "stroke:black;stroke-width:1");
+xxx.appendChild(line);
+}
+
+</script>
+{% include end-figure %}
+
+## Refering to Figures
+
+If you would like to refer to a figure by number, you can assign
+the value of the variable `fignum` (or `tabnum` in the case of a table)
+immediately after the liquid code for the figure:
+
+	{% raw %}
+	{% include img-figure url="/MUTOR/assets/images/sin-amp-period.png" description="Descriptive text" %}
+	{% assign myfigref = fignum %}
+	{% endraw %}
+	
+{% include img-figure url="/MUTOR/assets/images/sin-amp-period.png" description="Descriptive text" %}
+{% assign myfigref = fignum %}
+
+<pre>
+Then you can refer to the figure above as figure {% raw %}{{ myfigref }}{% endraw %}.
+</pre>
+Then you can refer to the figure above as figure {{ myfigref }}.
+
+The variable `fignum` is defined by the code in `img-figure` and `begin-figure`, 
+and will be changed by the next use of either of those includes, so if you 
+intend to use it, you should assign it to a variable and use the variable. Note that the
+figure must come before the reference for this to work.
 
 # End Matter
 

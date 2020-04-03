@@ -44,6 +44,10 @@ plugins:
 
 exclude:
  - _units/_*
+ - MUTOR-1_0-CNMAT
+ - Loui_course_materials
+ - Psychoakustik
+ - src
 
 collections:
  units:
