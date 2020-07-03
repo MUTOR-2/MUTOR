@@ -9,6 +9,8 @@
   height: auto;
 margin-right: 5%;
 margin-left: 5%;
+font-style: oblique;
+font-size: larger;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -26,13 +28,15 @@ div.wrapper span.left {
   display: table-cell;
   text-align: left;
  
-
-
+ 
+  
 }
 
 div.wrapper span.center {
   display: table-cell;
   text-align: center;
+
+
 }
 
 div.wrapper span.right {
