@@ -2,10 +2,13 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
+  border-top: 5px solid #ffffff;
   border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
   width: 100%;
+  height: auto;
+margin-right: 5%;
+margin-left: 5%;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -15,12 +18,16 @@ div.wrapper {
   display: table;
   width: 100%;
   table-layout: fixed;
+  height: auto;
 
 }
 
 div.wrapper span.left {
   display: table-cell;
   text-align: left;
+ 
+
+
 }
 
 div.wrapper span.center {
@@ -31,8 +38,8 @@ div.wrapper span.center {
 div.wrapper span.right {
   display: table-cell;
   text-align: right;
-  margin: 0;
-  padding: 0;
+ 
+
 }
 
 
@@ -43,6 +50,8 @@ div.wrapper span.right {
 .site-footer {
   border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 .footer-heading {
@@ -113,6 +122,9 @@ div.wrapper span.right {
 .page-content {
   padding: $spacing-unit 0;
   flex: 1;
+  margin-left: 5%;
+  margin-right: 5%;
+
 }
 
 .page-heading {
