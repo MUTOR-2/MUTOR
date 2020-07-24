@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 127.0, 80.0, 522.0, 285.0 ],
+		"rect" : [ 16.0, 45.0, 540.0, 249.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -142,7 +142,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1096.25, 166.0, 113.0, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 24.0, 84.0, 331.0, 17.0 ],
+					"presentation_rect" : [ 23.0, 62.0, 331.0, 17.0 ],
 					"text" : "press spacebar to start and stop adudio",
 					"textcolor" : [ 0.552941176470588, 0.545098039215686, 0.545098039215686, 1.0 ]
 				}
@@ -238,7 +238,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 24.0, 25.0, 386.0, 51.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 24.0, 25.0, 386.0, 51.0 ],
+					"presentation_rect" : [ 17.0, 15.0, 386.0, 51.0 ],
 					"text" : "waveform"
 				}
 
@@ -632,7 +632,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1101.0, 431.0, 74.0, 72.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 459.0, 124.0, 71.0, 142.0 ],
+					"presentation_rect" : [ 452.0, 101.0, 71.0, 142.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -710,7 +710,7 @@
 					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
 					"patching_rect" : [ 243.0, 446.0, 433.0, 142.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 24.0, 124.0, 433.0, 142.0 ],
+					"presentation_rect" : [ 17.0, 101.0, 433.0, 142.0 ],
 					"selectioncolor" : [ 0.0, 0.886274509803922, 1.0, 1.0 ],
 					"setmode" : 2,
 					"waveformcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
