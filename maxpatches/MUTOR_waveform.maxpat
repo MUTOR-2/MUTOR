@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 3.0, 45.0, 533.0, 307.0 ],
+		"rect" : [ 127.0, 80.0, 522.0, 285.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,99 +40,109 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"fontface" : 3,
-					"id" : "obj-41",
-					"linecount" : 3,
-					"maxclass" : "comment",
+					"id" : "obj-7",
+					"maxclass" : "toggle",
 					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1122.0, 25.0, 160.0, 47.0 ],
-					"text" : "note* I think I am doing one extra movement to scalate the ramp. "
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 69.0, 210.0, 18.0, 18.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 69.0, 234.0, 35.0, 22.0 ],
+					"text" : "dac~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Helvetica",
+					"fontsize" : 11.0,
 					"id" : "obj-39",
 					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 557.0, 138.0, 152.0, 60.0 ],
+					"patching_rect" : [ 567.0, 106.0, 140.0, 50.0 ],
 					"text" : "in case the audiofile is stoped before finishing set the scrolling bar to 0 to restart operation"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-36",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 494.0, 295.0, 158.0, 33.0 ],
-					"text" : "scalate ramp to the size of the buffer in miliseconds"
-				}
-
-			}
-, 			{
-				"box" : 				{
+					"fontname" : "Helvetica",
+					"fontsize" : 11.0,
 					"id" : "obj-35",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 721.0, 492.5, 133.0, 33.0 ],
+					"patching_rect" : [ 735.0, 498.0, 118.0, 28.0 ],
 					"text" : "ramp from 0 to 1 in the length of the buffer"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Helvetica",
+					"fontsize" : 11.0,
 					"id" : "obj-34",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 886.0, 584.5, 150.0, 33.0 ],
+					"patching_rect" : [ 876.0, 584.5, 139.0, 28.0 ],
 					"text" : "only set position when file is being played"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Helvetica",
+					"fontsize" : 11.0,
 					"id" : "obj-32",
 					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1180.0, 505.0, 116.0, 60.0 ],
+					"patching_rect" : [ 1185.5, 498.0, 107.0, 50.0 ],
 					"text" : "when file is finished automaticly set trigger to 0 to repeat action"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Helvetica",
+					"fontsize" : 11.0,
 					"id" : "obj-31",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1238.0, 399.0, 116.0, 33.0 ],
+					"patching_rect" : [ 1206.5, 399.0, 108.0, 28.0 ],
 					"text" : "play buffer from the begining to the end"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Helvetica",
+					"fontsize" : 11.0,
 					"id" : "obj-28",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1108.0, 171.0, 122.0, 33.0 ],
+					"patching_rect" : [ 1096.25, 166.0, 113.0, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 24.0, 84.0, 358.0, 20.0 ],
+					"presentation_rect" : [ 24.0, 84.0, 331.0, 17.0 ],
 					"text" : "press spacebar to start and stop adudio",
 					"textcolor" : [ 0.552941176470588, 0.545098039215686, 0.545098039215686, 1.0 ]
 				}
@@ -140,24 +150,28 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Helvetica",
+					"fontsize" : 11.0,
 					"id" : "obj-26",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 628.5, 404.0, 204.0, 33.0 ],
+					"patching_rect" : [ 610.5, 409.0, 211.0, 28.0 ],
 					"text" : "pipe is used just to compensate a bug in [waveform~] "
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Helvetica",
+					"fontsize" : 11.0,
 					"id" : "obj-25",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 628.5, 353.0, 204.0, 47.0 ],
+					"patching_rect" : [ 610.5, 348.0, 204.0, 39.0 ],
 					"text" : "visual scrolling bar to determine where are we reading the file (2 ms long scrolling bar)"
 				}
 
@@ -176,23 +190,27 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Helvetica",
+					"fontsize" : 11.0,
 					"id" : "obj-23",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 201.0, 620.0, 93.0, 47.0 ],
-					"text" : "get lenght or our file in miliseconds"
+					"patching_rect" : [ 116.0, 670.0, 95.0, 28.0 ],
+					"text" : "get lenght or our file in miliseconds",
+					"textjustification" : 0
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Helvetica",
 					"id" : "obj-21",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 24.0, 106.0, 358.0, 20.0 ],
+					"patching_rect" : [ 24.0, 106.0, 358.0, 18.0 ],
 					"text" : "Use the space bar of your keyboard to start and stop the sound",
 					"textcolor" : [ 0.552941176470588, 0.545098039215686, 0.545098039215686, 1.0 ]
 				}
@@ -201,37 +219,41 @@
 , 			{
 				"box" : 				{
 					"fontface" : 0,
+					"fontname" : "Helvetica",
 					"id" : "obj-16",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 24.0, 84.0, 358.0, 20.0 ],
+					"patching_rect" : [ 24.0, 84.0, 358.0, 18.0 ],
 					"text" : "Desplay and play a previously recorded file"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Helvetica Bold Oblique",
 					"fontsize" : 45.0,
 					"id" : "obj-10",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 24.0, 25.0, 358.0, 57.0 ],
+					"patching_rect" : [ 24.0, 25.0, 386.0, 51.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 24.0, 25.0, 358.0, 57.0 ],
+					"presentation_rect" : [ 24.0, 25.0, 386.0, 51.0 ],
 					"text" : "waveform"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Helvetica",
+					"fontsize" : 11.0,
 					"id" : "obj-4",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 273.0, 285.5, 93.0, 33.0 ],
+					"patching_rect" : [ 264.0, 291.0, 87.0, 28.0 ],
 					"text" : "store audiofile inside a buffer"
 				}
 
@@ -373,7 +395,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 842.0, 622.5, 37.0, 22.0 ],
+					"patching_rect" : [ 842.0, 641.5, 37.0, 22.0 ],
 					"text" : "s line"
 				}
 
@@ -409,8 +431,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 855.0, 498.0, 52.0, 22.0 ],
-					"text" : "0., 1. $1"
+					"patching_rect" : [ 855.0, 498.0, 55.0, 22.0 ],
+					"text" : "0., $1 $1"
 				}
 
 			}
@@ -514,18 +536,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-47",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 450.0, 310.0, 29.5, 22.0 ],
-					"text" : "* 0."
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"format" : 6,
 					"id" : "obj-46",
 					"maxclass" : "flonum",
@@ -581,7 +591,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1175.0, 461.0, 29.5, 22.0 ],
+					"patching_rect" : [ 1185.5, 460.0, 29.5, 22.0 ],
 					"text" : "0"
 				}
 
@@ -611,12 +621,15 @@
 			}
 , 			{
 				"box" : 				{
+					"coldcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"hotcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"id" : "obj-14",
 					"lastchannelcount" : 0,
 					"maxclass" : "live.gain~",
 					"numinlets" : 2,
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
+					"overloadcolor" : [ 1.0, 0.0, 0.886274509803922, 1.0 ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1101.0, 431.0, 74.0, 72.0 ],
 					"presentation" : 1,
@@ -633,7 +646,9 @@
 
 					}
 ,
-					"varname" : "live.gain~"
+					"tricolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"varname" : "live.gain~",
+					"warmcolor" : [ 1.0, 0.0, 0.886274509803922, 1.0 ]
 				}
 
 			}
@@ -644,7 +659,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 1101.0, 399.0, 93.0, 22.0 ],
+					"patching_rect" : [ 1101.0, 399.0, 103.5, 22.0 ],
 					"text" : "play~ waveform"
 				}
 
@@ -688,6 +703,7 @@
 , 			{
 				"box" : 				{
 					"buffername" : "waveform",
+					"gridcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"id" : "obj-1",
 					"maxclass" : "waveform~",
 					"numinlets" : 5,
@@ -696,7 +712,9 @@
 					"patching_rect" : [ 243.0, 446.0, 433.0, 142.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 24.0, 124.0, 433.0, 142.0 ],
-					"setmode" : 2
+					"selectioncolor" : [ 0.0, 0.886274509803922, 1.0, 1.0 ],
+					"setmode" : 2,
+					"waveformcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
 				}
 
 			}
@@ -760,14 +778,24 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
-					"midpoints" : [ 1184.5, 493.0, 1222.5, 493.0, 1222.5, 280.0, 1050.5, 280.0 ],
+					"midpoints" : [ 1195.0, 493.0, 1321.5, 493.0, 1321.5, 280.0, 1050.5, 280.0 ],
 					"source" : [ "obj-19", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"midpoints" : [ 155.0, 196.5, 78.5, 196.5 ],
+					"order" : 1,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
+					"order" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -803,17 +831,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-47", 0 ],
-					"source" : [ "obj-46", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-49", 0 ],
 					"midpoints" : [ 459.5, 337.0, 563.0, 337.0 ],
 					"order" : 0,
-					"source" : [ "obj-47", 0 ]
+					"source" : [ "obj-46", 0 ]
 				}
 
 			}
@@ -821,7 +842,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-51", 0 ],
 					"order" : 1,
-					"source" : [ "obj-47", 0 ]
+					"source" : [ "obj-46", 0 ]
 				}
 
 			}
@@ -884,18 +905,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-47", 1 ],
-					"midpoints" : [ 875.5, 289.5, 470.0, 289.5 ],
-					"order" : 1,
-					"source" : [ "obj-60", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-68", 1 ],
 					"midpoints" : [ 875.5, 342.5, 875.0, 342.5 ],
-					"order" : 0,
 					"source" : [ "obj-60", 0 ]
 				}
 
@@ -918,6 +929,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-62", 0 ],
 					"source" : [ "obj-68", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
