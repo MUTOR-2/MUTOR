@@ -198,8 +198,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 116.0, 670.0, 95.0, 28.0 ],
-					"text" : "get lenght or our file in miliseconds",
-					"textjustification" : 0
+					"text" : "get lenght or our file in miliseconds"
 				}
 
 			}
