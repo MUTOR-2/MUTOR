@@ -1,0 +1,163 @@
+/**
+ * Site header
+ */
+.site-header {
+    z-index: 10000;
+
+    //border-bottom: 1px solid $global-delim-color;
+    min-height: 45px;
+    max-width: $global-max-width;
+    height: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: $global-font-family;
+    font-size: $global-font-size;
+    font-weight: $global-font-weight;
+    font-style: oblique;
+
+    // Positioning context for the mobile navigation icon
+    position: relative;
+    
+    div.wrapper {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	height: auto;
+    }
+
+    div.wrapper span.mutor-logo {
+	display: table-cell;
+	text-align: left;
+	//padding-bottom: 0px;
+	width: 45%;
+    }
+
+    div.wrapper span.affiliation-logos {
+	display: table-cell;
+	//min-width: 85%;
+	text-align: right;
+	vertical-align: middle;
+
+	.wrapper {
+	    display: table;
+	    width: 100%;
+	    table-layout: auto;
+	    //height: 100%;
+	    margin: 0;
+	    padding: 0;
+	    
+	    span.affiliation-logo {
+		display: table-cell;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+	    }
+	}
+    }
+
+    /**
+     * nav / dropdown
+     */
+    .site-nav {
+	float: center;
+	position: relative;
+	display: table-row;
+
+	.page-link {
+	    color: $global-text-color;
+	}
+
+	.third-level-menu
+	{
+	    position: absolute;
+	    left: 100%;
+	    top: 0;
+	    list-style: none;
+	    padding: 0;
+	    margin: 0;
+	    display: none;
+	}
+
+	.third-level-menu > li
+	{
+	    background: $global-bg-color;
+	}
+	.third-level-menu > li:hover {
+	    background: $global-bg-color;
+	}
+
+	.second-level-menu
+	{
+	    position: absolute;
+	    top: 30px;
+	    left: 0;
+	    white-space: nowrap;
+	    list-style: none;
+	    padding: 0;
+	    margin: 0;
+	    display: none;
+	    text-align: left;
+	}
+
+	.second-level-menu > li
+	{
+	    position: relative;
+	    background: $global-bg-color;
+	}
+	.second-level-menu > li:hover {
+	    background: $global-bg-color;
+	}
+
+	.top-level-menu
+	{
+	    list-style: none;
+	    padding: 0;
+	    margin: 0;
+	}
+
+	.top-level-menu > li
+	{
+	    position: relative;
+	    float: left;
+	}
+	.top-level-menu > li:hover {
+	    background: $global-bg-color;
+	}
+
+	.top-level-menu li:hover > ul
+	{
+	    /* On hover, display the next level's menu */
+	    display: inline;
+	    border-right: 1px solid $global-delim-color;
+	    border-top: 1px solid $global-delim-color;
+	    border-bottom: 1px solid $global-delim-color;
+	}
+
+
+	/* Menu Link Styles */
+
+	.top-level-menu a /* Apply to all links inside the multi-level menu */
+	{
+	    font: bold 14px Arial, Helvetica, sans-serif;
+	    color: $global-text-color;
+	    text-decoration: none;
+	    padding: 0 10px 0 10px;
+
+	    /* Make the link cover the entire list item-container */
+	    display: block;
+	    line-height: 30px;
+	}
+	.top-level-menu a:hover {
+	    color: $global-bg-color;
+	    background-color: $global-text-color;
+	    padding: 0 10px 0 10px;
+	}
+
+	.burger-menu {
+	    width: 35px;
+	    height: 5px;
+	    background-color: black;
+	    margin: 6px 0;
+	}
+    }
+}
