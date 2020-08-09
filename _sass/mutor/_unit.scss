@@ -4,207 +4,161 @@ body {
     counter-reset: subsubsection;
 }
 
-.unit-header {
-    margin-bottom: $spacing-unit;
-    dl {
-	//border: 3px double #ccc;
-	//padding: 0.5em;
-	margin-bottom: 0;
+.unit {
+    padding-left: 5%;
+    .unit-header {
+	padding-bottom: 50px;
     }
-    dt {
-	float: left;
-	clear: left;
-	width: 100px;
-	//text-align: right;
-	font-weight: bold;
-	//color: green;
-    }
-    dt::after {
-	content: ":";
-    }
-    dd {
-	//margin: 0 0 0 110px;
-	padding: 0 0 0.5em 0;
-    }
-}
 
-.unit-title {
-    @include relative-font-size(2.625);
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-	@include relative-font-size(2.25);
+    .unit-title {
     }
-}
 
-.unit-toc {
-    
-    h4:before {
-	content: none;
+    // by default, the toc is at the very start of the text
+    // in the main content block, but we want it in the side
+    // info panel, so we use js to clone the toc node there,
+    // where it is styled according to the info side column
+    // style, and hide this one.
+    .unit-toc {
 	display: none;
     }
-    h4 {
-	margin-bottom: 0px;
+
+    .unit-main {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	height: auto;
+	
+	// for debugging layout
+	//border: 1px solid $global-delim-color;
     }
 
-    display: inline-block;
-    border: 1px solid black;
-    padding-left: $spacing-unit / 2;
-    padding-right: $spacing-unit / 2;
-}
+    .unit-content {
+	display: table-cell;
+	min-width: 70%;
+	padding-right: 48px;
 
-.unit-content {
-    
-    margin-bottom: $spacing-unit;
-    
-    h1 {
-	@include relative-font-size(2.5);
-
-	@include media-query($on-laptop) {
-	    @include relative-font-size(2.25);
+	// this is all to put a number in front
+	// of each section, subsection, etc.
+	h1 {
+	    counter-reset: subsection;
+	    counter-increment: section;
 	}
-	counter-reset: subsection;
-	counter-increment: section;
-    }
 
-    h1:before {
-	content: counter(section) ". ";
-    }
-    
-    h2 {
-	@include relative-font-size(2);
-
-	@include media-query($on-laptop) {
-	    @include relative-font-size(1.75);
+	h1:before {
+	    content: counter(section) ". ";
 	}
-	counter-reset: subsubsection;
-	counter-increment: subsection;
-    }
-    
-    h2:before {
-	content: counter(section) "." counter(subsection) " ";
-    }
 
-    h3 {
-	@include relative-font-size(1.625);
-
-	@include media-query($on-laptop) {
-	    @include relative-font-size(1.375);
+	h2 {
+	    counter-reset: subsubsection;
+	    counter-increment: subsection;
 	}
-	counter-reset: subsubsubsection;
-	counter-increment: subsubsection;
-    }
-
-    h3:before {
-	content: counter(section) "." counter(subsection) "." counter(subsubsection) " ";
-    }
-
-    h4 {
-	@include relative-font-size(1.25);
-
-	@include media-query($on-laptop) {
-	    @include relative-font-size(1.125);
+	
+	h2:before {
+	    content: counter(section) "." counter(subsection) " ";
 	}
-	/* counter-increment: subsubsubsection; */
-    }
 
-    h4:before {
-	/* content: counter(section) "." counter(subsection) "." counter(subsubsection) "." counter(subsubsubsection) " "; */
-    }
+	h3 {
+	    counter-reset: subsubsubsection;
+	    counter-increment: subsubsection;
+	}
 
-    /* figure.fig figcaption:before { */
-    /* 	counter-increment: figure; */
-    /* 	/\* content: "Figure " $unit-number "." counter(figure) ": "; *\/ */
-    /* } */
+	h3:before {
+	    content: counter(section) "." counter(subsection) "." counter(subsubsection) " ";
+	}
 
-    figure figcaption {
-	text-align: center;
-	font-weight: bold;
-	margin: $spacing-unit / 2;
-    }
+	h4 {
+	    /* counter-increment: subsubsubsection; */
+	}
 
-    figure {
-	display: inline-block;
-	text-align: center;
-    }
+	h4:before {
+	    /* content: counter(section) "." counter(subsection) "." counter(subsubsection) "." counter(subsubsubsection) " "; */
+	}
 
-    dl {
-	margin-left: $spacing-unit / 2;
-    }
-    dt {
-	font-weight: bold;
-    }
-    dd {
-	text-indent: 1em;
-    }
-}
+	/* figure.fig figcaption:before { */
+	/* 	counter-increment: figure; */
+	/* 	/\* content: "Figure " $unit-number "." counter(figure) ": "; *\/ */
+	/* } */
 
-.unit-quiz {
-    margin-bottom: $spacing-unit;
+	figure figcaption {
+	    text-align: center;
+	    font-weight: bold;
+	}
 
-    h2 {
-	@include relative-font-size(2);
+	figure {
+	    display: inline-block;
+	    text-align: center;
+	}
 
-	@include media-query($on-laptop) {
-	    @include relative-font-size(1.75);
+	dl {
+	}
+	dt {
+	    font-weight: bold;
+	}
+	dd {
+	    text-indent: 1em;
 	}
     }
 
-    h3 {
-	@include relative-font-size(1.625);
+    .unit-info-column {
+	display: table-cell;
+	width: 20%;
+	font-style: oblique;
+	
+	.unit-info-header {
+	    padding: 0;
+	    margin: 0 0 8px 0;
+	}
 
-	@include media-query($on-laptop) {
-	    @include relative-font-size(1.375);
+	ul {
+	    padding: 0;
+	    margin: 0;
+	}
+	
+	li {
+	    list-style-type: none;
+	    margin-bottom: 8px;
+	    ul {
+		li {
+		    list-style-type: circle;
+		    margin-left: 16px;
+		    margin-bottom: 0;
+		}
+	    }
 	}
     }
 
-    h4 {
-	@include relative-font-size(1.25);
-
-	@include media-query($on-laptop) {
-	    @include relative-font-size(1.125);
+    .unit-quiz {
+	h2 {
 	}
-    }
-}
 
-.unit-references {
-    margin-bottom: $spacing-unit;
+	h3 {
+	}
 
-    h2 {
-	@include relative-font-size(2);
-
-	@include media-query($on-laptop) {
-	    @include relative-font-size(1.75);
+	h4 {
 	}
     }
 
-    h3 {
-	@include relative-font-size(1.625);
+    .unit-references {
 
-	@include media-query($on-laptop) {
-	    @include relative-font-size(1.375);
+	h2 {
 	}
-    }
 
-    h4 {
-	@include relative-font-size(1.25);
-
-	@include media-query($on-laptop) {
-	    @include relative-font-size(1.125);
+	h3 {
 	}
-    }
 
-    ol {
-	counter-reset: list;
-	margin-left: $spacing-unit / 2;
-	padding: 0;
-    }
-    ol > li {
-	list-style: none;
-    }
-    ol > li:before {
-	content: "[" counter(list) "] ";
-	counter-increment: list;
+	h4 {
+	}
+
+	ol {
+	    counter-reset: list;
+	    padding: 0;
+	}
+	ol > li {
+	    list-style: none;
+	}
+	ol > li:before {
+	    content: "[" counter(list) "] ";
+	    counter-increment: list;
+	}
     }
 }

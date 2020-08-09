@@ -29,8 +29,6 @@ mathjax: true
 
 {% include unit_preamble.md %}
 
-{% increment _figctr %}
-
 # Structure of the Document
 
 ## Header

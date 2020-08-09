@@ -1,0 +1,19 @@
+.site-footer {
+    
+    min-height: 45px;
+    max-width: $global-max-width;
+    height: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: $global-font-family;
+    font-size: $global-font-size;
+    font-weight: $global-font-weight;
+    font-style: oblique;
+
+    // Positioning context for the mobile navigation icon
+    position: relative;
+
+    .wrapper {
+	border-top: 1px solid $global-delim-color;
+    }
+}
