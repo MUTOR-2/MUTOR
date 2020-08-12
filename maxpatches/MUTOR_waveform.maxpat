@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 45.0, 521.0, 265.0 ],
+		"rect" : [ 0.0, 45.0, 531.0, 234.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -443,7 +443,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1065.25, 162.0, 113.0, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 23.0, 62.0, 331.0, 17.0 ],
+					"presentation_rect" : [ 19.0, 40.0, 331.0, 17.0 ],
 					"text" : "press spacebar to start and stop adudio",
 					"textcolor" : [ 0.552941176470588, 0.545098039215686, 0.545098039215686, 1.0 ]
 				}
@@ -532,14 +532,14 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Helvetica Bold Oblique",
-					"fontsize" : 45.0,
+					"fontsize" : 16.0,
 					"id" : "obj-10",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 24.0, 25.0, 386.0, 51.0 ],
+					"patching_rect" : [ 24.0, 25.0, 147.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 17.0, 15.0, 386.0, 51.0 ],
+					"presentation_rect" : [ 19.0, 16.0, 147.0, 22.0 ],
 					"text" : "waveform"
 				}
 
@@ -849,7 +849,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1070.0, 427.0, 75.0, 72.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 452.0, 101.0, 71.0, 142.0 ],
+					"presentation_rect" : [ 448.0, 69.0, 71.0, 142.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -934,7 +934,7 @@
 					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
 					"patching_rect" : [ 243.0, 446.0, 433.0, 142.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 17.0, 101.0, 433.0, 142.0 ],
+					"presentation_rect" : [ 13.0, 69.0, 433.0, 142.0 ],
 					"selectioncolor" : [ 0.0, 0.886274509803922, 1.0, 1.0 ],
 					"setmode" : 2,
 					"waveformcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
