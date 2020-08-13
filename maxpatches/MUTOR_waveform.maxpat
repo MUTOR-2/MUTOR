@@ -539,7 +539,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 24.0, 25.0, 147.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 19.0, 16.0, 147.0, 22.0 ],
+					"presentation_rect" : [ 19.0, 23.0, 147.0, 22.0 ],
 					"text" : "waveform"
 				}
 
