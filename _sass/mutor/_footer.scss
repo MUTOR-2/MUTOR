@@ -8,12 +8,54 @@
     font-family: $global-font-family;
     font-size: $global-font-size;
     font-weight: $global-font-weight;
-    font-style: oblique;
+    //font-style: oblique;
 
     // Positioning context for the mobile navigation icon
     position: relative;
 
     .wrapper {
-	border-top: 1px solid $global-delim-color;
+	//border-top: 1px solid $global-delim-color;
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	height: auto;
+    }
+
+    div.wrapper span.links {
+	display: table-cell;
+	//width: 100%;
+	text-align: left;
+	vertical-align: middle;
+	padding: 50px 0 0 0;
+
+	a {
+	    background-color: #000000;
+	    color: #FFFFFF;
+	    padding: 5px 10px 5px 10px;
+	}
+    }
+
+    div.wrapper span.affiliation-logos {
+	display: table-cell;
+	//width: 100%;
+	text-align: right;
+	vertical-align: middle;
+	padding: 50px 0 0 0;
+
+	.wrapper {
+	    display: table;
+	    width: 100%;
+	    table-layout: auto;
+	    //height: 100%;
+	    margin: 0;
+	    padding: 0;
+	    
+	    span.affiliation-logo {
+		display: table-cell;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+	    }
+	}
     }
 }

@@ -20,7 +20,8 @@
     
     div.wrapper {
 	display: table;
-	width: 100%;
+	//width: 100%;
+	width: auto;
 	table-layout: fixed;
 	height: auto;
     }
@@ -29,30 +30,7 @@
 	display: table-cell;
 	text-align: left;
 	//padding-bottom: 0px;
-	width: 45%;
-    }
-
-    div.wrapper span.affiliation-logos {
-	display: table-cell;
-	//min-width: 85%;
-	text-align: right;
-	vertical-align: middle;
-
-	.wrapper {
-	    display: table;
-	    width: 100%;
-	    table-layout: auto;
-	    //height: 100%;
-	    margin: 0;
-	    padding: 0;
-	    
-	    span.affiliation-logo {
-		display: table-cell;
-		text-align: center;
-		padding: 0;
-		margin: 0;
-	    }
-	}
+	//width: 20%;
     }
 
     /**
@@ -61,7 +39,9 @@
     .site-nav {
 	float: center;
 	position: relative;
-	display: table-row;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 0 6px 50px;
 
 	.page-link {
 	    color: $global-text-color;

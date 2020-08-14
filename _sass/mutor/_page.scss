@@ -8,5 +8,7 @@
 
     position: relative;
 
-    
+    header {
+	padding-left: $global-title-indent;
+    }
 }
