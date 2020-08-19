@@ -12,22 +12,23 @@ $global-font-weight: 400;
 $global-title-indent: 100px;
 
 body {
+    background-color: $global-bg-color;
     max-width: $global-max-width;
     margin: auto;
 }
 
 a {
-  color: $global-text-color;
-  text-decoration: none;
+    color: $global-text-color;
+    text-decoration: none;
 
-  &:visited {
-    //color: darken($brand-color, 15%);
-  }
+    &:visited {
+	//color: darken($brand-color, 15%);
+    }
 
-  &:hover {
-    //color: $text-color;
-    text-decoration: underline;
-  }
+    &:hover {
+	//color: $text-color;
+	text-decoration: underline;
+    }
 }
 
 h1 {

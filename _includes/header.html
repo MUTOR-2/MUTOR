@@ -13,36 +13,73 @@
 {%- endfor -%}
 
 <header class="site-header" role="banner">
+  <script>
+    function openNav() {
+	document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+	document.getElementById("myNav").style.height = "0%";
+    }
+    </script>
   <div class="wrapper">
     <span class="mutor-logo"> 
       <a href ="{{ "/" | relative_url }}"><img src="/MUTOR/assets/images/mutor_logo_f1.png" alt="{{ site.title | escape }}" width="260px" height="98px"></a>
     </span>
 
     <nav class="site-nav">
-      <ul class="top-level-menu">
-	<li>
-	  <div class="burger-menu"></div>
-	  <div class="burger-menu"></div>
-	  <div class="burger-menu"></div>
-	  <ul class="second-level-menu">
-	    <li><a class="page-link" href="/MUTOR{{ refs_page.url }}">{{ refs_page.title }}</a></li>
-	    <li><a class="page-link" href="/MUTOR{{ disq_page.url }}">{{ disq_page.title }}</a></li>
-	    <li><a class="page-link" href="/MUTOR{{ about_page.url }}">{{ about_page.title }}</a></li>
-	    <li>
-	      <a href="#">Units</a>
-	      <ul class="third-level-menu">
-		{% for u in site.units %}
-		<li><a href="{{ site.baseurl }}{{ u.url }}">Unit {{ u.number }}: {{ u.title }}</a></li>
-		{% if forloop.last == false %}
-		{% endif %}
-		{% endfor %}
-	      </ul>
-	    </li>
-	  </ul>
-	</li>
-      </ul>
-      
-    </nav>
-  </div>
+      <div id="overlay" class="overlay">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<div class="overlay-content">
+	  <ul class="top-level-menu">
+    	    <li><a class="page-link" href="/MUTOR{{ refs_page.url }}">{{ refs_page.title }}</a></li>
+	    <li class="sep"><span class="sep-space"></span><span class="sep-line"></span><span class="sep-space"></span></li>
+    	    <li><a class="page-link" href="/MUTOR{{ disq_page.url }}">{{ disq_page.title }}</a></li>
+	    <li class="sep"><span class="sep-space"></span><span class="sep-line"></span><span class="sep-space"></span></li>
+    	    <li><a class="page-link" href="/MUTOR{{ about_page.url }}">{{ about_page.title }}</a></li>
+	    <li class="sep"><span class="sep-space"></span><span class="sep-line"></span><span class="sep-space"></span></li>
+    	    <li>
+	      <a class="page-link" href="">Units</a>
+    	      <ul class="second-level-menu" id="third-level-menu">
+    		{% for u in site.units %}
+    		<li><a href="{{ site.baseurl }}{{ u.url }}">Unit {{ u.number }}: {{ u.title }}</a></li>
+    		{% if forloop.last == false %}
+    		{% endif %}
+    		{% endfor %}
+    	      </ul>
+    	    </li>
+	    <li class="sep"><span class="sep-space"></span><span class="sep-line"></span><span class="sep-space"></span></li>
+    	  </ul>
+	</div>
+      </div>
 
+      <span style="font-size:30px;cursor:pointer;font-style: normal;" onclick="openNav()">&#9776;</span>
+
+      <script>
+	function openNav() {
+	    let color = MUTOR.rbright();
+	    let e = document.getElementById("third-level-menu");
+	    e.style["background-color"] = color;
+	    e = document.getElementsByTagName("BODY");
+	    e[0].style["overflow"] = "hidden";
+	    e = document.getElementById("overlay");
+	    e.style["position"] = "fixed";
+	    e.style["overflow-y"] = "auto";
+	    e = document.getElementById("overlay");
+	    e.style["background-color"] = color;
+	    e.style.height = "100%";
+	}
+
+	function closeNav() {
+	    let e = document.getElementsByTagName("BODY");
+	    e[0].style["overflow"] = "auto";
+	    e = document.getElementById("overlay");
+	    e.style["overflow"] = "hidden";
+	    e = document.getElementById("overlay");
+	    e.style.height = "0%";
+	}
+	</script>
+    </nav>
+  
+</div>
 </header>
