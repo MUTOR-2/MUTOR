@@ -11,10 +11,18 @@ $global-font-weight: 400;
 
 $global-title-indent: 100px;
 
+//$global-footer-height: 150px;
+
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: $global-bg-color;
     max-width: $global-max-width;
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -52,3 +60,24 @@ h6 {
     font-style: oblique;
 }
 
+// .page-content {
+//     min-height: 100%;
+//     margin-bottom: -$global-footer-height;
+// }
+
+// .page-content:after {
+//     content: "";
+//     display: block;
+//     height: $global-footer-height;
+// }
+.page-content {
+    flex: 1 0 auto;
+}
+
+.site-header {
+    flex: none;
+}
+
+.site-footer {
+    flex-shrink: 0;
+}
