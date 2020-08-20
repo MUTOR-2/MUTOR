@@ -1,0 +1,34 @@
+
+<!-- begin audio transport -->
+<button type="button" class="mutor-audio-transport" id="{{ include.name }}" value="stopped" onclick="{{ include.name }}_onclick(this)">
+&blacktriangleright;
+</button>
+<script type="text/javascript">
+transport_fns_{{ audio_ex_ctr }}.play.push(() => {
+    playing_{{ audio_ex_ctr }} = true;
+    let button = document.getElementById("{{ include.name }}");
+    button.value = "playing";
+    button.innerHTML = "&blacksquare;"
+});
+
+transport_fns_{{ audio_ex_ctr }}.stop.push(() => {
+    playing_{{ audio_ex_ctr }} = false;
+    let button = document.getElementById("{{ include.name }}");
+    button.value = "stopped";
+    button.innerHTML = "&blacktriangleright;"
+});
+
+function {{ include.name }}_onclick(button)
+{
+    switch(button.value){
+    case "stopped":
+	transport_{{ audio_ex_ctr }}('play');
+	window.requestAnimationFrame(draw_{{ audio_ex_ctr }});
+	break;
+    case "playing":
+	transport_{{ audio_ex_ctr }}('stop');
+	break;
+    }
+}
+</script>
+<!-- end audio transport-->

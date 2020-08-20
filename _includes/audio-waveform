@@ -1,0 +1,8 @@
+<!-- begin audio waveform -->
+<canvas id="{{ include.name }}" width="600" height="200" style="border:1px solid #000000;"></canvas>
+<script type="text/javascript">
+Tone.loaded().then(()=>{
+    MUTOR_alib.draw_waveform({{ include.buffer }}, document.getElementById("{{ include.name }}"));
+});
+</script>
+<!-- end audio waveform -->

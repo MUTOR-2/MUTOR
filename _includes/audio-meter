@@ -1,0 +1,9 @@
+<!-- begin audio meter -->
+<canvas id="{{ include.name }}" width="20px", height="200px" style="border:1px solid #000000;"></canvas>
+<script type="text/javascript">
+    const {{ include.name }} = new Tone.Meter();
+    {{ include.name }}.normalRange = true;
+    const {{ include.name }}_canvas = document.getElementById("{{ include.name }}");
+    draw_fns_{{ audio_ex_ctr }}.push(() => { MUTOR_alib.draw_meter( {{ include.name }}, {{ include.name }}_canvas, color_{{ audio_ex_ctr }}); });
+</script>
+<!-- end audio meter -->

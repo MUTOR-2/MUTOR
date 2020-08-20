@@ -1,0 +1,11 @@
+
+<!-- begin audio visual element overlay -->
+<script type="text/javascript">
+  let b = document.getElementById("{{ include.bottom }}");
+  let t = document.getElementById("{{ include.top }}");
+  t.style.position =  "fixed";
+  t.style['z-index'] = b.style['z-index'] + 1;
+  t.style.top = b.getBoundingClientRect().top + "px";
+  t.style.left = b.getBoundingClientRect().left + "px";
+</script>
+<!-- end audio visual element overlay -->
