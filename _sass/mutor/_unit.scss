@@ -5,9 +5,12 @@ body {
 }
 
 .unit {
-    padding-left: 5%;
+    //padding-left: 5%;
+    padding: 0 10px 0 10px;
+    position: relative;
     .unit-header {
-	padding-bottom: 50px;
+	padding-left: $global-title-indent;
+	//padding-bottom: 50px;
     }
 
     .unit-title {

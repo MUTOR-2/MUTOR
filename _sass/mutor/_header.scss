@@ -20,7 +20,6 @@
     
     div.wrapper {
 	display: table;
-	//width: 100%;
 	width: auto;
 	table-layout: fixed;
 	height: auto;
@@ -29,8 +28,6 @@
     div.wrapper span.mutor-logo {
 	display: table-cell;
 	text-align: left;
-	//padding-bottom: 0px;
-	//width: 20%;
     }
 
     /**
@@ -41,103 +38,101 @@
 	position: relative;
 	display: table-cell;
 	vertical-align: middle;
-	padding: 0 0 6px 50px;
+	padding: 0 0 2px 50px;
 
-	.page-link {
-	    color: $global-text-color;
+	ul {
+	    list-style: none;
+	    padding: 0px;
+	    margin: 0px;
 	}
 
-	.third-level-menu
-	{
+	.sep {
+	    display: table;
+	    table-layout: fixed;
+	    width: 100%;
 	    position: absolute;
-	    left: 100%;
+	}
+	
+	.sep-space {
+	    display: table-cell;
+	    position: relative;
+	}
+	
+	.sep-line {
+	    display: table-cell;
+	    border-top: 3px solid #000000;
+	    position: relative;
+	}
+
+	.overlay {
+	    height: 0%;
+	    width: 100%;
+	    position: fixed;
+	    z-index: 1;
 	    top: 0;
-	    list-style: none;
-	    padding: 0;
-	    margin: 0;
-	    display: none;
-	}
-
-	.third-level-menu > li
-	{
-	    background: $global-bg-color;
-	}
-	.third-level-menu > li:hover {
-	    background: $global-bg-color;
-	}
-
-	.second-level-menu
-	{
-	    position: absolute;
-	    top: 30px;
 	    left: 0;
-	    white-space: nowrap;
-	    list-style: none;
-	    padding: 0;
-	    margin: 0;
-	    display: none;
-	    text-align: left;
+	    overflow-y: hidden;
+	    transition: 0.5s;
 	}
 
-	.second-level-menu > li
-	{
+	.overlay-content {
 	    position: relative;
-	    background: $global-bg-color;
-	}
-	.second-level-menu > li:hover {
-	    background: $global-bg-color;
-	}
-
-	.top-level-menu
-	{
-	    list-style: none;
-	    padding: 0;
-	    margin: 0;
+	    top: 25%;
+	    width: 100%;
+	    text-align: center;
+	    margin-top: 30px;
 	}
 
-	.top-level-menu > li
-	{
-	    position: relative;
-	    float: left;
-	}
-	.top-level-menu > li:hover {
-	    background: $global-bg-color;
-	}
-
-	.top-level-menu li:hover > ul
-	{
-	    /* On hover, display the next level's menu */
-	    display: inline;
-	    border-right: 1px solid $global-delim-color;
-	    border-top: 1px solid $global-delim-color;
-	    border-bottom: 1px solid $global-delim-color;
-	}
-
-
-	/* Menu Link Styles */
-
-	.top-level-menu a /* Apply to all links inside the multi-level menu */
-	{
-	    font: bold 14px Arial, Helvetica, sans-serif;
-	    color: $global-text-color;
+	.overlay a {
+	    padding: 8px;
 	    text-decoration: none;
-	    padding: 0 10px 0 10px;
-
-	    /* Make the link cover the entire list item-container */
+	    font-size: 36px;
+	    color: #000000;
 	    display: block;
-	    line-height: 30px;
-	}
-	.top-level-menu a:hover {
-	    color: $global-bg-color;
-	    background-color: $global-text-color;
-	    padding: 0 10px 0 10px;
+	    transition: 0.3s;
 	}
 
-	.burger-menu {
-	    width: 35px;
-	    height: 5px;
-	    background-color: black;
-	    margin: 6px 0;
+	.overlay a:hover, .overlay a:focus {
+	    color: #A8B6C5;
+	}
+
+	.overlay .closebtn {
+	    position: absolute;
+	    top: 20px;
+	    right: 45px;
+	    font-size: 60px;
+	}
+
+	.closebtn {
+	    font-style: normal;
+	}
+
+	@media screen and (max-height: 450px) {
+	    .overlay {overflow-y: auto;}
+	    .overlay a {font-size: 20px}
+	    .overlay .closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	    }
+	}
+
+	.top-level-menu > li:hover {
+	    .second-level-menu {
+	    	display: inline-block;
+		max-height: 1000px;
+		transition: max-height .3s ease-in;
+	    }
+	}
+
+	.second-level-menu {
+	    max-height: 0;
+	    transition: max-height 0.15s ease-out;
+	    overflow: hidden;
+	    background: #d5d5d5;
+	    li > a {
+		font-size: 24px;
+	    }
 	}
     }
 }

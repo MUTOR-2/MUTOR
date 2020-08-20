@@ -1,0 +1,28 @@
+<script type="text/javascript">
+  let MUTOR = {
+      color_palettes : {
+	  bright : ["#00FFFF", "#FF00FF", "#00FF00", "#FFFF00"],
+	  dark : ["#000000", "#333333", "#A8B6C5", "FFFFFF"],
+	  all : ["#00FFFF", "#FF00FF", "#00FF00", "#FFFF00", "#000000", "#333333", "#A8B6C5", "FFFFFF"]
+      },
+
+      "rcolor" : function(palettes)
+      {
+	  let colors = [];
+	  if(palettes == undefined){
+	      colors = this.color_palettes.keys();
+	  }
+	  palettes.forEach(p => colors.push.apply(colors, this.color_palettes[p]));
+	  return colors[Math.floor(Math.random() * colors.length)];
+      },
+      "rbright" : function()
+      {
+	  return this.rcolor(["bright"]);
+      },
+      
+      "rdark" : function()
+      {
+	  return this.rcolor(["dark"]);
+      }
+  }
+</script>
