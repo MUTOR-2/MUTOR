@@ -21,7 +21,12 @@
 </button>
 {% endif %}
 <script type="text/javascript">
-    transport_fns_{{ audio_ex_ctr }}.play.push(function(){
+{    
+    let button = document.getElementById("{{ include.name }}");
+    button.style['background-color'] = color_{{ audio_ex_ctr }};
+}
+
+transport_fns_{{ audio_ex_ctr }}.play.push(function(){
     playing_{{ audio_ex_ctr }} = true;
     let button = document.getElementById("{{ include.name }}");
     button.value = "playing";

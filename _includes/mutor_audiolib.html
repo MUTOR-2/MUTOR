@@ -8,6 +8,10 @@
 	      const width = parseFloat(c.getAttribute("width"));
 	      const height = parseFloat(c.getAttribute("height"));
 	      let samps_per_pixel = Math.floor(samps.length / width);
+	      ctx.clearRect(0, 0, width, height);
+	      ctx.fillStyle = "#000000";
+	      ctx.fillRect(0, 0, width, height);
+	      ctx.strokeStyle = "#FFFFFF";
 	      ctx.moveTo(0, height / 2);
 	      for(x = 0; x < width; x++){
 		  let y = 0;//, yy = 0;
@@ -47,6 +51,7 @@
 	      const height = parseFloat(c.getAttribute("height"));
 	      const vc = v * (width);
 	      ctx.clearRect(0, 0, width, height);
+	      ctx.strokeStyle = "#FFFFFF";
 	      ctx.beginPath();
 	      ctx.moveTo(vc, 0);
 	      ctx.lineTo(vc, height);
