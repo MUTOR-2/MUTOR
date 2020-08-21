@@ -1,7 +1,7 @@
 <div style="display: block; text-align: center; float: center">
 <figure class="fig">
   <div style="text-align:">
-  <img src="{{ include.url }}" alt="{{ include.description }}">
+  <img src="{{ include.url }}" alt="{{ include.description }}" style="width: 100%">
   </div>
   {% comment %}{% capture figctr %}{% increment _figctr %}{% endcapture %}{% endcomment %}
   {% assign _figctr = _figctr | plus: 1 %}

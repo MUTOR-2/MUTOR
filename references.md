@@ -4,4 +4,12 @@ title: References
 permalink: /references/
 ---
 
-References...
+{% for u in site.units %}
+### {{ u.number }}. {{ u.title }}
+
+{% for r in u.citations %}
+{% increment n %}. {{ r }}
+
+{% endfor %}
+{% endfor %}
+
