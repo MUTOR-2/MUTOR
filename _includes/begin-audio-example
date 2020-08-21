@@ -1,0 +1,40 @@
+{::nomarkdown}
+{% assign audio_ex_ctr = audio_ex_ctr | plus: 1 %}
+{% assign audio_ex_pfx = audio_ex_ctr | prepend: "mutor_audioex_" | append: "_" %}
+{% assign audio_ex_overlay = false %}
+
+{% if tonejs_loaded != true %}
+<script src="https://unpkg.com/tone@14.7.39/build/Tone.js"></script>
+{% assign tonejs_loaded = true %}
+{% endif %}
+
+{% if mutor_audiolib_loaded != true %}
+{% include mutor_audiolib.html %}
+{% assign mutor_audiolib_loaded = true %}
+{% endif %}
+
+<!-- begin audio example {{ audio_ex_ctr }} -->
+
+<script type="text/javascript">
+//let draw_fns_{{ audio_ex_ctr }} = {};
+let draw_fns_{{ audio_ex_ctr }} = [];
+let transport_fns_{{ audio_ex_ctr }} = {play: [], stop: []};
+let color_{{ audio_ex_ctr }} = MUTOR.rbright();
+let playing_{{ audio_ex_ctr }} = false;
+
+function draw_{{ audio_ex_ctr }}()
+{
+    draw_fns_{{ audio_ex_ctr }}.forEach(f => f());
+    if(playing_{{ audio_ex_ctr }} == true){
+        window.requestAnimationFrame(draw_{{ audio_ex_ctr }});
+    }
+}
+
+function transport_{{ audio_ex_ctr }}(action)
+{
+    transport_fns_{{ audio_ex_ctr }}[action].forEach(f => f());
+}
+
+</script>
+
+<div class="audio-example">

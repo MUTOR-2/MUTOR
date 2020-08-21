@@ -1,0 +1,18 @@
+
+<!-- begin audio player -->
+<script type="text/javascript">
+  const {{ include.name }} = new Tone.Player().toDestination();
+  {{ include.name }}.buffer = {{ include.buffer }};
+  let {{ include.name }}_duration = 0;
+  let {{ include.name }}_starttime = 0;
+  {{ include.name }}.onstop = (source) => {transport_{{ audio_ex_ctr}}('stop');};
+  transport_fns_{{ audio_ex_ctr }}.play.push(() => {
+      {{ include.name }}.start();
+      {{ include.name }}_starttime = {{ include.name }}.now();
+  });
+  transport_fns_{{ audio_ex_ctr }}.stop.push(() => { {{ include.name }}.stop(); });
+  Tone.loaded().then(() => {
+      {{ include.name }}_duration = {{ include.name }}.buffer.duration;
+  });
+</script>
+<!-- end audio player -->

@@ -1,0 +1,24 @@
+<!-- begin audio waveform -->
+{% if include.width %}
+{% assign width = include.width %}
+{% else %}
+{% assign width = "600px" %}
+{% endif %}
+
+{% if include.height %}
+{% assign height = include.height %}
+{% else %}
+{% assign height = "200px" %}
+{% endif %}
+
+{% if audio_ex_overlay == true %}
+<canvas class="audio-waveform audio-ex-layer" id="{{ include.name }}" width="{{ width  }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
+{% else %}
+<canvas class="audio-waveform" id="{{ include.name }}" width="{{ width }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
+{% endif %}
+<script type="text/javascript">
+    Tone.loaded().then(()=>{
+        MUTOR_alib.draw_waveform({{ include.buffer }}, document.getElementById("{{ include.name }}"));
+    });
+</script>
+<!-- end audio waveform -->

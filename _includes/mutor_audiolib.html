@@ -1,0 +1,56 @@
+<script type="text/javascript">
+  const MUTOR_alib = {
+      draw_waveform : (buffer, canvas) =>
+	  {
+	      const samps = buffer.getChannelData(0);
+	      let c = canvas;
+	      let ctx = c.getContext("2d");
+	      const width = parseFloat(c.getAttribute("width"));
+	      const height = parseFloat(c.getAttribute("height"));
+	      let samps_per_pixel = Math.floor(samps.length / width);
+	      ctx.moveTo(0, height / 2);
+	      for(x = 0; x < width; x++){
+		  let y = 0;//, yy = 0;
+		  for(i = 0; i < samps_per_pixel; i++){
+		      //yy += samps[i + (samps_per_pixel * x)];
+		      y += Math.pow(samps[i + (samps_per_pixel * x)], 2.);
+		  }
+		  y = Math.sqrt(y / samps_per_pixel);
+		  if(x % 2){
+		      y *= -1;
+		  }
+		  y = y * (height / 2.) + (height / 2.);
+		  ctx.lineTo(x, y);
+	      }
+	      ctx.stroke();
+	  },
+      draw_meter : (meter, canvas, color) =>
+	  {
+	      const v = 1 - meter.getValue();
+	      let c = canvas;
+	      let ctx = c.getContext("2d");
+	      const width = parseFloat(c.getAttribute("width"));
+	      const height = parseFloat(c.getAttribute("height"));
+	      const vc = v * (height);
+	      ctx.clearRect(0, 0, width, height);
+	      ctx.fillStyle = color;
+	      ctx.beginPath();
+	      ctx.fillRect(0, vc, width, height);
+	      ctx.stroke();
+	  },
+      draw_playhead : (player, progress, canvas, color) =>
+	  {
+	      const v = progress;
+	      let c = canvas;
+	      let ctx = c.getContext("2d");
+	      const width = parseFloat(c.getAttribute("width"));
+	      const height = parseFloat(c.getAttribute("height"));
+	      const vc = v * (width);
+	      ctx.clearRect(0, 0, width, height);
+	      ctx.beginPath();
+	      ctx.moveTo(vc, 0);
+	      ctx.lineTo(vc, height);
+	      ctx.stroke();
+	  }
+  };
+</script>

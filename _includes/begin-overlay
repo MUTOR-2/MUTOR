@@ -1,0 +1,7 @@
+{% assign audio_ex_overlay = true %}
+<style>
+  .stack { position: relative; }
+  .audio-ex-layer { position: absolute; top: 0; left: 0; }
+</style>
+
+<div class="stack" style="width: {{ include.width }}; height: {{ include.height }}; padding: 0; margin-top: -6px">

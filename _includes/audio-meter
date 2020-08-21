@@ -1,0 +1,28 @@
+
+<!-- begin audio meter -->
+{% if include.width %}
+{% assign width = include.width %}
+{% else %}
+{% assign width = "20px" %}
+{% endif %}
+
+{% if include.height %}
+{% assign height = include.height %}
+{% else %}
+{% assign height = "200px" %}
+{% endif %}
+
+{% if audio_ex_overlay == true %}
+<canvas class="audio-meter audio-ex-layer" id="{{ include.name }}" width="{{ width }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
+{% else %}
+<canvas class="audio-meter" id="{{ include.name }}" width="{{ width }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
+{% endif %}
+<script type="text/javascript">
+  const {{ include.name }} = new Tone.Meter();
+  {{ include.name }}.normalRange = true;
+  const {{ include.name }}_canvas = document.getElementById("{{ include.name }}");
+  draw_fns_{{ audio_ex_ctr }}.push(function(){
+    MUTOR_alib.draw_meter( {{ include.name }}, {{ include.name }}_canvas, color_{{ audio_ex_ctr }});
+  });
+</script>
+<!-- end audio meter -->

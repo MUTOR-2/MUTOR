@@ -1,0 +1,5 @@
+<!-- begin audio connection -->
+<script type="text/javascript">
+{{ include.outlet }}.connect( {{ include.inlet }} );
+</script>
+<!-- end audio connection -->
