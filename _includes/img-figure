@@ -6,7 +6,7 @@
   {% comment %}{% capture figctr %}{% increment _figctr %}{% endcapture %}{% endcomment %}
   {% assign _figctr = _figctr | plus: 1 %}
   {% assign figid = _figctr | prepend: "figid" %}
-  {% capture fignum %}{{ page.number }}.{{ _figctr | plus: 1 }}{% endcapture %}
+  {% capture fignum %}{{ page.number }}.{{ _figctr }}{% endcapture %}
   <style>#{{- figid -}}:before { content: "Figure " "{{ fignum }}" ": "; }</style>
   <figcaption id="{{- figid -}}">{{ include.description }}</figcaption>
 </figure>
