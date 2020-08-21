@@ -21,6 +21,7 @@ body {
     background-color: $global-bg-color;
     max-width: $global-max-width;
     margin: auto;
+    // push the footer to the bottom
     display: flex;
     flex-direction: column;
 }
@@ -60,16 +61,7 @@ h6 {
     font-style: oblique;
 }
 
-// .page-content {
-//     min-height: 100%;
-//     margin-bottom: -$global-footer-height;
-// }
-
-// .page-content:after {
-//     content: "";
-//     display: block;
-//     height: $global-footer-height;
-// }
+// these force the footer to the bottom, even when the page isn't full
 .page-content {
     flex: 1 0 auto;
 }

@@ -1,21 +1,38 @@
-
 <!-- begin audio transport -->
-<button type="button" class="mutor-audio-transport" id="{{ include.name }}" value="stopped" onclick="{{ include.name }}_onclick(this)">
+{% if include.width %}
+{% assign width = include.width %}
+{% else %}
+{% assign width = "600px" %}
+{% endif %}
+
+{% if include.height %}
+{% assign height = include.height %}
+{% else %}
+{% assign height = "20px" %}
+{% endif %}
+
+{% if audio_ex_overlay == true %}
+<button type="button" class="audio-transport audio-ex-overlay" id="{{ include.name }}" value="stopped" onclick="{{ include.name }}_onclick(this)" width="{{ width }}" height="{{ height }}">
 &blacktriangleright;
 </button>
+{% else %}
+<button type="button" class="audio-transport" id="{{ include.name }}" value="stopped" onclick="{{ include.name }}_onclick(this)" style="width: {{ width }}; height: {{ height }};">
+&#x25BA; Play
+</button>
+{% endif %}
 <script type="text/javascript">
-transport_fns_{{ audio_ex_ctr }}.play.push(() => {
+    transport_fns_{{ audio_ex_ctr }}.play.push(function(){
     playing_{{ audio_ex_ctr }} = true;
     let button = document.getElementById("{{ include.name }}");
     button.value = "playing";
-    button.innerHTML = "&blacksquare;"
+    button.innerHTML = "&#x25FE; Stop"
 });
 
-transport_fns_{{ audio_ex_ctr }}.stop.push(() => {
+transport_fns_{{ audio_ex_ctr }}.stop.push(function(){
     playing_{{ audio_ex_ctr }} = false;
     let button = document.getElementById("{{ include.name }}");
     button.value = "stopped";
-    button.innerHTML = "&blacktriangleright;"
+    button.innerHTML = "&#x25BA; Play"
 });
 
 function {{ include.name }}_onclick(button)
