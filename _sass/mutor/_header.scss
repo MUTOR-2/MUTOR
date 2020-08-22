@@ -40,6 +40,15 @@
 	vertical-align: middle;
 	padding: 0 0 2px 50px;
 
+	.burger-menu {
+	    font-size: 42px;
+	    cursor: pointer;
+	    font-style: normal;
+	    display: table-cell;
+	    padding-bottom: 12px;
+	    
+	}
+
 	ul {
 	    list-style: none;
 	    padding: 0px;
