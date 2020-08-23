@@ -73,3 +73,47 @@ h6 {
 .site-footer {
     flex-shrink: 0;
 }
+
+header {
+    //padding-left: $global-title-indent;
+    // h1::before {
+    //     content: "";
+    //     display: inline;
+    //     border-bottom: 2px solid black;
+    //     position: absolute;
+    //     width: 100px;
+    //     top: 0;
+    //     left: 0;
+    //     padding: 18px 0 0 0;
+    // }
+    .header-pre-pre-wrapper {
+	//border: 1px solid black;
+	min-width: 100px;
+	display: table-cell;
+	//position: absolute;
+	//top: 0;
+	//padding-top: -20px;
+	left: 0;
+	position: relative;
+    }
+    .header-pre-pre {
+	position: absolute;
+	top: 49%;
+	left: 0;
+	border: 1px solid black;
+	width: 100%
+    }
+    .header-pre-wrapper {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 14px;
+    }
+    .header-pre::before {
+	
+	content: "\25BA";
+    }
+    .header {
+	display: table-cell;
+	padding-left: 25px;
+    }
+}

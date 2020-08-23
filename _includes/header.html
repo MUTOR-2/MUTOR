@@ -21,7 +21,7 @@
     function closeNav() {
 	document.getElementById("myNav").style.height = "0%";
     }
-    </script>
+  </script>
   <div class="wrapper">
     <span class="mutor-logo"> 
       <a href ="{{ "/" | relative_url }}"><img src="/MUTOR/assets/images/mutor_logo_f1.png" alt="{{ site.title | escape }}" width="260px" height="98px"></a>
@@ -53,7 +53,7 @@
 	</div>
       </div>
 
-      <span style="font-size:30px;cursor:pointer;font-style: normal;" onclick="openNav()">&#9776;</span>
+      <span class="burger-menu" onclick="openNav()">&#9776;</span>
 
       <script>
 	function openNav() {
@@ -78,8 +78,8 @@
 	    e = document.getElementById("overlay");
 	    e.style.height = "0%";
 	}
-	</script>
+      </script>
     </nav>
-  
-</div>
+    
+  </div>
 </header>
