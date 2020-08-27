@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 527.0, 118.0, 640.0, 814.0 ],
+		"rect" : [ 176.0, 87.0, 511.0, 814.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -101,8 +101,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 202.0, 559.0, 196.0, 20.0 ],
-					"text" : "Devided by n"
+					"patching_rect" : [ 202.0, 559.0, 273.0, 20.0 ],
+					"presentation_linecount" : 2,
+					"text" : "Divided by n = amount by which to a adjust a fifth "
 				}
 
 			}
@@ -148,7 +149,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 344.0, 10.0, 25.0, 20.0 ],
+					"patching_rect" : [ 291.0, 11.0, 25.0, 20.0 ],
 					"text" : "n"
 				}
 
