@@ -10,8 +10,7 @@ MUTOR 2.0 is extension of a project which started in 2004 within the framework o
 
 # Chapter 2
 
-In 2019, the Hamburg University of Music and Drama (HfMT) applied for and was allocated funds within the Hamburg Open Online University program to blow new life into this project. This posed an opportunity to reconnect with our partners at Berkeley and Northeastern University as well as put our materials on a new platform with open access. In the meantime Psyche had become Assistant Professor of Creativity and Creative Practice and Director of Northeatern's Music, Imaging, and Neural Dynamics Laboratory (MIND Lab), John had moved to Berlin to pursue work as a free-lancing composer and programmer and had been hired by HfMT as a multimedia specialist. CNMAT's current director Ed Campion also became excited about the second life ot this project and allocated resources for its completion. 
-We are also delighted about the AR and VR contributions that the MMKH, a Hamburg-based multimedia production studio, will make.
+In 2019, the Hamburg University of Music and Drama (HfMT) applied for and had been allocated funds within the Hamburg Open Online University program to blow new life into the MUTOR project. This posed an opportunity to reconnect with our partners at Berkeley and Northeastern University as well as put our materials on a new platform with open access. In the meantime Psyche had become Assistant Professor of Creativity and Creative Practice and Director of Northeatern's Music, Imaging, and Neural Dynamics Laboratory (MIND Lab), John had moved to Berlin to pursue work as a free-lancing composer and programmer and had been hired by HfMT as a multimedia specialist. CNMAT's current director Ed Campion also became excited about the second life ot this project and allocated resources for its completion. We are also delighted about the AR and VR contributions that the MMKH, a Hamburg-based multimedia production studio, will make.
 
    <div align="center">
     <video controls src="/MUTOR/assets/videos/David_Wessel.mp4">
@@ -20,6 +19,8 @@ We are also delighted about the AR and VR contributions that the MMKH, a Hamburg
    </div>
    
 Excerpt of a video with David Wessel created in 2006 at CNMAT, UC Berkeley with David explaining the potential of including a class on music perception and cognition in a composition curriculum.
+
+Screenshots of the original MUTOR platform:
 
 {% include img-figure url="/MUTOR/assets/images/MUTOR_Screenshots/sine_wave.png" description="Sine Wave" %}
 {% include img-figure url="/MUTOR/assets/images/MUTOR_Screenshots/search.png" description="Search" %}
