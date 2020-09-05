@@ -4,12 +4,31 @@ title: About
 permalink: /about/
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus sit amet dictum sit amet justo donec enim. Fringilla urna porttitor rhoncus dolor purus non. Adipiscing elit duis tristique sollicitudin nibh sit amet. Urna nec tincidunt praesent semper feugiat. Sapien eget mi proin sed libero. Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis. Senectus et netus et malesuada fames ac turpis egestas integer. Semper quis lectus nulla at volutpat diam ut venenatis. Placerat in egestas erat imperdiet sed euismod nisi. Sed cras ornare arcu dui vivamus. Sit amet mauris commodo quis imperdiet. Tincidunt augue interdum velit euismod in pellentesque massa. Eu consequat ac felis donec. Egestas maecenas pharetra convallis posuere morbi leo.
+# Chapter 1
+MUTOR 2.0 is extension of a project which started in 2004 within the framework of the E-Learning Consortium Hamburg (ELCH). The participating universities were the Hamburg University of Music and Drama (HfMT), University of California, Berkeley and Northeastern University. Much of the direction of this project was laid out during the sabbatical of Anthony de Ritis who had been involved in a similar project called the BSO Online Conservatory. We approached David Wessel (1942-2014), director of the Center of New Music and Audio Technologies at the time. David was a polyhistor with great insights in various aspects of the science and practice of music. Both Tony and I had taken David's class and music perception and cognition while persuing doctoral studies and had found it to be a great inspiration to composers, electronic musicians and performers alike. David gladly accepted and hired two of the graduate students at CNMAT, Psyche Loui and John MacCallum who conducted interviews with him. They were transcribed and extended by Max patches, videos and illustrations, all put on a Wiki platform which served as the basis for the music perception and cognition classes taught at those three universities, even after David's passing in 2014. Tony had assembled a team to turn these materials into an interactive Flash application. Due to budget cuts, the project had to be stopped after we had just finished a prototype.
 
-Augue mauris augue neque gravida in fermentum. Hendrerit dolor magna eget est. Odio ut enim blandit volutpat maecenas. Nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi. Vitae turpis massa sed elementum tempus egestas sed sed risus. Vestibulum sed arcu non odio euismod lacinia at. Commodo odio aenean sed adipiscing diam donec adipiscing tristique risus. Laoreet non curabitur gravida arcu ac tortor dignissim. Ipsum dolor sit amet consectetur. Enim sed faucibus turpis in eu mi bibendum neque egestas. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Sed enim ut sem viverra. Morbi tristique senectus et netus et malesuada fames ac. Tincidunt id aliquet risus feugiat. Tristique magna sit amet purus gravida quis blandit. Dictum fusce ut placerat orci nulla pellentesque dignissim enim. Potenti nullam ac tortor vitae purus. Egestas dui id ornare arcu odio ut sem.
+   <div align="center">
+    <video controls src="/MUTOR/assets/audios/David_Wessel.mp4">
+      Your browser does not support the video element.
+    </video>
+   </div>
+   
+Excerpt of a video with David Wessel created in 2006 at CNMAT, UC Berkeley with David explaining the potential of including a class on music perception and cognition in a composition curriculum.
 
-Elit at imperdiet dui accumsan. Lectus arcu bibendum at varius vel pharetra vel turpis. Cras sed felis eget velit aliquet sagittis id consectetur purus. Egestas dui id ornare arcu odio ut sem nulla pharetra. Ut consequat semper viverra nam. Lectus arcu bibendum at varius vel pharetra vel turpis nunc. Et ultrices neque ornare aenean euismod elementum nisi quis. Ut ornare lectus sit amet. Eget sit amet tellus cras adipiscing enim eu turpis. Aliquam vestibulum morbi blandit cursus risus at ultrices mi. Turpis egestas integer eget aliquet nibh praesent tristique magna.
+{% include img-figure url="/MUTOR/assets/images/MUTOR_Screenshots/sine_wave.png" %}
+sine_wave.png
+search.png
+oscilloscope.png
+people.png
+guide.png
+menue.png
+glossary.png
+fft.png
+ear.png
+cochlea.png
 
-Eget mi proin sed libero enim sed faucibus turpis in. In tellus integer feugiat scelerisque varius morbi enim. Quis auctor elit sed vulputate mi. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Eget arcu dictum varius duis at consectetur. Viverra suspendisse potenti nullam ac. Aliquet nec ullamcorper sit amet risus nullam eget felis. Viverra justo nec ultrices dui. Sociis natoque penatibus et magnis dis parturient. Ligula ullamcorper malesuada proin libero. Quam nulla porttitor massa id. Tortor id aliquet lectus proin.
+# Chapter 2
 
-Diam volutpat commodo sed egestas egestas. Sed libero enim sed faucibus turpis. Sed felis eget velit aliquet sagittis id consectetur. Erat velit scelerisque in dictum. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Ultrices gravida dictum fusce ut placerat orci nulla. Porttitor rhoncus dolor purus non enim. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. In metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Dignissim suspendisse in est ante in nibh mauris cursus. Phasellus faucibus scelerisque eleifend donec pretium. Sit amet luctus venenatis lectus. Vulputate ut pharetra sit amet aliquam id diam. Aliquam purus sit amet luctus. Accumsan sit amet nulla facilisi morbi tempus iaculis urna id. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Dictum sit amet justo donec enim diam. Sit amet justo donec enim diam vulputate ut pharetra. Urna duis convallis convallis tellus id interdum velit laoreet. Eget nullam non nisi est sit amet.
+In 2019, the Hamburg University of Music and Drama (HfMT) applied for and was allocated funds within the Hamburg Open Online University program to blow new life into this project. This posed an opportunity to reconnect with our partners at Berkeley and Northeastern University as well as put our materials on a new platform with open access. In the meantime Psyche had become Assistant Professor of Creativity and Creative Practice and Director of Northeatern's Music, Imaging, and Neural Dynamics Laboratory (MIND Lab), John had moved to Berlin to pursue work as a free-lancing composer and programmer and had been hired by HfMT as a multimedia specialist. CNMAT's current director Ed Campion also became excited about the second life ot this project and allocated resources for its completion. 
+We are also delighted about the AR and VR contributions that the MMKH, a Hamburg-based multimedia production studio, will make.
+
