@@ -8,7 +8,7 @@ permalink: /about/
 MUTOR 2.0 is extension of a project which started in 2004 within the framework of the E-Learning Consortium Hamburg (ELCH). The participating universities were the Hamburg University of Music and Drama (HfMT), University of California, Berkeley and Northeastern University. Much of the direction of this project was laid out during the sabbatical of Anthony de Ritis who had been involved in a similar project called the BSO Online Conservatory. We approached David Wessel (1942-2014), director of the Center of New Music and Audio Technologies at the time. David was a polyhistor with great insights in various aspects of the science and practice of music. Both Tony and I had taken David's class and music perception and cognition while persuing doctoral studies and had found it to be a great inspiration to composers, electronic musicians and performers alike. David gladly accepted and hired two of the graduate students at CNMAT, Psyche Loui and John MacCallum who conducted interviews with him. They were transcribed and extended by Max patches, videos and illustrations, all put on a Wiki platform which served as the basis for the music perception and cognition classes taught at those three universities, even after David's passing in 2014. Tony had assembled a team to turn these materials into an interactive Flash application. Due to budget cuts, the project had to be stopped after we had just finished a prototype.
 
    <div align="center">
-    <video controls src="/MUTOR/assets/audios/David_Wessel.mp4">
+    <video controls src="/MUTOR/assets/videos/David_Wessel.mp4">
       Your browser does not support the video element.
     </video>
    </div>
