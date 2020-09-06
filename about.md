@@ -29,7 +29,7 @@ We are also delighted about the AR and VR contributions that the [Multimedia Kon
    
 Excerpt of a video with David Wessel created in 2006 at CNMAT, UC Berkeley with David explaining the potential of including a class on music perception and cognition in a composition curriculum.
 
-Screenshots of the original MUTOR platform:
+Screenshots of the Flash application:
 
 {% include img-figure url="/MUTOR/assets/images/MUTOR_Screenshots/sine_wave.png" description="Sine Wave" %}
 {% include img-figure url="/MUTOR/assets/images/MUTOR_Screenshots/search.png" description="Search" %}
