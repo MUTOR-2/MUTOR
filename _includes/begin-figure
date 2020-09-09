@@ -1,9 +1,7 @@
 <div style="display: block; text-align: center; float: center">
 <figure class="fig">
   {% comment %}{% capture figctr %}{% increment _figctr %}{% endcapture %}{% endcomment %}
-    _figctr = {{ _figctr }}
   {% assign _figctr = _figctr | plus: 1 %}
-    _figctr = {{ _figctr }}
   {% assign figid = _figctr | prepend: "figid" %}
   {% capture fignum %}{{ page.number }}.{{ _figctr }}{% endcapture %}
   <style>#{{- figid -}}:before { content: "Figure " "{{ fignum }}" ": "; }</style>

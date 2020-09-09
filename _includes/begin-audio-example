@@ -1,4 +1,3 @@
-{::nomarkdown}
 {% assign audio_ex_ctr = audio_ex_ctr | plus: 1 %}
 {% assign audio_ex_pfx = audio_ex_ctr | prepend: "mutor_audioex_" | append: "_" %}
 {% assign audio_ex_overlay = false %}
