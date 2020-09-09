@@ -13,7 +13,7 @@ Much of the direction of this project was laid out in 2006 during the sabbatical
 
 In 2019, the Hamburg University of Music and Drama (HfMT) applied for and had been allocated funds within the Hamburg Open Online University program to blow new life into the MUTOR project. This posed an opportunity to reconnect with our partners at Berkeley and Northeastern University as well as put our materials on a new platform with open access. 
 
-In the meantime Psyche had become Assistant Professor of Creativity and Creative Practice and Director of Northeatern's Music, Imaging, and Neural Dynamics Laboratory (MIND Lab), John had moved to Berlin to pursue work as a free-lance composer and programmer and had been hired by HfMT as a multimedia specialist. CNMAT's current director Ed Campion also became excited about the renewed efforts and re-joined the project. 
+In the meantime Psyche had become Assistant Professor of Creativity and Creative Practice and Director of Northeastern's Music, Imaging, and Neural Dynamics Laboratory (MIND Lab), John had moved to Berlin to pursue work as a free-lance composer and programmer and had been hired by HfMT as a multimedia specialist. CNMAT's current director Ed Campion also became excited about the renewed efforts and re-joined the project. 
 
 We are hoping that this class on music perception and cognition will only be the first of many more which will paint a complete picture of the exciting fields of music technology and multimedia.
 
