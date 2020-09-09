@@ -3,4 +3,4 @@ layout: home
 title: MUsic Technology Online Repository (MUTOR)
 ---
 
-blah blah blah...
+Welcome to the MUsic Technology Online Repository
