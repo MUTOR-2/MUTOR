@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 6,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -235,7 +235,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -391,7 +391,7 @@
 				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.04 ],
 					"clefs" : 0,
-					"fgcolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+					"fgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
 					"id" : "obj-13",
 					"maxclass" : "nslider",
 					"numinlets" : 2,
@@ -493,7 +493,7 @@
 					"patching_rect" : [ 130.5, 20.0, 147.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 36.0, 20.0, 148.0, 22.0 ],
-					"text" : "wessel illution"
+					"text" : "Wessel illusion"
 				}
 
 			}
@@ -509,7 +509,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -555,7 +555,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1363,7 +1363,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2475,7 +2475,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2813,7 +2813,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3383,7 +3383,7 @@
 				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.04 ],
 					"clefs" : 0,
-					"fgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+					"fgcolor" : [ 1.0, 0.0, 1.0, 1.0 ],
 					"id" : "obj-12",
 					"maxclass" : "nslider",
 					"numinlets" : 2,
@@ -3469,7 +3469,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
