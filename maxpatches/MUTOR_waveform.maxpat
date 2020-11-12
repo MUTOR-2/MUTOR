@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 339.0, 222.0, 567.0, 262.0 ],
+		"rect" : [ 559.0, 310.0, 567.0, 262.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -983,7 +983,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 6,
 					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
-					"patching_rect" : [ 243.0, 446.0, 433.0, 142.0 ],
+					"patching_rect" : [ 243.0, 447.0, 433.0, 142.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 13.0, 69.0, 433.0, 142.0 ],
 					"selectioncolor" : [ 0.0, 0.886274509803922, 1.0, 1.0 ],
