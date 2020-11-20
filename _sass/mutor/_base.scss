@@ -74,6 +74,15 @@ h6 {
     flex-shrink: 0;
 }
 
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+
+    border-left: 10px solid black;
+} 
+
 header {
     //padding-left: $global-title-indent;
     // h1::before {
@@ -101,17 +110,15 @@ header {
 	top: 49%;
 	left: 0;
 	border: 1px solid black;
-	width: 100%
+	width: 100%;
     }
     .header-pre-wrapper {
 	display: table-cell;
 	vertical-align: middle;
-	font-size: 14px;
     }
-    .header-pre::before {
-	
-	content: "\25BA";
-    }
+    // .header-pre::before {
+    // 	content: "\25BA";
+    // }
     .header {
 	display: table-cell;
 	padding-left: 25px;
