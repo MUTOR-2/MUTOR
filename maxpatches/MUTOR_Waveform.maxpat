@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 221.0, 63.0, 585.0, 285.0 ],
+		"rect" : [ 56.0, 104.0, 1118.0, 428.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -115,7 +115,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1070.0, 596.0, 91.0, 102.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 448.0, 69.0, 70.0, 142.0 ],
+					"presentation_rect" : [ 1005.0, 112.0, 69.0, 259.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~[1]",
@@ -533,15 +533,15 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Helvetica",
-					"fontsize" : 11.0,
+					"fontsize" : 16.0,
 					"id" : "obj-28",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1065.25, 162.0, 113.0, 28.0 ],
+					"patching_rect" : [ 1065.25, 162.0, 161.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 19.0, 40.0, 331.0, 17.0 ],
+					"presentation_rect" : [ 68.0, 61.0, 290.0, 22.0 ],
 					"text" : "press spacebar to start and stop adudio",
 					"textcolor" : [ 0.552941176470588, 0.545098039215686, 0.545098039215686, 1.0 ]
 				}
@@ -630,14 +630,14 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Helvetica Bold Oblique",
-					"fontsize" : 16.0,
+					"fontsize" : 22.0,
 					"id" : "obj-10",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 24.0, 25.0, 147.0, 22.0 ],
+					"patching_rect" : [ 24.0, 25.0, 197.0, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 19.0, 23.0, 147.0, 22.0 ],
+					"presentation_rect" : [ 68.0, 38.0, 111.0, 28.0 ],
 					"text" : "waveform"
 				}
 
@@ -985,7 +985,7 @@
 					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
 					"patching_rect" : [ 243.0, 447.0, 433.0, 142.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 13.0, 69.0, 433.0, 142.0 ],
+					"presentation_rect" : [ 36.0, 112.0, 967.0, 259.0 ],
 					"selectioncolor" : [ 0.0, 0.886274509803922, 1.0, 1.0 ],
 					"setmode" : 2,
 					"waveformcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
