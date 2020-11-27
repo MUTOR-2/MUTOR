@@ -73,8 +73,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 285.0, 192.0, 100.0, 22.0 ],
-					"text" : "loadmess 1 1000"
+					"patching_rect" : [ 285.0, 192.0, 113.0, 22.0 ],
+					"text" : "loadmess 100 1000"
 				}
 
 			}
@@ -174,7 +174,7 @@
 					"patching_rect" : [ 279.0, 156.0, 62.0, 28.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 267.0, 176.0, 92.0, 17.0 ],
-					"text" : "TONE 1 1Hz",
+					"text" : "TONE 100 1Hz",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
 				}
 
@@ -455,11 +455,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 61.5, 79.0, 276.0, 86.0 ],
+					"patching_rect" : [ 26.5, 47.0, 281.0, 86.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 36.0, 64.0, 658.0, 38.0 ],
-					"text" : "Choose between two different sine oscilators to compare loudness. The first one is oscilating at a frequency of 1 Hz and the second one is oscilating at a frequency of 1000 Hz",
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 36.0, 64.0, 658.0, 54.0 ],
+					"text" : "Choose between two different sine oscilators to compare loudness. The first one is oscilating at a frequency of 100 Hz and the second one is oscilating at a frequency of 1000 Hz",
 					"textcolor" : [ 0.552941176470588, 0.545098039215686, 0.545098039215686, 1.0 ]
 				}
 
@@ -469,11 +469,10 @@
 					"fontname" : "Helvetica Bold Oblique",
 					"fontsize" : 22.0,
 					"id" : "obj-49",
-					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 61.5, 55.0, 124.0, 116.0 ],
+					"patching_rect" : [ 26.5, 17.0, 409.0, 28.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 36.0, 37.0, 420.0, 28.0 ],
 					"text" : "loudness 1: which tone sounds louder"
