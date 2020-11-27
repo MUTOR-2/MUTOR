@@ -44,13 +44,14 @@
 					"fontname" : "Helvetica",
 					"fontsize" : 11.0,
 					"id" : "obj-48",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 893.0, 78.0, 108.0, 17.0 ],
+					"patching_rect" : [ 897.0, 71.0, 108.0, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 94.0, 113.0, 108.0, 17.0 ],
-					"text" : "base frequency"
+					"presentation_rect" : [ 94.0, 113.0, 120.0, 17.0 ],
+					"text" : "fundamental frequency"
 				}
 
 			}
@@ -81,7 +82,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-43",
-					"items" : [ 50, ",", 100, ",", 440, ",", 1000, ",", 5000 ],
+					"items" : [ 50, ",", 100, ",", 440, ",", 1000 ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -89,7 +90,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 897.0, 135.5, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 94.0, 132.0, 108.0, 22.0 ]
+					"presentation_rect" : [ 94.0, 132.0, 120.0, 22.0 ]
 				}
 
 			}
@@ -137,7 +138,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 69.333333000000039, 251.0, 138.0, 17.0 ],
+					"patching_rect" : [ 43.333333000000039, 230.0, 138.0, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 855.0, 137.0, 138.0, 17.0 ],
 					"text" : "stop audio to freeze image"
