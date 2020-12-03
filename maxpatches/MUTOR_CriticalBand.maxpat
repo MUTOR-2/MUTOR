@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 376.0, 81.0, 577.0, 680.0 ],
+		"rect" : [ 376.0, 81.0, 615.0, 680.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,40 @@
 		"assistshowspatchername" : 0,
 		"title" : "Critical Band",
 		"boxes" : [ 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-21",
+					"maxclass" : "flonum",
+					"maximum" : 1.0,
+					"minimum" : 0.0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 819.333333333333485, 137.5, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 21.0, 118.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-20",
+					"maxclass" : "flonum",
+					"maximum" : 1.0,
+					"minimum" : 0.0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 687.333333333333485, 137.5, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 260.0, 118.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "newobj",
@@ -108,7 +142,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 469.833333333333485, 224.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 481.333333333333485, 175.0, 17.0, 17.0 ]
+					"presentation_rect" : [ 475.833333333333485, 180.0, 17.0, 17.0 ]
 				}
 
 			}
@@ -553,7 +587,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 496.833333333333485, 227.5, 64.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 502.833333333333485, 175.0, 64.0, 17.0 ],
+					"presentation_rect" : [ 497.333333333333485, 180.0, 64.0, 17.0 ],
 					"text" : "example"
 				}
 
@@ -816,7 +850,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 740.333333333333485, 140.0, 64.0, 28.0 ],
+					"patching_rect" : [ 740.333333333333485, 137.5, 64.0, 28.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 313.0, 118.0, 64.0, 28.0 ],
@@ -958,20 +992,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 819.333333333333485, 137.5, 50.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 21.0, 118.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -991,20 +1011,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 687.333333333333485, 61.0, 117.0, 22.0 ],
 					"text" : "loadmess 1 440 220"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-9",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 687.333333333333485, 140.0, 50.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 260.0, 118.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -1044,7 +1050,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 474.333333333333485, 94.0, 166.0, 19.0 ]
+					"patching_rect" : [ 474.333333333333485, 94.0, 166.0, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 475.833333333333485, 155.0, 127.0, 19.0 ]
 				}
 
 			}
@@ -1057,11 +1065,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 31.5, 49.0, 417.5, 70.0 ],
+					"patching_rect" : [ 31.5, 49.0, 437.5, 70.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 36.0, 51.0, 517.0, 54.0 ],
-					"text" : "you can use the sliders to add partials to the sound source when you activate the mode of complex tones. You can also control the amplitude and pitch for the two sources.",
+					"presentation_rect" : [ 36.0, 51.0, 562.0, 54.0 ],
+					"text" : "you can use the sliders to add partials to each one of the sound sources and hear them when you activate the mode of complex tones. You can also control the amplitude and pitch for the two sources and choose a new interval",
 					"textcolor" : [ 0.552941176470588, 0.545098039215686, 0.545098039215686, 1.0 ]
 				}
 
@@ -1216,13 +1224,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-69", 1 ],
 					"source" : [ "obj-130", 0 ]
 				}
@@ -1258,15 +1259,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"midpoints" : [ 696.833333333333485, 127.5, 828.833333333333485, 127.5 ],
-					"order" : 0,
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"midpoints" : [ 893.833333333333485, 119.5, 957.833333333333485, 119.5 ],
 					"source" : [ "obj-14", 1 ]
@@ -1282,8 +1274,17 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-20", 0 ],
 					"order" : 1,
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"midpoints" : [ 696.833333333333485, 127.5, 828.833333333333485, 127.5 ],
+					"order" : 0,
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -1323,6 +1324,20 @@
 					"destination" : [ "obj-52", 1 ],
 					"midpoints" : [ 201.5, 235.5, 439.5, 235.5 ],
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-21", 0 ]
 				}
 
 			}
@@ -1642,13 +1657,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"source" : [ "obj-9", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-92", 0 ],
 					"source" : [ "obj-91", 0 ]
 				}
@@ -1688,7 +1696,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "JM_CBdemo.js",
-				"bootpath" : "~/Desktop/lib",
+				"bootpath" : "~/Documents/GitHub/MUTOR/maxpatches",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
