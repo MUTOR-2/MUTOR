@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 376.0, 81.0, 615.0, 680.0 ],
+		"rect" : [ 303.0, 50.0, 614.0, 696.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1068,7 +1068,7 @@
 					"patching_rect" : [ 31.5, 49.0, 437.5, 70.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 36.0, 51.0, 562.0, 54.0 ],
+					"presentation_rect" : [ 36.0, 51.0, 566.0, 54.0 ],
 					"text" : "you can use the sliders to add partials to each one of the sound sources and hear them when you activate the mode of complex tones. You can also control the amplitude and pitch for the two sources and choose a new interval",
 					"textcolor" : [ 0.552941176470588, 0.545098039215686, 0.545098039215686, 1.0 ]
 				}
@@ -1104,6 +1104,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.043137254901961, 1.0 ],
+					"contdata" : 1,
 					"id" : "obj-2",
 					"maxclass" : "multislider",
 					"numinlets" : 1,
@@ -1122,6 +1123,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.043137254901961, 1.0 ],
+					"contdata" : 1,
 					"id" : "obj-1",
 					"maxclass" : "multislider",
 					"numinlets" : 1,
