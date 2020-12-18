@@ -40,6 +40,28 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 22.0, 367.0, 79.0, 22.0 ],
+					"text" : "s Illution-stop"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 106.0, 367.0, 87.0, 22.0 ],
+					"text" : "s Illution-metro"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Helvetica",
 					"fontsize" : 16.0,
 					"id" : "obj-3",
@@ -66,7 +88,7 @@
 					"patching_rect" : [ 43.0, 41.0, 414.0, 28.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 61.0, 39.0, 425.0, 28.0 ],
-					"text" : "Wessel's illution"
+					"text" : "Wessel's illusion"
 				}
 
 			}
@@ -74,7 +96,7 @@
 				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.04 ],
 					"clefs" : 0,
-					"fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fgcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
 					"id" : "obj-9",
 					"maxclass" : "nslider",
 					"numinlets" : 2,
@@ -91,7 +113,7 @@
 				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.04 ],
 					"clefs" : 0,
-					"fgcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
+					"fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-23",
 					"maxclass" : "nslider",
 					"numinlets" : 2,
@@ -108,7 +130,7 @@
 				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.04 ],
 					"clefs" : 0,
-					"fgcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
+					"fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-25",
 					"maxclass" : "nslider",
 					"numinlets" : 2,
@@ -125,7 +147,7 @@
 				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 					"clefs" : 0,
-					"fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fgcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
 					"id" : "obj-26",
 					"maxclass" : "nslider",
 					"numinlets" : 2,
@@ -142,7 +164,7 @@
 				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.04 ],
 					"clefs" : 0,
-					"fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fgcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
 					"id" : "obj-27",
 					"maxclass" : "nslider",
 					"numinlets" : 2,
@@ -158,7 +180,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.04 ],
-					"fgcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
+					"fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-29",
 					"maxclass" : "nslider",
 					"numinlets" : 2,
@@ -228,8 +250,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 934.0, 384.0, 72.0, 22.0 ],
-					"text" : "s endillution"
+					"patching_rect" : [ 934.0, 384.0, 75.0, 22.0 ],
+					"text" : "s endillusion"
 				}
 
 			}
@@ -370,8 +392,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 79.0, 70.0, 22.0 ],
-									"text" : "r endillution"
+									"patching_rect" : [ 50.0, 79.0, 73.0, 22.0 ],
+									"text" : "r endillusion"
 								}
 
 							}
@@ -382,7 +404,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 50.0, 155.0, 92.0, 22.0 ],
+									"patching_rect" : [ 50.0, 155.0, 96.0, 22.0 ],
 									"text" : "gate 2"
 								}
 
@@ -1613,8 +1635,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 233.0, 40.0, 77.0, 22.0 ],
-									"text" : "r Illution-stop"
+									"patching_rect" : [ 233.0, 40.0, 80.0, 22.0 ],
+									"text" : "r Illusion-stop"
 								}
 
 							}
@@ -1685,7 +1707,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "int" ],
-									"patching_rect" : [ 123.0, 119.0, 69.0, 22.0 ],
+									"patching_rect" : [ 126.5, 119.0, 69.0, 22.0 ],
 									"text" : "counter 1 6"
 								}
 
@@ -1697,8 +1719,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 123.0, 79.0, 85.0, 22.0 ],
-									"text" : "r Illution-metro"
+									"patching_rect" : [ 126.5, 79.0, 88.0, 22.0 ],
+									"text" : "r Illusion-metro"
 								}
 
 							}
@@ -2023,7 +2045,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-24", 0 ],
-									"midpoints" : [ 132.5, 189.5, 536.5, 189.5 ],
+									"midpoints" : [ 136.5, 189.5, 536.5, 189.5 ],
 									"source" : [ "obj-3", 1 ]
 								}
 
@@ -2119,7 +2141,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-59", 2 ],
-									"midpoints" : [ 242.5, 111.5, 157.5, 111.5 ],
+									"midpoints" : [ 242.5, 111.5, 161.0, 111.5 ],
 									"source" : [ "obj-42", 0 ]
 								}
 
@@ -2533,8 +2555,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 77.0, 60.0, 85.0, 22.0 ],
-									"text" : "r Illution-metro"
+									"patching_rect" : [ 77.0, 60.0, 88.0, 22.0 ],
+									"text" : "r Illusion-metro"
 								}
 
 							}
@@ -2545,8 +2567,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 261.0, 68.0, 77.0, 22.0 ],
-									"text" : "r Illution-stop"
+									"patching_rect" : [ 261.0, 68.0, 80.0, 22.0 ],
+									"text" : "r Illusion-stop"
 								}
 
 							}
@@ -2804,8 +2826,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 22.0, 336.0, 79.0, 22.0 ],
-					"text" : "s Illution-stop"
+					"patching_rect" : [ 22.0, 336.0, 82.0, 22.0 ],
+					"text" : "s Illusion-stop"
 				}
 
 			}
@@ -2862,8 +2884,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 558.0, 35.0, 77.0, 22.0 ],
-									"text" : "r Illution-stop"
+									"patching_rect" : [ 558.0, 35.0, 80.0, 22.0 ],
+									"text" : "r Illusion-stop"
 								}
 
 							}
@@ -2946,8 +2968,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 346.0, 35.0, 85.0, 22.0 ],
-									"text" : "r Illution-metro"
+									"patching_rect" : [ 346.0, 35.0, 88.0, 22.0 ],
+									"text" : "r Illusion-metro"
 								}
 
 							}
@@ -3281,8 +3303,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 106.0, 336.0, 87.0, 22.0 ],
-					"text" : "s Illution-metro"
+					"patching_rect" : [ 106.0, 336.0, 90.0, 22.0 ],
+					"text" : "s Illusion-metro"
 				}
 
 			}
