@@ -96,7 +96,7 @@
 				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.04 ],
 					"clefs" : 0,
-					"fgcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
+					"fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-9",
 					"maxclass" : "nslider",
 					"numinlets" : 2,
@@ -113,7 +113,7 @@
 				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.04 ],
 					"clefs" : 0,
-					"fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fgcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
 					"id" : "obj-23",
 					"maxclass" : "nslider",
 					"numinlets" : 2,
@@ -130,7 +130,7 @@
 				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.04 ],
 					"clefs" : 0,
-					"fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fgcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
 					"id" : "obj-25",
 					"maxclass" : "nslider",
 					"numinlets" : 2,
@@ -147,7 +147,7 @@
 				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 					"clefs" : 0,
-					"fgcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
+					"fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-26",
 					"maxclass" : "nslider",
 					"numinlets" : 2,
@@ -164,7 +164,7 @@
 				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.04 ],
 					"clefs" : 0,
-					"fgcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
+					"fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-27",
 					"maxclass" : "nslider",
 					"numinlets" : 2,
@@ -180,7 +180,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.04 ],
-					"fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fgcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
 					"id" : "obj-29",
 					"maxclass" : "nslider",
 					"numinlets" : 2,
@@ -2752,7 +2752,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 478.0, 68.0, 110.0, 22.0 ],
-					"text" : "loadmess 60 64 67"
+					"text" : "loadmess 72 76 79"
 				}
 
 			}
