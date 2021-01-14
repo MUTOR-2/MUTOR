@@ -10,7 +10,11 @@
 		}
 ,
 		"classnamespace" : "box",
+<<<<<<< Updated upstream:maxpatches/MUTOR_DoesPhaseMatter1.maxpat
 		"rect" : [ 59.0, 78.0, 1151.0, 538.0 ],
+=======
+		"rect" : [ 442.0, 187.0, 625.0, 418.0 ],
+>>>>>>> Stashed changes:maxpatches/MUTOR_does phase matters (2 sources).maxpat
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -418,7 +422,11 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 31.5, 25.0, 246.0, 28.0 ],
 					"presentation" : 1,
+<<<<<<< Updated upstream:maxpatches/MUTOR_DoesPhaseMatter1.maxpat
 					"presentation_rect" : [ 97.0, 61.0, 231.0, 28.0 ],
+=======
+					"presentation_rect" : [ 51.0, 36.0, 171.0, 22.0 ],
+>>>>>>> Stashed changes:maxpatches/MUTOR_does phase matters (2 sources).maxpat
 					"text" : "does phase matter?"
 				}
 
@@ -799,7 +807,11 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 517.0, 610.0, 154.0, 116.0 ],
 					"presentation" : 1,
+<<<<<<< Updated upstream:maxpatches/MUTOR_DoesPhaseMatter1.maxpat
 					"presentation_rect" : [ 90.0, 324.0, 434.0, 139.0 ],
+=======
+					"presentation_rect" : [ 51.0, 129.0, 186.0, 118.0 ],
+>>>>>>> Stashed changes:maxpatches/MUTOR_does phase matters (2 sources).maxpat
 					"sonomedcolor" : [ 0.0, 0.749019607843137, 0.498039215686275, 1.0 ],
 					"sonomedhicolor" : [ 1.0, 0.749019607843137, 0.0, 1.0 ],
 					"sonomedlocolor" : [ 0.498039215686275, 0.0, 0.498039215686275, 1.0 ]
@@ -818,7 +830,11 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 359.0, 610.0, 152.0, 116.0 ],
 					"presentation" : 1,
+<<<<<<< Updated upstream:maxpatches/MUTOR_DoesPhaseMatter1.maxpat
 					"presentation_rect" : [ 527.0, 324.0, 434.0, 139.0 ],
+=======
+					"presentation_rect" : [ 239.0, 253.0, 186.0, 120.0 ],
+>>>>>>> Stashed changes:maxpatches/MUTOR_does phase matters (2 sources).maxpat
 					"range" : [ -1.5, 1.5 ]
 				}
 
@@ -854,7 +870,11 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 21.0, 610.0, 152.0, 116.0 ],
 					"presentation" : 1,
+<<<<<<< Updated upstream:maxpatches/MUTOR_DoesPhaseMatter1.maxpat
 					"presentation_rect" : [ 527.0, 181.0, 435.0, 140.006711453199387 ],
+=======
+					"presentation_rect" : [ 239.0, 129.0, 186.0, 120.0 ],
+>>>>>>> Stashed changes:maxpatches/MUTOR_does phase matters (2 sources).maxpat
 					"range" : [ -1.5, 1.5 ]
 				}
 
