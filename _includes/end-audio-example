@@ -1,5 +1,2 @@
 </div>
-<figcaption id="{{- audio_ex_id -}}">{{ audio_ex_caption }}</figcaption>
-</figure>
-</div>
 <!-- end audio example {{ audio_ex_ctr }} -->

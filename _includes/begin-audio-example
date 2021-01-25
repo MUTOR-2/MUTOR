@@ -17,7 +17,7 @@
 <script type="text/javascript">
 //let draw_fns_{{ audio_ex_ctr }} = {};
 let draw_fns_{{ audio_ex_ctr }} = [];
-let transport_fns_{{ audio_ex_ctr }} = {play: [], stop: [], pause: []};
+let transport_fns_{{ audio_ex_ctr }} = {play: [], stop: []};
 let color_{{ audio_ex_ctr }} = MUTOR.rbright();
 let playing_{{ audio_ex_ctr }} = false;
 
@@ -37,9 +37,3 @@ function transport_{{ audio_ex_ctr }}(action)
 </script>
 
 <div class="audio-example">
-<figure class="fig">
-{% assign audio_ex_id = audio_ex_ctr | prepend: "audio_ex_id" %}
-{% capture audio_ex_num %}{{ page.number }}.{{ audio_ex_ctr }}{% endcapture %}
-<style>#{{- audio_ex_id -}}:before { content: "Audio Example " "{{ audio_ex_num }}" ": "; }</style>
-{% assign audio_ex_caption = include.description %}
-<div style="text-align:">

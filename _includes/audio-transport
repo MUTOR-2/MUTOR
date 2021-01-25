@@ -12,83 +12,45 @@
 {% endif %}
 
 {% if audio_ex_overlay == true %}
-<button type="button" class="audio-transport audio-ex-overlay" id="{{ include.name | append: 1 }}" value="stopped" onclick="{{ include.name }}_onclick(this)" width="{{ width }}" height="{{ height }}">
+<button type="button" class="audio-transport audio-ex-overlay" id="{{ include.name }}" value="stopped" onclick="{{ include.name }}_onclick(this)" width="{{ width }}" height="{{ height }}">
 &blacktriangleright;
 </button>
-<button type="button" class="audio-transport audio-ex-overlay" id="{{ include.name | append: 2}}" value="stopped" onclick="{{ include.name }}_onclick(this)" width="calc({{ width }} / 2.0)" height="{{ height }}">
-11;
-</button>
 {% else %}
-<div style="display: table-row; padding: 0; margin: 0; border-collapse: collapse; border-spacing: 0">
-<button type="button" class="audio-transport" id="{{ include.name | append: 1 }}" value="stopped" onclick="{{ include.name }}_onclick(this)" style="width: calc({{ width }} / 2.0); height: {{ height }}; padding: 0; margin: 0 1px 0 0; display: table-cell; border-collapse: collapse; border-spacing: 0;">
+<button type="button" class="audio-transport" id="{{ include.name }}" value="stopped" onclick="{{ include.name }}_onclick(this)" style="width: {{ width }}; height: {{ height }};">
 &#x25BA; Play
 </button>
-<button type="button" class="audio-transport audio-ex-overlay" id="{{ include.name | append: 2 }}" value="stopped" onclick="{{ include.name }}_onclick(this)" style="width: calc({{ width }} / 2.0); height: {{ height }}; padding: 0; margin: 0 0 0 1px; display: table-cell; border-collapse: collapse; border-spacing: 0;">
-11;
-</button>
-</div>
 {% endif %}
 <script type="text/javascript">
 {    
-    let button1 = document.getElementById("{{ include.name | append: 1}}");
-    button1.style['background-color'] = color_{{ audio_ex_ctr }};
-    let button2 = document.getElementById("{{ include.name | append: 2}}");
-    button2.style['background-color'] = color_{{ audio_ex_ctr }};
+    let button = document.getElementById("{{ include.name }}");
+    button.style['background-color'] = color_{{ audio_ex_ctr }};
 }
 
 transport_fns_{{ audio_ex_ctr }}.play.push(function(){
     playing_{{ audio_ex_ctr }} = true;
-    let button1 = document.getElementById("{{ include.name | append: 1 }}");
-    button1.value = "playing";
-    button1.innerHTML = "&#x25FE; Stop"
-    button1.style.width = 'calc({{ width }} / 2.0)';
-
-    let button2 = document.getElementById("{{ include.name | append: 2 }}");
-    button2.value = "playing";
-    button2.innerHTML = "11 Pause";
-    button2.style['display'] = "inherit";
-    button2.style.width = 'calc({{ width }} / 2.0)';
+    let button = document.getElementById("{{ include.name }}");
+    button.value = "playing";
+    button.innerHTML = "&#x25FE; Stop"
 });
 
 transport_fns_{{ audio_ex_ctr }}.stop.push(function(){
     playing_{{ audio_ex_ctr }} = false;
-    let button1 = document.getElementById("{{ include.name | append: 1 }}");
-    button1.value = "stopped";
-    button1.innerHTML = "&#x25BA; Play"
-    button1.style['width'] = "{{ width }}";
-
-    let button2 = document.getElementById("{{ include.name | append: 2 }}");
-    button2.value = "stopped";
-    button2.innerHTML = "";
-    button2.style['display'] = "none";
-});
-
-transport_fns_{{ audio_ex_ctr }}.pause.push(function(){
-    playing_{{ audio_ex_ctr }} = false;
-    let button1 = document.getElementById("{{ include.name | append: 1 }}");
-    button1.value = "stopped";
-    button1.innerHTML = "&#25FE; Stop"
-
-    let button2 = document.getElementById("{{ include.name | append: 2 }}");
-    button2.value = "paused";
-    button2.innerHTML = "&#25BA; Resume";
-    button2.style['display'] = "inherit";
+    let button = document.getElementById("{{ include.name }}");
+    button.value = "stopped";
+    button.innerHTML = "&#x25BA; Play"
 });
 
 function {{ include.name }}_onclick(button)
 {
-    if(button.id == "{{ include.name | append: 1 }}"){
-        switch(button.value){
-        case "stopped":
-	    transport_{{ audio_ex_ctr }}('play');
-	    window.requestAnimationFrame(draw_{{ audio_ex_ctr }});
-	    break;
-        case "playing":
-	    transport_{{ audio_ex_ctr }}('stop');
-	    break;
-        }
-    }else{
-    }    
+    switch(button.value){
+    case "stopped":
+	transport_{{ audio_ex_ctr }}('play');
+	window.requestAnimationFrame(draw_{{ audio_ex_ctr }});
+	break;
+    case "playing":
+	transport_{{ audio_ex_ctr }}('stop');
+	break;
+    }
 }
 </script>
 <!-- end audio transport-->
