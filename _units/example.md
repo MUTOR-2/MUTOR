@@ -29,6 +29,26 @@ mathjax: true
 
 {% include unit_preamble.md %}
 
+{% include audio-numberbox min="33" %}
+
+{% include begin-audio-example description="A waveform" %}
+{% include audio-buffer name="mybuf" src="/MUTOR/assets/audios/trombone.mp3" %}
+{% include audio-player name="player" buffer="mybuf" %}
+<table><tr><td>
+{% include audio-spectroscope name="spectroscope" gain=10. %}
+</td><td>
+{% include audio-meter name="meter" %}
+</td></tr><tr><td>
+{% include audio-connection outlet="player" inlet="meter" %}
+{% include audio-connection outlet="player" inlet="spectroscope" %}
+{% include audio-transport name="transport" %}
+</td></tr></table>
+{% include end-audio-example %}
+{% capture audio_ex_waveform %}{{ audio_ex_num }}{% endcapture %}
+
+{% include audio-fileplayer src="/MUTOR/assets/audios/trombone.mp3" description="Bone" %}
+{% include audio-fileplayer src="/MUTOR/assets/audios/unit9_Scriabin_Hajdu_ Burnig Petrol.mp3" description="Biggie" %}
+
 # Structure of the Document
 
 ## Header

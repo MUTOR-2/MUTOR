@@ -352,7 +352,7 @@ function cb(f) {
 }
 
 function calcInterval(f, i){
-	return f * (Math.pow(Math.pow(2, 1/12), i));
+    return f * (Math.pow(Math.pow(2, 1/12), i));
 }
 
 function draw() {
