@@ -1,7 +1,7 @@
 {% if include.width %}
 {% assign width = include.width %}
 {% else %}
-{% assign width = "400px" %}
+{% assign width = "600px" %}
 {% endif %}
 
 <div style="display: block; text-align: center; float: center">
