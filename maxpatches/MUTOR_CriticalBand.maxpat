@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -51,7 +51,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -276,7 +276,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 369.0, 276.0, 165.0, 62.0 ],
-									"text" : "0.774149 0.882992 0.665305 0.665305 0.692516 0.855782 0.774149 0.148299 0.20272 0.148299 0.229931 0.420407"
+									"text" : "0. 0.314607 0.41573 0.516854 0.606742 0.685393 0.719101 0.460674 0.449438 0.404494 0.359551 0."
 								}
 
 							}
@@ -457,7 +457,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -636,7 +636,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -861,7 +861,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 369.0, 276.0, 165.0, 62.0 ],
-									"text" : "0.684323 0.288389 0.288389 0.224184 0.277688 0.481006 0.491707 0.470305 0.470305 0.577314 0.662921 0.641519"
+									"text" : "0.550562 0.561798 0.561798 0.561798 0.539326 0.483146 0.438202 0.337079 0.202247 0.202247 0.213483 0.325843"
 								}
 
 							}
@@ -1043,7 +1043,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1854,7 +1854,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 475.833333333333485, 273.833333333333485, 50.0, 28.0 ],
-					"text" : "desplay\nCB"
+					"text" : "display\nCB"
 				}
 
 			}
@@ -2780,7 +2780,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "JM_CBdemo.js",
-				"bootpath" : "~/Desktop/MUTOR_BIG",
+				"bootpath" : "~/Documents/GitHub/MUTOR/maxpatches",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
