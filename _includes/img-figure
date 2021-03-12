@@ -1,7 +1,19 @@
+{% if include.width %}
+{% assign width = include.width %}
+{% else %}
+{% assign width = "600px" %}
+{% endif %}
+
+{% if include.height %}
+{% assign height = include.height %}
+{% else %}
+{% assign height = "auto" %}
+{% endif %}
+
 <div style="display: block; text-align: center; float: center">
 <figure class="fig">
   <div style="text-align:">
-  <img src="{{ include.url }}" alt="{{ include.description }}" style="width: 100%">
+  <img src="{{ include.url }}" alt="{{ include.description }}" style="width:{{ width }}; height:{{ height }};">
   </div>
   {% comment %}{% capture figctr %}{% increment _figctr %}{% endcapture %}{% endcomment %}
   {% assign _figctr = _figctr | plus: 1 %}

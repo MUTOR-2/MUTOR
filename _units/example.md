@@ -29,6 +29,16 @@ mathjax: true
 
 {% include unit_preamble.md %}
 
+<form method="get" action="http://www.google.com/search" target="_blank">
+<input type="hidden" name="sitesearch" value="MUTOR-2.github.io/MUTOR" />
+<input type="text" name="q" maxlength="255" placeholder="Search with Google" />
+</form>
+
+<div class="mutor-search">
+<script async src="https://cse.google.com/cse.js?cx=5356ce81f3abccd91"></script>
+<div class="gcse-search"></div>
+</div>
+
 # Structure of the Document
 
 ## Header
