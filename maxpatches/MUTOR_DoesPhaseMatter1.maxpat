@@ -10,7 +10,11 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 78.0, 1151.0, 645.0 ],
+<<<<<<< Updated upstream:maxpatches/MUTOR_DoesPhaseMatter1.maxpat
+		"rect" : [ 59.0, 78.0, 1151.0, 538.0 ],
+=======
+		"rect" : [ 442.0, 187.0, 625.0, 418.0 ],
+>>>>>>> Stashed changes:maxpatches/MUTOR_does phase matters (2 sources).maxpat
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,82 +44,6 @@
 		"assistshowspatchername" : 0,
 		"title" : "does phase matter?",
 		"boxes" : [ 			{
-				"box" : 				{
-					"fontname" : "Helvetica",
-					"fontsize" : 11.0,
-					"id" : "obj-29",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 88.0, 467.0, 59.0, 39.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 88.0, 467.0, 115.0, 17.0 ],
-					"text" : "sum of both oscilators"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"domain" : [ 20.0, 3000.0 ],
-					"fgcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-					"id" : "obj-24",
-					"markercolor" : [ 0.349019607843137, 0.349019607843137, 0.349019607843137, 1.0 ],
-					"maxclass" : "spectroscope~",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 880.0, 750.0, 154.0, 116.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 89.0, 487.0, 434.0, 139.0 ],
-					"sonomedcolor" : [ 0.0, 0.749019607843137, 0.498039215686275, 1.0 ],
-					"sonomedhicolor" : [ 1.0, 0.749019607843137, 0.0, 1.0 ],
-					"sonomedlocolor" : [ 0.498039215686275, 0.0, 0.498039215686275, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bufsize" : 248,
-					"calccount" : 64,
-					"fgcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-					"gridcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-					"id" : "obj-25",
-					"maxclass" : "scope~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 722.0, 750.0, 152.0, 116.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 529.0, 487.0, 434.0, 139.0 ],
-					"range" : [ -2.0, 2.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-20",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 722.0, 689.0, 29.5, 22.0 ],
-					"text" : "+~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-18",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 762.0, 688.0, 29.5, 22.0 ],
-					"text" : "+~"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"fontname" : "Helvetica",
 					"fontsize" : 11.0,
@@ -494,7 +422,11 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 31.5, 25.0, 246.0, 28.0 ],
 					"presentation" : 1,
+<<<<<<< Updated upstream:maxpatches/MUTOR_DoesPhaseMatter1.maxpat
 					"presentation_rect" : [ 97.0, 61.0, 231.0, 28.0 ],
+=======
+					"presentation_rect" : [ 51.0, 36.0, 171.0, 22.0 ],
+>>>>>>> Stashed changes:maxpatches/MUTOR_does phase matters (2 sources).maxpat
 					"text" : "does phase matter?"
 				}
 
@@ -823,6 +755,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"floatoutput" : 1,
 					"id" : "obj-17",
 					"knobcolor" : [ 1.0, 0.0, 0.886274509803922, 1.0 ],
@@ -874,7 +807,11 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 517.0, 610.0, 154.0, 116.0 ],
 					"presentation" : 1,
+<<<<<<< Updated upstream:maxpatches/MUTOR_DoesPhaseMatter1.maxpat
 					"presentation_rect" : [ 90.0, 324.0, 434.0, 139.0 ],
+=======
+					"presentation_rect" : [ 51.0, 129.0, 186.0, 118.0 ],
+>>>>>>> Stashed changes:maxpatches/MUTOR_does phase matters (2 sources).maxpat
 					"sonomedcolor" : [ 0.0, 0.749019607843137, 0.498039215686275, 1.0 ],
 					"sonomedhicolor" : [ 1.0, 0.749019607843137, 0.0, 1.0 ],
 					"sonomedlocolor" : [ 0.498039215686275, 0.0, 0.498039215686275, 1.0 ]
@@ -893,8 +830,12 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 359.0, 610.0, 152.0, 116.0 ],
 					"presentation" : 1,
+<<<<<<< Updated upstream:maxpatches/MUTOR_DoesPhaseMatter1.maxpat
 					"presentation_rect" : [ 527.0, 324.0, 434.0, 139.0 ],
-					"range" : [ -2.0, 2.0 ]
+=======
+					"presentation_rect" : [ 239.0, 253.0, 186.0, 120.0 ],
+>>>>>>> Stashed changes:maxpatches/MUTOR_does phase matters (2 sources).maxpat
+					"range" : [ -1.5, 1.5 ]
 				}
 
 			}
@@ -929,8 +870,12 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 21.0, 610.0, 152.0, 116.0 ],
 					"presentation" : 1,
+<<<<<<< Updated upstream:maxpatches/MUTOR_DoesPhaseMatter1.maxpat
 					"presentation_rect" : [ 527.0, 181.0, 435.0, 140.006711453199387 ],
-					"range" : [ -2.0, 2.0 ]
+=======
+					"presentation_rect" : [ 239.0, 129.0, 186.0, 120.0 ],
+>>>>>>> Stashed changes:maxpatches/MUTOR_does phase matters (2 sources).maxpat
+					"range" : [ -1.5, 1.5 ]
 				}
 
 			}
@@ -961,17 +906,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"midpoints" : [ 30.5, 491.0, 731.5, 491.0 ],
-					"order" : 0,
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
-					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -1079,14 +1014,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"midpoints" : [ 771.5, 729.5, 889.5, 729.5 ],
-					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"source" : [ "obj-19", 0 ]
 				}
@@ -1094,8 +1021,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 1 ],
-					"midpoints" : [ 526.5, 490.5, 782.0, 490.5 ],
+					"destination" : [ "obj-6", 0 ],
+					"midpoints" : [ 526.5, 317.5, 573.0, 317.5 ],
 					"order" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
@@ -1103,25 +1030,9 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 526.5, 317.5, 573.0, 317.5 ],
+					"destination" : [ "obj-8", 0 ],
 					"order" : 1,
 					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"order" : 2,
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-25", 0 ],
-					"source" : [ "obj-20", 0 ]
 				}
 
 			}
@@ -1152,17 +1063,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 1 ],
-					"midpoints" : [ 368.5, 491.0, 742.0, 491.0 ],
-					"order" : 0,
-					"source" : [ "obj-26", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"order" : 1,
 					"source" : [ "obj-26", 0 ]
 				}
 
@@ -1256,17 +1157,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"midpoints" : [ 188.5, 490.5, 771.5, 490.5 ],
-					"order" : 0,
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -1275,7 +1167,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"midpoints" : [ 188.5, 329.0, 264.5, 329.0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-7", 0 ]
 				}
 
