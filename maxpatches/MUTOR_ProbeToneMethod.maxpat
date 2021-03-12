@@ -38,7 +38,7 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
-		"title" : "Tone Probe Method",
+		"title" : "Probe Tone Method",
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-2",
@@ -1532,7 +1532,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 755.0, 438.5, 145.0, 22.0 ],
-									"text" : "1 3 -5 6 2 -1 -2 4 0 5 -4 -3"
+									"text" : "4 6 0 1 2 -3 -1 3 -4 -2 -5 5"
 								}
 
 							}
@@ -3154,7 +3154,7 @@
 					"patching_rect" : [ 46.5, 40.0, 246.0, 28.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 25.0, 24.0, 397.0, 28.0 ],
-					"text" : "tone probe method"
+					"text" : "probe tone method"
 				}
 
 			}
