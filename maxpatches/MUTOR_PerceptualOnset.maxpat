@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -247,7 +247,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -560,7 +560,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -751,7 +751,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1031,7 +1031,7 @@
 					"patching_rect" : [ 1021.5, 248.0, 19.0, 19.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 863.0, 83.0, 23.0, 23.0 ],
-					"uncheckedcolor" : [ 0.396078431372549, 0.396078431372549, 0.396078431372549, 1.0 ]
+					"uncheckedcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
 				}
 
 			}

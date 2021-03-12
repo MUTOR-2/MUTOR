@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -51,7 +51,7 @@
 					"patching_rect" : [ 43.0, 58.5, 365.0, 54.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 19.0, 49.0, 543.0, 38.0 ],
+					"presentation_rect" : [ 19.0, 49.0, 541.0, 38.0 ],
 					"text" : "Choose between two different dyads to compare loudness. You can control tyhe frequencies of each dyad with the number boxes.",
 					"textcolor" : [ 0.552941176470588, 0.545098039215686, 0.545098039215686, 1.0 ]
 				}
@@ -350,13 +350,13 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
+					"outlettype" : [ "int", "int" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -391,54 +391,6 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
-								"box" : 								{
-									"id" : "obj-1",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 273.0, 39.0, 22.0 ],
-									"text" : "$1 30"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "signal", "bang" ],
-									"patching_rect" : [ 50.0, 297.0, 48.0, 22.0 ],
-									"text" : "line~ 0."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-29",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 114.5, 273.0, 39.0, 22.0 ],
-									"text" : "$1 30"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-30",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "signal", "bang" ],
-									"patching_rect" : [ 114.5, 297.0, 48.0, 22.0 ],
-									"text" : "line~ 0."
-								}
-
-							}
-, 							{
 								"box" : 								{
 									"id" : "obj-48",
 									"maxclass" : "number",
@@ -519,7 +471,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 49.999979666666491, 355.5, 30.0, 30.0 ]
+									"patching_rect" : [ 49.999979666666491, 267.5, 30.0, 30.0 ]
 								}
 
 							}
@@ -531,19 +483,12 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 114.5, 355.5, 30.0, 30.0 ]
+									"patching_rect" : [ 114.5, 267.5, 30.0, 30.0 ]
 								}
 
 							}
  ],
 						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-20", 0 ],
 									"source" : [ "obj-10", 0 ]
@@ -554,13 +499,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-21", 0 ],
 									"source" : [ "obj-10", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-56", 0 ],
-									"source" : [ "obj-2", 0 ]
 								}
 
 							}
@@ -580,29 +518,15 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
+									"destination" : [ "obj-56", 0 ],
 									"source" : [ "obj-25", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-29", 0 ],
-									"source" : [ "obj-25", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-30", 0 ],
-									"source" : [ "obj-29", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-57", 0 ],
-									"source" : [ "obj-30", 0 ]
+									"source" : [ "obj-25", 1 ]
 								}
 
 							}

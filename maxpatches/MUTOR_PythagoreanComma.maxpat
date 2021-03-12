@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -50,7 +50,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 696.5, 405.0, 57.5, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 275.0, 212.5, 75.0, 17.0 ],
+					"presentation_rect" : [ 275.0, 210.0, 75.0, 17.0 ],
 					"text" : "final frequeny"
 				}
 
@@ -292,15 +292,14 @@
 					"fontname" : "Helvetica",
 					"fontsize" : 16.0,
 					"id" : "obj-28",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 50.5, 51.0, 828.0, 38.0 ],
+					"patching_rect" : [ 50.5, 51.0, 828.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 26.0, 46.0, 532.0, 38.0 ],
-					"text" : "example that demonstrates how pythagorean comma works \ncomparing two sinewave sources",
+					"text" : "example that demonstrate how pythagorean comma works compearing two sinewave sources",
 					"textcolor" : [ 0.552941176470588, 0.545098039215686, 0.545098039215686, 1.0 ]
 				}
 
