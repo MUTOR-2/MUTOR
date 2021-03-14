@@ -1,0 +1,3 @@
+{% include begin-figure description=include.description %}
+{% include audio-example src=include.src %}
+{% include end-figure %}

@@ -1,0 +1,23 @@
+{% include begin-audio-example %}
+
+{% assign buffername = audio_ex_pfx | append: "buffer" %}
+{% assign playername = audio_ex_pfx | append: "player" %}
+{% assign waveformname = audio_ex_pfx | append: "waveform" %}
+{% assign playheadname = audio_ex_pfx | append: "playhead" %}
+{% assign metername = audio_ex_pfx | append: "meter" %}
+{% assign transportname = audio_ex_pfx | append: "transport" %}
+
+{% include audio-buffer name=buffername src=include.src %}
+{% include audio-player name=playername buffer= buffername %}
+<table><tr><td>
+{% include begin-overlay width="600px" height="200px" %}
+{% include audio-waveform name=waveformname buffer=buffername %}
+{% include audio-playhead name=playheadname player=playername %}
+{% include end-overlay %}
+</td><td>
+{% include audio-meter name=metername %}
+</td></tr><tr><td>
+{% include audio-connection outlet=playername inlet=metername %}
+{% include audio-transport name=transportname %}
+</td></tr></table>
+{% include end-audio-example %}
