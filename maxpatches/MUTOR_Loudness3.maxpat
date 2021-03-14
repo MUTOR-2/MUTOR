@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -158,7 +158,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 32.0, 46.0, 647.0, 54.0 ],
-					"text" : "Choose between two different sources to compare loudness. The first one is an sine tone oscilating at a frequency of 100 Hz and the second one is a bank of oscilators which base frequencie is 100 Hz. You can change the amount of partials.",
+					"text" : "Choose between two different sources to compare loudness. The first one is an sine tone oscillating at a frequency of 100 Hz and the second one is a bank of oscilators with a base frequency of 100 Hz. You can change the number of partials.",
 					"textcolor" : [ 0.552941176470588, 0.545098039215686, 0.545098039215686, 1.0 ]
 				}
 
@@ -241,7 +241,7 @@
 					"patching_rect" : [ 22.0, 230.0, 18.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 836.0, 137.0, 17.0, 17.0 ],
-					"uncheckedcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
+					"uncheckedcolor" : [ 0.396078431372549, 0.396078431372549, 0.396078431372549, 1.0 ]
 				}
 
 			}
@@ -488,7 +488,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
