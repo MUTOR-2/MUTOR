@@ -56,6 +56,32 @@
 	      ctx.moveTo(vc, 0);
 	      ctx.lineTo(vc, height);
 	      ctx.stroke();
-	  }
+	  },
+      draw_spectroscope : (fft, gain, canvas, color) =>
+          {
+	      let spec = fft.getValue();
+	      let c = canvas;
+	      let ctx = c.getContext("2d");
+	      const width = parseFloat(c.getAttribute("width"));
+	      const height = parseFloat(c.getAttribute("height"));
+	      const g = parseFloat(gain);
+	      let samps_per_pixel = Math.floor(fft.size / width);
+	      if(samps_per_pixel == 0){
+		  samps_per_pixel = 1;
+	      }
+	      ctx.clearRect(0, 0, width, height);
+	      ctx.fillStyle = "#000000";
+	      ctx.fillRect(0, 0, width, height);
+	      //ctx.strokeStyle = "#FFFFFF";
+	      ctx.fillStyle = "#FFFFFF";
+	      ctx.beginPath();
+	      ctx.moveTo(0, height);
+	      for(x = 0; x < fft.size; x++){
+		  ctx.lineTo(x, height - (spec[x] * g));
+	      }
+	      //ctx.stroke();
+	      ctx.closePath();
+	      ctx.fill();
+	  },
   };
 </script>
