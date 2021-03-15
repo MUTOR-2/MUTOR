@@ -65,21 +65,29 @@
 	  const width = parseFloat(c.getAttribute("width"));
 	  const height = parseFloat(c.getAttribute("height"));
 	  const g = parseFloat(gain);
-	  let samps_per_pixel = Math.floor(fft.size / width);
-	  if(samps_per_pixel == 0){
-	      samps_per_pixel = 1;
-	  }
 	  ctx.clearRect(0, 0, width, height);
 	  ctx.fillStyle = "#000000";
 	  ctx.fillRect(0, 0, width, height);
-	  //ctx.strokeStyle = "#FFFFFF";
 	  ctx.fillStyle = "#FFFFFF";
 	  ctx.beginPath();
 	  ctx.moveTo(0, height);
-	  for(x = 0; x < fft.size; x++){
-	      ctx.lineTo(x, height - (spec[x] * g));
+	  if(width < fft.size){
+	      let samps_per_pixel = Math.floor(fft.size / width);
+	      for(i = 0; i < width; i++){
+		  let y = 0;
+		  for(j = 0; j < samps_per_pixel; j++){
+		      y += spec[j + (i * samps_per_pixel)]
+		  }
+		  y /= samps_per_pixel;
+		  ctx.lineTo(i, height - (y * g));
+	      }
+	  }else{
+	      let pixels_per_samp = Math.floor(width / fft.size);
+	      for(i = 0; i < fft.size; i++){
+		  let y = spec[i];
+		  ctx.lineTo(i * pixels_per_samp, height - (y * g));
+	      }
 	  }
-	  //ctx.stroke();
 	  ctx.closePath();
 	  ctx.fill();
       },

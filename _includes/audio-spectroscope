@@ -15,7 +15,7 @@
 {% if include.gain %}
 {% assign gain = include.gain %}
 {% else %}
-{% assign gain = 1. %}
+{% assign gain = 10000. %}
 {% endif %}
 
 {% if audio_ex_overlay == true %}

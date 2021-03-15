@@ -6,12 +6,12 @@
 {% assign playheadname = audio_ex_pfx | append: "playhead" %}
 {% assign metername = audio_ex_pfx | append: "meter" %}
 {% assign transportname = audio_ex_pfx | append: "transport" %}
-{% assign spectroscopename = audio_ex_pfx | append: "spectroscope" %}
+{% assign sonogramname = audio_ex_pfx | append: "sonogram" %}
 
 {% if include.gain %}
 {% assign gain = include.gain %}
 {% else %}
-{% assign gain = 10000. %}
+{% assign gain = 100. %}
 {% endif %}
 
 {% include audio-buffer name=buffername src=include.src %}
@@ -24,8 +24,8 @@
 </td><td>
 {% include audio-meter name=metername %}
 </td></tr><tr><td>
-{% include audio-spectroscope name=spectroscopename gain=gain %}
-{% include audio-connection outlet=playername inlet=spectroscopename %}
+{% include audio-sonogram name=sonogramname gain=gain %}
+{% include audio-connection outlet=playername inlet=sonogramname %}
 </td></tr><tr><td>
 {% include audio-connection outlet=playername inlet=metername %}
 {% include audio-transport name=transportname %}
