@@ -38,7 +38,7 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
-		"title" : "Explore Different Tunnings",
+		"title" : "Just Intonation Intervals",
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-7",
@@ -97,13 +97,14 @@
 					"fontname" : "Helvetica Bold Oblique",
 					"fontsize" : 22.0,
 					"id" : "obj-49",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 31.5, 25.0, 254.0, 28.0 ],
+					"patching_rect" : [ 31.5, 25.0, 254.0, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 36.0, 28.0, 254.0, 28.0 ],
-					"text" : "explore different tuning"
+					"presentation_rect" : [ 36.0, 28.0, 257.0, 28.0 ],
+					"text" : "just intonation intervals"
 				}
 
 			}
