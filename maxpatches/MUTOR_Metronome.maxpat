@@ -41,6 +41,18 @@
 		"title" : "MUTOR_metronome",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 180.0, 320.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -99,7 +111,7 @@
 					"patching_rect" : [ 222.0, 147.0, 103.0, 26.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 131.0, 127.0, 103.0, 26.0 ],
-					"size" : 700.0
+					"size" : 300.0
 				}
 
 			}
@@ -240,7 +252,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 91.0, 417.0, 140.5, 22.0 ],
+					"patching_rect" : [ 91.0, 430.0, 140.5, 22.0 ],
 					"text" : "+~"
 				}
 
@@ -364,7 +376,16 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"order" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
+					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
 

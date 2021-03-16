@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 108.0, 89.0, 1007.0, 667.0 ],
+		"rect" : [ 100.0, 51.0, 1072.0, 667.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -558,7 +558,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-6",
-					"items" : [ "random", ",", "all", "50%", ",", "coun.", "down", ",", "count.", "up", ",", "big", "jums", ",", "close", "movement" ],
+					"items" : [ "random", ",", "all", "50%", ",", "coun.", "down", ",", "count.", "up", ",", "big", "jums", ",", "close", "movement", ",", "stay", "the", "same" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -674,6 +674,10 @@
 , 						{
 							"number" : 6,
 							"data" : [ 9, "obj-4", "multislider", "list", 50, 50, 0, 0, 76, 5, "obj-48", "number", "int", 2, 9, "obj-63", "multislider", "list", 50, 50, 0, 0, 76, 9, "obj-70", "multislider", "list", 0, 0, 0, 0, 0, 9, "obj-77", "multislider", "list", 0, 0, 0, 0, 0, 9, "obj-84", "multislider", "list", 30, 30, 0, 0, 0 ]
+						}
+, 						{
+							"number" : 7,
+							"data" : [ 9, "obj-4", "multislider", "list", 0, 0, 0, 0, 0, 5, "obj-48", "number", "int", 5, 9, "obj-63", "multislider", "list", 0, 0, 0, 0, 0, 9, "obj-70", "multislider", "list", 0, 0, 0, 0, 0, 9, "obj-77", "multislider", "list", 0, 0, 0, 0, 0, 9, "obj-84", "multislider", "list", 0, 0, 0, 0, 100, 5, "obj-6", "umenu", "int", 5, 5, "obj-22", "kslider", "int", 60, 5, "obj-25", "number", "int", 60, 5, "obj-31", "umenu", "int", 4 ]
 						}
  ]
 				}
