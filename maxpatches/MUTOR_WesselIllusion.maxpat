@@ -21,7 +21,7 @@
 		"gridsnaponopen" : 1,
 		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
+		"toolbarvisible" : 0,
 		"lefttoolbarpinned" : 0,
 		"toptoolbarpinned" : 0,
 		"righttoolbarpinned" : 0,
@@ -69,7 +69,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 43.0, 58.5, 367.0, 38.0 ],
+					"patching_rect" : [ 43.0, 58.5, 371.0, 38.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 61.0, 67.0, 543.0, 22.0 ],
 					"text" : "Press the button to start and stop. Use the number box to control bpm",
@@ -2859,7 +2859,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-1",
