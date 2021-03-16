@@ -72,7 +72,7 @@
 					"patching_rect" : [ 43.0, 58.5, 367.0, 38.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 61.0, 67.0, 543.0, 22.0 ],
-					"text" : "press the button to start and stop. use the number box to control bpm",
+					"text" : "Press the button to start and stop. Use the number box to control bpm",
 					"textcolor" : [ 0.552941176470588, 0.545098039215686, 0.545098039215686, 1.0 ]
 				}
 
@@ -145,7 +145,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.980678796768188, 0.985615134239197, 0.867124855518341, 1.0 ],
 					"clefs" : 0,
 					"fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-26",
@@ -2587,15 +2587,6 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"midpoints" : [ 99.0, 259.5, 355.5, 259.5 ],
-									"order" : 0,
-									"source" : [ "obj-1", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-5", 0 ],
 									"order" : 1,
 									"source" : [ "obj-1", 0 ]
@@ -2608,15 +2599,6 @@
 									"midpoints" : [ 86.5, 259.5, 195.5, 259.5 ],
 									"order" : 0,
 									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-70", 0 ],
-									"midpoints" : [ 99.0, 259.5, 275.5, 259.5 ],
-									"order" : 1,
-									"source" : [ "obj-1", 1 ]
 								}
 
 							}
@@ -2849,7 +2831,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 212.0, 323.0, 920.0, 764.0 ],
+						"rect" : [ 202.0, 172.0, 920.0, 764.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2877,6 +2859,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-1",
@@ -3166,20 +3149,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-17", 0 ],
 									"source" : [ "obj-16", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-4", 1 ],
-									"source" : [ "obj-17", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
-									"source" : [ "obj-17", 0 ]
 								}
 
 							}
