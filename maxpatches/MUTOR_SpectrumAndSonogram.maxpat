@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 114.0, 98.0, 1148.0, 501.0 ],
+		"rect" : [ 83.0, 45.0, 1148.0, 501.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -47,7 +47,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 144.0, 318.0, 29.5, 22.0 ],
-					"text" : "> 2"
+					"text" : "> 5"
 				}
 
 			}
@@ -203,7 +203,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 75.0, 318.0, 29.5, 22.0 ],
-					"text" : "< 3"
+					"text" : "< 6"
 				}
 
 			}
@@ -249,8 +249,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 50.5, 134.0, 80.0, 22.0 ],
-					"text" : "loadmess 7 1"
+					"patching_rect" : [ 50.5, 134.0, 87.0, 22.0 ],
+					"text" : "loadmess 10 1"
 				}
 
 			}
@@ -398,7 +398,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 91.5, 190.0, 29.5, 22.0 ],
-									"text" : "> 6"
+									"text" : "> 9"
 								}
 
 							}
@@ -734,7 +734,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 298.5, 174.0, 29.5, 22.0 ],
-									"text" : "> 6"
+									"text" : "> 9"
 								}
 
 							}
@@ -746,7 +746,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 234.0, 175.0, 29.5, 22.0 ],
-									"text" : "- 2"
+									"text" : "- 5"
 								}
 
 							}
@@ -1498,14 +1498,14 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 281.5, 157.0, 29.5, 22.0 ],
-									"text" : "> 2"
+									"text" : "> 5"
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"coll_data" : 									{
-										"count" : 3,
+										"count" : 6,
 										"data" : [ 											{
 												"key" : 0,
 												"value" : [ "anton.aif" ]
@@ -1517,6 +1517,18 @@
 , 											{
 												"key" : 2,
 												"value" : [ "drumLoop.aif" ]
+											}
+, 											{
+												"key" : 3,
+												"value" : [ "unit2-HumpbackWhale.mp3" ]
+											}
+, 											{
+												"key" : 4,
+												"value" : [ "unit2-Siamang.mp3" ]
+											}
+, 											{
+												"key" : 5,
+												"value" : [ "unit2-Swallow.mp3" ]
 											}
  ]
 									}
@@ -1585,8 +1597,8 @@
 										"followglobaltempo" : 0,
 										"formantcorrection" : 0,
 										"mode" : "basic",
-										"originallength" : [ 3339.319727891156163, "ticks" ],
-										"originaltempo" : 120.0,
+										"originallength" : [ 15924.244897959188165, "ticks" ],
+										"originaltempo" : 120.000000000000028,
 										"pitchcorrection" : 0,
 										"quality" : "basic",
 										"timestretch" : [ 0 ]
@@ -1624,7 +1636,7 @@
 						"lines" : [ 							{
 								"patchline" : 								{
 									"destination" : [ "obj-21", 0 ],
-									"midpoints" : [ 90.5, 223.5, 291.0, 223.5 ],
+									"midpoints" : [ 90.5, 237.5, 291.0, 237.5 ],
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -1850,7 +1862,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 524.0, 247.0, 17.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 981.5, 88.5, 17.0, 17.0 ],
+					"presentation_rect" : [ 972.5, 88.5, 17.0, 17.0 ],
 					"uncheckedcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
 				}
 
@@ -1880,7 +1892,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 545.0, 247.0, 29.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 950.5, 88.5, 29.0, 17.0 ],
+					"presentation_rect" : [ 941.5, 88.5, 29.0, 17.0 ],
 					"text" : "play"
 				}
 
@@ -2192,7 +2204,7 @@
 					"fontname" : "Helvetica",
 					"fontsize" : 11.0,
 					"id" : "obj-98",
-					"items" : [ "anton.aif", ",", "cello-f2.aif", ",", "drumLoop.aif", ",", "sinewave", ",", "trianglewave", ",", "sqarewave", ",", "pinknoise", ",", "microphone" ],
+					"items" : [ "anton", ",", "cello-f2", ",", "drum", "loop", ",", "humpback", "whale", ",", "siamang", ",", "swallow", ",", "sinewave", ",", "trianglewave", ",", "sqarewave", ",", "pinknoise", ",", "microphone" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2200,7 +2212,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 50.5, 247.0, 100.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 950.5, 63.5, 100.0, 19.0 ]
+					"presentation_rect" : [ 941.5, 63.5, 109.0, 19.0 ]
 				}
 
 			}
