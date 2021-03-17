@@ -26,6 +26,7 @@ function draw_{{ audio_ex_ctr }}()
     draw_fns_{{ audio_ex_ctr }}.forEach(f => f());
     if(playing_{{ audio_ex_ctr }} == true){
         window.requestAnimationFrame(draw_{{ audio_ex_ctr }});
+	//Tone.Draw.schedule(draw_{{ audio_ex_ctr }}, Tone.Draw.now());
     }
 }
 

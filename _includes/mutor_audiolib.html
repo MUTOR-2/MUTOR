@@ -85,49 +85,104 @@
 	      let pixels_per_samp = Math.floor(width / fft.size);
 	      for(i = 0; i < fft.size; i++){
 		  let y = spec[i];
-		  ctx.lineTo(i * pixels_per_samp, height - (y * g));
+		  ctx.lineTo(i * pixels_per_samp, y * -1);//height - (y * g));
 	      }
 	  }
 	  ctx.closePath();
 	  ctx.fill();
       },
-      draw_sonogram : (fft, gain, canvas, color) =>
-      {
-	  let spec = fft.getValue();
-	  let c = canvas;
-	  let ctx = c.getContext("2d");
-	  const width = parseFloat(c.getAttribute("width"));
-	  const height = parseFloat(c.getAttribute("height"));
-	  const g = parseFloat(gain);
-	  // shift everything to the left by one col of pixels	  
-	  let imageData = ctx.getImageData(1, 0, width - 1, height);
-	  ctx.putImageData(imageData, 0, 0);
+	draw_sonogram : (fft, gain, canvas, color) =>
+	{
+	    let spec = fft.getValue();
+	    let c = canvas;
+	    let ctx = c.getContext("2d");
+	    const width = parseFloat(c.getAttribute("width"));
+	    const height = parseFloat(c.getAttribute("height"));
+	    const g = parseFloat(gain);
+	    // shift everything to the left by one col of pixels	  
+	    let imageData = ctx.getImageData(1, 0, width - 1, height);
+	    ctx.putImageData(imageData, 0, 0);
 
-	  if(height < fft.size){
-	      let samps_per_pixel = Math.floor(fft.size / height);
-	      for(i = 0; i < height; i++){
-		  let y = 0;
-		  for(j = 0; j < samps_per_pixel; j++){
-		      y += spec[j + (i * samps_per_pixel)];
-		  }
-		  y /= samps_per_pixel;
-		  ctx.fillStyle = `hsl(
+	    if(height < fft.size){
+		let samps_per_pixel = Math.floor(fft.size / height);
+		for(i = 0; i < height; i++){
+		    let y = 0;
+		    for(j = 0; j < samps_per_pixel; j++){
+			y += spec[j + (i * samps_per_pixel)];
+		    }
+		    y /= samps_per_pixel;
+		    ctx.fillStyle = `hsl(
         	  	${Math.floor(y * g * 360.)},
         	  	${Math.floor(y * g * 100.)}%,
 	          	${Math.floor(y * g * 100.)}%)`;
-		  ctx.fillRect(width - 1, height - i - 1, 1, 1);
-	      }
-	  }else{
-	      let pixels_per_samp = Math.floor(height / fft.size);
-	      for(i = 0; i < fft.size; i++){
-		  let y = spec[i];
-		  ctx.fillStyle = `hsl(
+		    ctx.fillRect(width - 1, height - i - 1, 1, 1);
+		}
+	    }else{
+		let pixels_per_samp = Math.floor(height / fft.size);
+		for(i = 0; i < fft.size; i++){
+		    let y = spec[i];
+		    ctx.fillStyle = `hsl(
         	  	${Math.floor(y * g * 360.)},
         	  	${Math.floor(y * g * 100.)}%,
 	          	${Math.floor(y * g * 100.)}%)`;
-		  ctx.fillRect(width - 1, height - (i * pixels_per_samp) - 1, 1, pixels_per_samp);
-	      }
-	  }
-      },
-  };
+		    ctx.fillRect(width - 1, height - (i * pixels_per_samp) - 1, 1, pixels_per_samp);
+		}
+	    }
+	},
+	draw_scope : (analyser, gain, samps_per_pixel, lasty, canvas, color) =>
+	{
+	    let sv = analyser.getValue();
+	    const svs = analyser.size;
+	    let c = canvas;
+	    let ctx = c.getContext("2d");
+	    const width = parseFloat(c.getAttribute("width"));
+	    const height = parseFloat(c.getAttribute("height"));
+	    const g = parseFloat(gain);
+	    if(samps_per_pixel < 1){
+		samps_per_pixel = 1;
+	    }
+	    if(samps_per_pixel > svs){
+		samps_per_pixel = svs;
+	    }
+
+	    const pix_to_draw = (svs / samps_per_pixel);
+	    //console.log("svs = " + svs + " samps_per_pixel = " + samps_per_pixel + " pix_to_draw = " + pix_to_draw);
+	    // shift everything to the left by one col of pixels
+	    let imageData;
+	    if(pix_to_draw < width){
+	    	imageData = ctx.getImageData(pix_to_draw - 1, 0, (width - 1) - pix_to_draw, height);
+	    }
+	    ctx.clearRect(0, 0, width, height);
+	    ctx.fillStyle = "#000000";
+	    ctx.fillRect(0, 0, width, height);
+	    if(pix_to_draw < width){
+	    	ctx.putImageData(imageData, 0, 0);
+	    }
+	    
+	    // ctx.clearRect(0, 0, width, height);
+	    // ctx.fillStyle = "#000000";
+	    // ctx.fillRect(0, 0, width, height);
+	    ctx.strokeStyle = "#FFFFFF";
+	    ctx.beginPath();
+	    let x = (width - 1) - pix_to_draw;
+	    let y = 0;
+	    ctx.moveTo(x - 1, lasty);
+	    for(i = 0; i < pix_to_draw; i++){
+		// y = 0;
+		// for(j = 0; j < samps_per_pixel; j++){
+		//     y += sv[i + (j * samps_per_pixel)];
+		// }
+		// y /= samps_per_pixel;
+		y = sv[i * samps_per_pixel];
+		y = ((-y + 1.) / 2.) * height;
+		ctx.lineTo(x, y);
+		++x;
+	    }
+	    
+	    //ctx.closePath();
+	    //ctx.fill();
+	    ctx.stroke();
+	    return y;
+	},
+	};
 </script>

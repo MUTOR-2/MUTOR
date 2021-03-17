@@ -1,0 +1,29 @@
+
+<!-- begin audio number box -->
+{% if include.min %}
+{% assign min = include.min %}
+{% else %}
+{% assign min = "" %}
+{% endif %}
+
+{% if include.max %}
+{% assign max = include.max %}
+{% else %}
+{% assign max = "" %}
+{% endif %}
+
+{% if include.def %}
+{% assign def = include.def %}
+{% else %}
+{% assign def = "0" %}
+{% endif %}
+
+{% if include.label %}
+<label for="{{ include.name }}">{{ include.label }}</label>
+{% endif %}
+<input type="number" id="{{ include.name }}" min="{{ min }}" max="{{ max }}" value="{{ def }}">
+<script type="text/javascript">
+const {{ include.name }} = document.getElementById("{{ include.name }}");
+</script>
+
+<!-- end audio number box -->

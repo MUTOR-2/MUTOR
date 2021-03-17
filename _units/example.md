@@ -39,6 +39,45 @@ mathjax: true
 <div class="gcse-search"></div>
 </div>
 
+# Audio test
+
+{% include begin-audio-example %}
+{% assign oscillatorname = audio_ex_pfx | append: "oscillator" %}
+{% assign oscillator2name = audio_ex_pfx | append: "oscillator2" %}
+{% assign transportname = audio_ex_pfx | append: "transport" %}
+{% assign freqnumberboxname = audio_ex_pfx | append: "freqnumberbox" %}
+{% assign phasenumberboxname = audio_ex_pfx | append: "phasenumberbox" %}
+{% assign scopename = audio_ex_pfx | append: "scope" %}
+{% assign scope2name = audio_ex_pfx | append: "scope2" %}
+
+{% include audio-oscillator name=oscillatorname freq="375." type="sine" %}
+{% include audio-oscillator name=oscillator2name freq="375." type="sine" %}
+<table><tr><td>
+{% include audio-numberbox name=freqnumberboxname max="880" def="375" label="frequency in Hz: " %}
+{% include audio-numberbox name=phasenumberboxname def="0" label="phase (0-360): " %}
+</td></tr><tr><td>
+{% include audio-scope name=scopename samps_per_pixel=1 %}
+</td></tr><tr><td>
+{% include audio-scope name=scope2name samps_per_pixel=1 %}
+</td></tr><tr><td>
+{% include audio-transport name=transportname %}
+</td></tr></table>
+{% include audio-connection outlet=oscillatorname inlet=scopename %}
+{% include audio-connection outlet=oscillatorname inlet=scope2name %}
+{% include audio-connection outlet=oscillator2name inlet=scope2name %}
+<script type="text/javascript">
+{{ freqnumberboxname }}.addEventListener('change', (e)=>{
+	{{ oscillatorname }}.frequency.value = parseFloat(e.target.value);
+});
+{{ phasenumberboxname }}.addEventListener('change', (e)=>{
+	{{ oscillatorname }}.phase = parseFloat(e.target.value);
+});
+</script>
+
+{% include end-audio-example %}
+
+{% include spectrum-example src="/MUTOR/assets/audios/trombone.mp3" %}
+
 # Structure of the Document
 
 ## Header

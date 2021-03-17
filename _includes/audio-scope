@@ -1,0 +1,44 @@
+
+<!-- begin audio scope -->
+{% if include.width %}
+{% assign width = include.width %}
+{% else %}
+{% assign width = "600px" %}
+{% endif %}
+
+{% if include.height %}
+{% assign height = include.height %}
+{% else %}
+{% assign height = "200px" %}
+{% endif %}
+
+{% if include.gain %}
+{% assign gain = include.gain %}
+{% else %}
+{% assign gain = 10000. %}
+{% endif %}
+
+{% if include.samps_per_pixel %}
+{% assign samps_per_pixel = include.samps_per_pixel %}
+{% else %}
+{% assign samps_per_pixel = 8. %}
+{% endif %}
+
+{% if audio_ex_overlay == true %}
+<canvas class="audio-scope audio-ex-layer" id="{{ include.name }}" width="{{ width  }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
+{% else %}
+<canvas class="audio-scope" id="{{ include.name }}" width="{{ width }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
+{% endif %}
+<script type="text/javascript">
+    const {{ include.name }} = new Tone.Analyser("waveform", 1024);
+    // {{ include.name }}.normalRange = true;
+    const {{ include.name }}_canvas = document.getElementById("{{ include.name }}");
+    let {{ include.name }}_lasty = parseFloat("{{ height }}") / 2;
+    draw_fns_{{ audio_ex_ctr }}.push(function(){
+      {{ include.name }}_lasty = MUTOR_alib.draw_scope( {{ include.name }}, {{ gain }}, {{ samps_per_pixel }}, {{ include.name }}_lasty, {{ include.name }}_canvas, color_{{ audio_ex_ctr }});
+    });
+    Tone.loaded().then(()=>{
+    	MUTOR_alib.draw_scope( {{ include.name }}, {{ gain }}, {{ samps_per_pixel }}, {{ include.name }}_lasty, {{ include.name }}_canvas, color_{{ audio_ex_ctr }});
+    })
+</script>
+<!-- end audio scope -->
