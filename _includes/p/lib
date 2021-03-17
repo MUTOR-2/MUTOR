@@ -85,7 +85,7 @@
 	      let pixels_per_samp = Math.floor(width / fft.size);
 	      for(i = 0; i < fft.size; i++){
 		  let y = spec[i];
-		  ctx.lineTo(i * pixels_per_samp, y * -1);//height - (y * g));
+		  ctx.lineTo(i * pixels_per_samp, height - (y * g));
 	      }
 	  }
 	  ctx.closePath();

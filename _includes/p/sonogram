@@ -1,5 +1,5 @@
 
-<!-- begin audio sonogram -->
+<!-- begin mutor patch sonogram -->
 {% if include.width %}
 {% assign width = include.width %}
 {% else %}
@@ -18,20 +18,20 @@
 {% assign gain = 100. %}
 {% endif %}
 
-{% if audio_ex_overlay == true %}
-<canvas class="audio-sonogram audio-ex-layer" id="{{ include.name }}" width="{{ width  }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
+{% if mutor_patch_overlay == true %}
+<canvas class="mutor-patch-sonogram mutor-patch-layer" id="{{ include.name }}" width="{{ width  }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
 {% else %}
-<canvas class="audio-sonogram" id="{{ include.name }}" width="{{ width }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
+<canvas class="mutor-patch-sonogram" id="{{ include.name }}" width="{{ width }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
 {% endif %}
 <script type="text/javascript">
     const {{ include.name }} = new Tone.FFT(512);
     {{ include.name }}.normalRange = true;
     const {{ include.name }}_canvas = document.getElementById("{{ include.name }}");
-    draw_fns_{{ audio_ex_ctr }}.push(function(){
-      MUTOR_alib.draw_sonogram( {{ include.name }}, {{ gain }}, {{ include.name }}_canvas, color_{{ audio_ex_ctr }});
+    draw_fns_{{ mutor_patch_ctr }}.push(function(){
+      MUTOR_alib.draw_sonogram( {{ include.name }}, {{ gain }}, {{ include.name }}_canvas, color_{{ mutor_patch_ctr }});
     });
     Tone.loaded().then(()=>{
-    	MUTOR_alib.draw_sonogram( {{ include.name }}, {{ gain }}, {{ include.name }}_canvas, color_{{ audio_ex_ctr }});
+    	MUTOR_alib.draw_sonogram( {{ include.name }}, {{ gain }}, {{ include.name }}_canvas, color_{{ mutor_patch_ctr }});
     })
 </script>
-<!-- end audio sonogram -->
+<!-- end mutor patch sonogram -->

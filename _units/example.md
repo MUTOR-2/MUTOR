@@ -42,13 +42,13 @@ mathjax: true
 # Audio test
 
 {% include p/begin %}
-{% assign oscillatorname = audio_ex_pfx | append: "oscillator" %}
-{% assign oscillator2name = audio_ex_pfx | append: "oscillator2" %}
-{% assign transportname = audio_ex_pfx | append: "transport" %}
-{% assign freqnumberboxname = audio_ex_pfx | append: "freqnumberbox" %}
-{% assign phasenumberboxname = audio_ex_pfx | append: "phasenumberbox" %}
-{% assign scopename = audio_ex_pfx | append: "scope" %}
-{% assign scope2name = audio_ex_pfx | append: "scope2" %}
+{% assign oscillatorname = mutor_patch_pfx | append: "oscillator" %}
+{% assign oscillator2name = mutor_patch_pfx | append: "oscillator2" %}
+{% assign transportname = mutor_patch_pfx | append: "transport" %}
+{% assign freqnumberboxname = mutor_patch_pfx | append: "freqnumberbox" %}
+{% assign phasenumberboxname = mutor_patch_pfx | append: "phasenumberbox" %}
+{% assign scopename = mutor_patch_pfx | append: "scope" %}
+{% assign scope2name = mutor_patch_pfx | append: "scope2" %}
 
 {% include p/oscillator name=oscillatorname freq="375." type="sine" %}
 {% include p/oscillator name=oscillator2name freq="375." type="sine" %}

@@ -1,4 +1,4 @@
-<!-- begin audio playhead -->
+<!-- begin mutor patch playhead -->
 {% if include.width %}
 {% assign width = include.width %}
 {% else %}
@@ -11,15 +11,15 @@
 {% assign height = "200px" %}
 {% endif %}
 
-{% if audio_ex_overlay == true %}
-<canvas class="audio-playhead audio-ex-layer" id="{{ include.name }}" width="{{ width }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
+{% if mutor_patch_overlay == true %}
+<canvas class="mutor-patchplayhead mutor-patch-layer" id="{{ include.name }}" width="{{ width }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
 {% else %}
-<canvas class="audio-playhead" id="{{ include.name }}" width="{{ width }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
+<canvas class="mutor-patchplayhead" id="{{ include.name }}" width="{{ width }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
 {% endif %}
 <script type="text/javascript">
   const {{ include.name }}_canvas = document.getElementById("{{ include.name }}");
-  draw_fns_{{ audio_ex_ctr }}.push(() => {
-    MUTOR_alib.draw_playhead( {{ include.player }}, ({{ include.player }}.now() - {{ include.player }}_starttime) / {{ include.player }}_duration, {{ include.name }}_canvas, color_{{ audio_ex_ctr }});
+  draw_fns_{{ mutor_patch_ctr }}.push(() => {
+    MUTOR_alib.draw_playhead( {{ include.player }}, ({{ include.player }}.now() - {{ include.player }}_starttime) / {{ include.player }}_duration, {{ include.name }}_canvas, color_{{ mutor_patch_ctr }});
   });
 </script>
-<!-- end audio playhead -->
+<!-- end mutor patch playhead -->

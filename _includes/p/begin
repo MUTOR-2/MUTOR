@@ -1,6 +1,6 @@
-{% assign audio_ex_ctr = audio_ex_ctr | plus: 1 %}
-{% assign audio_ex_pfx = audio_ex_ctr | prepend: "mutor_audioex_" | append: "_" %}
-{% assign audio_ex_overlay = false %}
+{% assign mutor_patch_ctr = mutor_patch_ctr | plus: 1 %}
+{% assign mutor_patch_pfx = mutor_patch_ctr | prepend: "mutor_patch_" | append: "_" %}
+{% assign mutor_patch_overlay = false %}
 
 {% if tonejs_loaded != true %}
 <script src="https://unpkg.com/tone@14.7.39/build/Tone.js"></script>
@@ -12,29 +12,29 @@
 {% assign mutor_audiolib_loaded = true %}
 {% endif %}
 
-<!-- begin audio example {{ audio_ex_ctr }} -->
+<!-- begin mutor patch {{ mutor_patch_ctr }} -->
 
 <script type="text/javascript">
-//let draw_fns_{{ audio_ex_ctr }} = {};
-let draw_fns_{{ audio_ex_ctr }} = [];
-let transport_fns_{{ audio_ex_ctr }} = {play: [], stop: []};
-let color_{{ audio_ex_ctr }} = MUTOR.rbright();
-let playing_{{ audio_ex_ctr }} = false;
+//let draw_fns_{{ mutor_patch_ctr }} = {};
+let draw_fns_{{ mutor_patch_ctr }} = [];
+let transport_fns_{{ mutor_patch_ctr }} = {play: [], stop: []};
+let color_{{ mutor_patch_ctr }} = MUTOR.rbright();
+let playing_{{ mutor_patch_ctr }} = false;
 
-function draw_{{ audio_ex_ctr }}()
+function draw_{{ mutor_patch_ctr }}()
 {
-    draw_fns_{{ audio_ex_ctr }}.forEach(f => f());
-    if(playing_{{ audio_ex_ctr }} == true){
-        window.requestAnimationFrame(draw_{{ audio_ex_ctr }});
-	//Tone.Draw.schedule(draw_{{ audio_ex_ctr }}, Tone.Draw.now());
+    draw_fns_{{ mutor_patch_ctr }}.forEach(f => f());
+    if(playing_{{ mutor_patch_ctr }} == true){
+        window.requestAnimationFrame(draw_{{ mutor_patch_ctr }});
+	//Tone.Draw.schedule(draw_{{ mutor_patch_ctr }}, Tone.Draw.now());
     }
 }
 
-function transport_{{ audio_ex_ctr }}(action)
+function transport_{{ mutor_patch_ctr }}(action)
 {
-    transport_fns_{{ audio_ex_ctr }}[action].forEach(f => f());
+    transport_fns_{{ mutor_patch_ctr }}[action].forEach(f => f());
 }
 
 </script>
 
-<div class="audio-example">
+<div class="mutor-patch">

@@ -1,5 +1,5 @@
 
-<!-- begin audio scope -->
+<!-- begin mutor patch scope -->
 {% if include.width %}
 {% assign width = include.width %}
 {% else %}
@@ -24,21 +24,21 @@
 {% assign samps_per_pixel = 8. %}
 {% endif %}
 
-{% if audio_ex_overlay == true %}
-<canvas class="audio-scope audio-ex-layer" id="{{ include.name }}" width="{{ width  }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
+{% if mutor_patch_overlay == true %}
+<canvas class="mutor-patch-scope mutor-patch-layer" id="{{ include.name }}" width="{{ width  }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
 {% else %}
-<canvas class="audio-scope" id="{{ include.name }}" width="{{ width }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
+<canvas class="mutor-patch-scope" id="{{ include.name }}" width="{{ width }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
 {% endif %}
 <script type="text/javascript">
     const {{ include.name }} = new Tone.Analyser("waveform", 1024);
     // {{ include.name }}.normalRange = true;
     const {{ include.name }}_canvas = document.getElementById("{{ include.name }}");
     let {{ include.name }}_lasty = parseFloat("{{ height }}") / 2;
-    draw_fns_{{ audio_ex_ctr }}.push(function(){
-      {{ include.name }}_lasty = MUTOR_alib.draw_scope( {{ include.name }}, {{ gain }}, {{ samps_per_pixel }}, {{ include.name }}_lasty, {{ include.name }}_canvas, color_{{ audio_ex_ctr }});
+    draw_fns_{{ mutor_patch_ctr }}.push(function(){
+      {{ include.name }}_lasty = MUTOR_alib.draw_scope( {{ include.name }}, {{ gain }}, {{ samps_per_pixel }}, {{ include.name }}_lasty, {{ include.name }}_canvas, color_{{ mutor_patch_ctr }});
     });
     Tone.loaded().then(()=>{
-    	MUTOR_alib.draw_scope( {{ include.name }}, {{ gain }}, {{ samps_per_pixel }}, {{ include.name }}_lasty, {{ include.name }}_canvas, color_{{ audio_ex_ctr }});
+    	MUTOR_alib.draw_scope( {{ include.name }}, {{ gain }}, {{ samps_per_pixel }}, {{ include.name }}_lasty, {{ include.name }}_canvas, color_{{ mutor_patch_ctr }});
     })
 </script>
-<!-- end audio scope -->
+<!-- end mutor patch scope -->

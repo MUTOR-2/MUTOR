@@ -1,13 +1,13 @@
 
-<!-- begin audio player -->
+<!-- begin mutor patch player -->
 <script type="text/javascript">
   const {{ include.name }} = new Tone.Oscillator({{ include.freq }}, "{{ include.type }}").toDestination();
-  {{ include.name }}.onstop = (source) => {transport_{{ audio_ex_ctr}}('stop');};
-  transport_fns_{{ audio_ex_ctr }}.play.push(() => {
+  {{ include.name }}.onstop = (source) => {transport_{{ mutor_patch_ctr}}('stop');};
+  transport_fns_{{ mutor_patch_ctr }}.play.push(() => {
       {{ include.name }}.start();
   });
-  transport_fns_{{ audio_ex_ctr }}.stop.push(() => { {{ include.name }}.stop(); });
+  transport_fns_{{ mutor_patch_ctr }}.stop.push(() => { {{ include.name }}.stop(); });
   Tone.loaded().then(() => {
   });
 </script>
-<!-- end audio player -->
+<!-- end mutor patch player -->

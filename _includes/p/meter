@@ -1,5 +1,5 @@
 
-<!-- begin audio meter -->
+<!-- begin mutor patch meter -->
 {% if include.width %}
 {% assign width = include.width %}
 {% else %}
@@ -12,17 +12,17 @@
 {% assign height = "200px" %}
 {% endif %}
 
-{% if audio_ex_overlay == true %}
-<canvas class="audio-meter audio-ex-layer" id="{{ include.name }}" width="{{ width }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
+{% if mutor_patch_overlay == true %}
+<canvas class="mutor-patch-meter mutor-patch-layer" id="{{ include.name }}" width="{{ width }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
 {% else %}
-<canvas class="audio-meter" id="{{ include.name }}" width="{{ width }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
+<canvas class="mutor-patch-meter" id="{{ include.name }}" width="{{ width }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
 {% endif %}
 <script type="text/javascript">
   const {{ include.name }} = new Tone.Meter();
   {{ include.name }}.normalRange = true;
   const {{ include.name }}_canvas = document.getElementById("{{ include.name }}");
-  draw_fns_{{ audio_ex_ctr }}.push(function(){
-    MUTOR_alib.draw_meter( {{ include.name }}, {{ include.name }}_canvas, color_{{ audio_ex_ctr }});
+  draw_fns_{{ mutor_patch_ctr }}.push(function(){
+    MUTOR_alib.draw_meter( {{ include.name }}, {{ include.name }}_canvas, color_{{ mutor_patch_ctr }});
   });
 </script>
-<!-- end audio meter -->
+<!-- end mutor patch meter -->

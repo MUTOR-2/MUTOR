@@ -1,4 +1,5 @@
-<!-- begin audio waveform -->
+
+<!-- begin mutor patch waveform -->
 {% if include.width %}
 {% assign width = include.width %}
 {% else %}
@@ -11,14 +12,14 @@
 {% assign height = "200px" %}
 {% endif %}
 
-{% if audio_ex_overlay == true %}
-<canvas class="audio-waveform audio-ex-layer" id="{{ include.name }}" width="{{ width  }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
+{% if mutor_patch_overlay == true %}
+<canvas class="mutor-patch-waveform mutor-patch-layer" id="{{ include.name }}" width="{{ width  }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
 {% else %}
-<canvas class="audio-waveform" id="{{ include.name }}" width="{{ width }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
+<canvas class="mutor-patch-waveform" id="{{ include.name }}" width="{{ width }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
 {% endif %}
 <script type="text/javascript">
     Tone.loaded().then(()=>{
         MUTOR_alib.draw_waveform({{ include.buffer }}, document.getElementById("{{ include.name }}"));
     });
 </script>
-<!-- end audio waveform -->
+<!-- end mutor patch waveform -->

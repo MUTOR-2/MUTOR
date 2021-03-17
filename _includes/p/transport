@@ -1,4 +1,4 @@
-<!-- begin audio transport -->
+<!-- begin mutor patch transport -->
 {% if include.width %}
 {% assign width = include.width %}
 {% else %}
@@ -11,30 +11,30 @@
 {% assign height = "20px" %}
 {% endif %}
 
-{% if audio_ex_overlay == true %}
-<button type="button" class="audio-transport audio-ex-overlay" id="{{ include.name }}" value="stopped" onclick="{{ include.name }}_onclick(this)" width="{{ width }}" height="{{ height }}">
+{% if mutor_patch_overlay == true %}
+<button type="button" class="mutor-patch-transport mutor-patch-overlay" id="{{ include.name }}" value="stopped" onclick="{{ include.name }}_onclick(this)" width="{{ width }}" height="{{ height }}">
 &blacktriangleright;
 </button>
 {% else %}
-<button type="button" class="audio-transport" id="{{ include.name }}" value="stopped" onclick="{{ include.name }}_onclick(this)" style="width: {{ width }}; height: {{ height }};">
+<button type="button" class="mutor-patch-transport" id="{{ include.name }}" value="stopped" onclick="{{ include.name }}_onclick(this)" style="width: {{ width }}; height: {{ height }};">
 &#x25BA; Play
 </button>
 {% endif %}
 <script type="text/javascript">
 {    
     let button = document.getElementById("{{ include.name }}");
-    button.style['background-color'] = color_{{ audio_ex_ctr }};
+    button.style['background-color'] = color_{{ mutor_patch_ctr }};
 }
 
-transport_fns_{{ audio_ex_ctr }}.play.push(function(){
-    playing_{{ audio_ex_ctr }} = true;
+transport_fns_{{ mutor_patch_ctr }}.play.push(function(){
+    playing_{{ mutor_patch_ctr }} = true;
     let button = document.getElementById("{{ include.name }}");
     button.value = "playing";
     button.innerHTML = "&#x25FE; Stop"
 });
 
-transport_fns_{{ audio_ex_ctr }}.stop.push(function(){
-    playing_{{ audio_ex_ctr }} = false;
+transport_fns_{{ mutor_patch_ctr }}.stop.push(function(){
+    playing_{{ mutor_patch_ctr }} = false;
     let button = document.getElementById("{{ include.name }}");
     button.value = "stopped";
     button.innerHTML = "&#x25BA; Play"
@@ -44,13 +44,13 @@ function {{ include.name }}_onclick(button)
 {
     switch(button.value){
     case "stopped":
-	transport_{{ audio_ex_ctr }}('play');
-	window.requestAnimationFrame(draw_{{ audio_ex_ctr }});
+	transport_{{ mutor_patch_ctr }}('play');
+	window.requestAnimationFrame(draw_{{ mutor_patch_ctr }});
 	break;
     case "playing":
-	transport_{{ audio_ex_ctr }}('stop');
+	transport_{{ mutor_patch_ctr }}('stop');
 	break;
     }
 }
 </script>
-<!-- end audio transport-->
+<!-- end mutor patch transport-->

@@ -1,12 +1,12 @@
 
 {% include p/begin %}
 
-{% assign buffername = audio_ex_pfx | append: "buffer" %}
-{% assign playername = audio_ex_pfx | append: "player" %}
-{% assign waveformname = audio_ex_pfx | append: "waveform" %}
-{% assign playheadname = audio_ex_pfx | append: "playhead" %}
-{% assign metername = audio_ex_pfx | append: "meter" %}
-{% assign transportname = audio_ex_pfx | append: "transport" %}
+{% assign buffername = mutor_patch_pfx | append: "buffer" %}
+{% assign playername = mutor_patch_pfx | append: "player" %}
+{% assign waveformname = mutor_patch_pfx | append: "waveform" %}
+{% assign playheadname = mutor_patch_pfx | append: "playhead" %}
+{% assign metername = mutor_patch_pfx | append: "meter" %}
+{% assign transportname = mutor_patch_pfx | append: "transport" %}
 
 {% include p/buffer name=buffername src=include.src %}
 {% include p/player name=playername buffer= buffername %}

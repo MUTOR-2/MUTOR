@@ -1,5 +1,5 @@
-<!-- begin audio buffer -->
+<!-- begin mutor patch buffer -->
 <script type="text/javascript">
 const {{ include.name }} = new Tone.ToneAudioBuffer( "{{ include.src }}" );
 </script>
-<!-- end audio buffer -->
+<!-- end mutor patch buffer -->
