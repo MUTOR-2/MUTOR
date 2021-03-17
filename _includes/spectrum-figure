@@ -1,9 +1,0 @@
-{% if include.gain %}
-{% assign gain = include.gain %}
-{% else %}
-{% assign gain = 1. %}
-{% endif %}
-
-{% include begin-figure description=include.description %}
-{% include spectrum-example src=include.src gain=include.gain %}
-{% include end-figure %}

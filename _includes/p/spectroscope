@@ -15,7 +15,7 @@
 {% if include.gain %}
 {% assign gain = include.gain %}
 {% else %}
-{% assign gain = 10000. %}
+{% assign gain = 1. %}
 {% endif %}
 
 {% if mutor_patch_overlay == true %}

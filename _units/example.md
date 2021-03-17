@@ -76,7 +76,7 @@ mathjax: true
 
 {% include p/end %}
 
-{% include spectrum-example src="/MUTOR/assets/audios/trombone.mp3" %}
+{% include p/xspectroscope src="/MUTOR/assets/audios/trombone.mp3" %}
 
 # Structure of the Document
 
