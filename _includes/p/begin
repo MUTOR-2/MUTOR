@@ -8,7 +8,7 @@
 {% endif %}
 
 {% if mutor_audiolib_loaded != true %}
-{% include mutor_audiolib.html %}
+{% include p/lib %}
 {% assign mutor_audiolib_loaded = true %}
 {% endif %}
 
