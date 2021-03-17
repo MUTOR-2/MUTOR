@@ -551,23 +551,39 @@ where it can be excited by striking the knee with great force.
 
 ## xwaveform
 
+{% include begin-figure description="A waveform" %}
 {% include p/xwaveform src="/MUTOR/assets/audios/trombone.mp3" %}
+{% include end-figure %}
 
 ## xspectroscope
 
+{% include begin-figure description="A spectrum" %}
 {% include p/xspectroscope src="/MUTOR/assets/audios/trombone.mp3" gain="6000." %}
+{% include end-figure %}
 
 ## xsonogram
 
+{% include begin-figure description="A sonogram" %}
 {% include p/xsonogram src="/MUTOR/assets/audios/trombone.mp3" %}
+{% include end-figure %}
 
 ## xwaveform-spectroscope
 
+{% include begin-figure description="A waveform (top) and a spectrum (bottom)" %}
 {% include p/xwaveform-spectroscope src="/MUTOR/assets/audios/trombone.mp3" gain="6000." %}
+{% include end-figure %}
 
 ## xwaveform-sonogram
 
+{% include begin-figure description="A waveform (top) and a sonogram (bottom)" %}
 {% include p/xwaveform-sonogram src="/MUTOR/assets/audios/trombone.mp3" %}
+{% include end-figure %}
+
+## xwaveform-spectrogram-sonogram
+
+{% include begin-figure description="A waveform (top), a spectrum (bottom left), and a sonogram (bottom right)" %}
+{% include p/xwaveform-spectroscope-sonogram src="/MUTOR/assets/audios/trombone.mp3" gain="6000." %}
+{% include end-figure %}
 
 ## testing...
 
