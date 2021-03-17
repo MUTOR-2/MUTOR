@@ -39,45 +39,6 @@ mathjax: true
 <div class="gcse-search"></div>
 </div>
 
-# Audio test
-
-{% include p/begin %}
-{% assign oscillatorname = mutor_patch_pfx | append: "oscillator" %}
-{% assign oscillator2name = mutor_patch_pfx | append: "oscillator2" %}
-{% assign transportname = mutor_patch_pfx | append: "transport" %}
-{% assign freqnumberboxname = mutor_patch_pfx | append: "freqnumberbox" %}
-{% assign phasenumberboxname = mutor_patch_pfx | append: "phasenumberbox" %}
-{% assign scopename = mutor_patch_pfx | append: "scope" %}
-{% assign scope2name = mutor_patch_pfx | append: "scope2" %}
-
-{% include p/oscillator name=oscillatorname freq="375." type="sine" %}
-{% include p/oscillator name=oscillator2name freq="375." type="sine" %}
-<table><tr><td>
-{% include p/number name=freqnumberboxname max="880" def="375" label="frequency in Hz: " %}
-{% include p/number name=phasenumberboxname def="0" label="phase (0-360): " %}
-</td></tr><tr><td>
-{% include p/scope name=scopename samps_per_pixel=1 %}
-</td></tr><tr><td>
-{% include p/scope name=scope2name samps_per_pixel=1 %}
-</td></tr><tr><td>
-{% include p/transport name=transportname %}
-</td></tr></table>
-{% include p/connect outlet=oscillatorname inlet=scopename %}
-{% include p/connect outlet=oscillatorname inlet=scope2name %}
-{% include p/connect outlet=oscillator2name inlet=scope2name %}
-<script type="text/javascript">
-{{ freqnumberboxname }}.addEventListener('change', (e)=>{
-	{{ oscillatorname }}.frequency.value = parseFloat(e.target.value);
-});
-{{ phasenumberboxname }}.addEventListener('change', (e)=>{
-	{{ oscillatorname }}.phase = parseFloat(e.target.value);
-});
-</script>
-
-{% include p/end %}
-
-{% include p/xspectroscope src="/MUTOR/assets/audios/trombone.mp3" %}
-
 # Structure of the Document
 
 ## Header
@@ -585,5 +546,63 @@ This is useful for making editorial comments to each other, for example:
 So, the cochlea is located behind the right knee
 {% include note author="GH" text="John, I think you should double-check this..." %},
 where it can be excited by striking the knee with great force.
+
+# Audio Examples
+
+## xwaveform
+
+{% include p/xwaveform src="/MUTOR/assets/audios/trombone.mp3" %}
+
+## xspectroscope
+
+{% include p/xspectroscope src="/MUTOR/assets/audios/trombone.mp3" gain="6000." %}
+
+## xsonogram
+
+{% include p/xsonogram src="/MUTOR/assets/audios/trombone.mp3" %}
+
+## xwaveform-spectroscope
+
+{% include p/xwaveform-spectroscope src="/MUTOR/assets/audios/trombone.mp3" gain="6000." %}
+
+## xwaveform-sonogram
+
+{% include p/xwaveform-sonogram src="/MUTOR/assets/audios/trombone.mp3" %}
+
+## testing...
+
+{% include p/begin %}
+{% assign oscillatorname = mutor_patch_pfx | append: "oscillator" %}
+{% assign oscillator2name = mutor_patch_pfx | append: "oscillator2" %}
+{% assign transportname = mutor_patch_pfx | append: "transport" %}
+{% assign freqnumberboxname = mutor_patch_pfx | append: "freqnumberbox" %}
+{% assign phasenumberboxname = mutor_patch_pfx | append: "phasenumberbox" %}
+{% assign scopename = mutor_patch_pfx | append: "scope" %}
+{% assign scope2name = mutor_patch_pfx | append: "scope2" %}
+
+{% include p/oscillator name=oscillatorname freq="375." type="sine" %}
+{% include p/oscillator name=oscillator2name freq="375." type="sine" %}
+<table><tr><td>
+{% include p/number name=freqnumberboxname max="880" def="375" label="frequency in Hz: " %}
+{% include p/number name=phasenumberboxname def="0" label="phase (0-360): " %}
+</td></tr><tr><td>
+{% include p/scope name=scopename samps_per_pixel=1 %}
+</td></tr><tr><td>
+{% include p/scope name=scope2name samps_per_pixel=1 %}
+</td></tr><tr><td>
+{% include p/transport name=transportname %}
+</td></tr></table>
+{% include p/connect outlet=oscillatorname inlet=scopename %}
+{% include p/connect outlet=oscillator2name inlet=scope2name %}
+<script type="text/javascript">
+{{ freqnumberboxname }}.addEventListener('change', (e)=>{
+	{{ oscillatorname }}.frequency.value = parseFloat(e.target.value);
+});
+{{ phasenumberboxname }}.addEventListener('change', (e)=>{
+	{{ oscillatorname }}.phase = parseFloat(e.target.value);
+});
+</script>
+
+{% include p/end %}
 
 {% include unit_postamble.md %}

@@ -1,12 +1,11 @@
 {% include p/begin %}
 
-{% assign buffername = audio_ex_pfx | append: "buffer" %}
-{% assign playername = audio_ex_pfx | append: "player" %}
-{% assign waveformname = audio_ex_pfx | append: "waveform" %}
-{% assign playheadname = audio_ex_pfx | append: "playhead" %}
-{% assign metername = audio_ex_pfx | append: "meter" %}
-{% assign transportname = audio_ex_pfx | append: "transport" %}
-{% assign sonogramname = audio_ex_pfx | append: "sonogram" %}
+{% assign buffername = mutor_patch_pfx | append: "buffer" %}
+{% assign playername = mutor_patch_pfx | append: "player" %}
+{% assign playheadname = mutor_patch_pfx | append: "playhead" %}
+{% assign metername = mutor_patch_pfx | append: "meter" %}
+{% assign transportname = mutor_patch_pfx | append: "transport" %}
+{% assign sonogramname = mutor_patch_pfx | append: "sonogram" %}
 
 {% if include.gain %}
 {% assign gain = include.gain %}
@@ -17,15 +16,10 @@
 {% include p/buffer name=buffername src=include.src %}
 {% include p/player name=playername buffer= buffername %}
 <table><tr><td>
-{% include p/begin-overlay width="600px" height="200px" %}
-{% include p/waveform name=waveformname buffer=buffername %}
-{% include p/playhead name=playheadname player=playername %}
-{% include p/end-overlay %}
-</td><td>
-{% include p/meter name=metername %}
-</td></tr><tr><td>
 {% include p/sonogram name=sonogramname gain=gain %}
 {% include p/connect outlet=playername inlet=sonogramname %}
+</td><td>
+{% include p/meter name=metername %}
 </td></tr><tr><td>
 {% include p/connect outlet=playername inlet=metername %}
 {% include p/transport name=transportname %}
