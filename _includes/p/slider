@@ -1,0 +1,76 @@
+
+<!-- begin mutor patch slider -->
+{% if include.min %}
+{% assign min = include.min %}
+{% else %}
+{% assign min = "0" %}
+{% endif %}
+
+{% if include.max %}
+{% assign max = include.max %}
+{% else %}
+{% assign max = "1" %}
+{% endif %}
+
+{% if include.width %}
+{% assign width = include.width %}
+{% else %}
+{% assign width = "20px" %}
+{% endif %}
+
+{% if include.height %}
+{% assign height = include.height %}
+{% else %}
+{% assign height = "200px" %}
+{% endif %}
+
+{% if mutor_patch_overlay == true %}
+<canvas class="mutor-patch-slider mutor-patch-layer" id="{{ include.name }}" width="{{ width }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
+{% else %}
+<canvas class="mutor-patch-slider" id="{{ include.name }}" width="{{ width }}" height="{{ height }}" style="border:1px solid #000000;"></canvas>
+{% endif %}
+<script type="text/javascript">
+const {{ include.name }} = document.getElementById("{{ include.name }}");
+let {{ include.name }}_value = {{ min }};
+let {{ include.name }}_ctx = {{ include.name }}.getContext("2d");
+let {{ include.name }}_mousestate = 0;
+function {{ include.name }}_mousemove(e)
+{
+	if({{ include.name }}_mousestate == 0){
+		return;
+	}
+	const width = parseInt("{{ width }}");
+	const height = parseInt("{{ height }}");
+	const canvasrect = {{ include.name }}.getBoundingClientRect();
+	const mousex = e.clientX - canvasrect.left;
+	const mousey = e.clientY - canvasrect.top;
+	const min = {{ min }};
+	const max = {{ max }};
+	const x = (mousex / width) * (max - min) + min;
+	const y = ((height - mousey) / height) * (max - min) + min;
+	{{ include.name }}_ctx.fillStyle = "#FFFFFF";
+	{{ include.name }}_ctx.fillRect(0, 0, width, height);
+	{{ include.name }}_ctx.fillStyle = color_{{ mutor_patch_ctr }};
+	if(width >= height){
+		{{ include.name }}_ctx.fillRect(0, 0, mousex, height);
+		{{ include.name }}_value = x;
+	}else{
+		{{ include.name }}_ctx.fillRect(0, height - 1, width, mousex);
+		{{ include.name }}_value = y;
+	}
+}
+function {{ include.name }}_mousedown(e)
+{
+	{{ include.name }}_mousestate = 1;
+	{{ include.name }}_mousemove(e);
+}
+function {{ include.name }}_mouseup(e)
+{
+	{{ include.name }}_mousestate = 0;
+}
+{{ include.name }}.addEventListener('mousedown', {{ include.name }}_mousedown);
+{{ include.name }}.addEventListener('mouseup', {{ include.name }}_mouseup);
+{{ include.name }}.addEventListener('mousemove', {{ include.name }}_mousemove);
+</script>
+
+<!-- end mutor patch slider -->

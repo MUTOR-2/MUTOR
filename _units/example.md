@@ -593,12 +593,16 @@ where it can be excited by striking the knee with great force.
 {% assign transportname = mutor_patch_pfx | append: "transport" %}
 {% assign freqnumberboxname = mutor_patch_pfx | append: "freqnumberbox" %}
 {% assign phasenumberboxname = mutor_patch_pfx | append: "phasenumberbox" %}
+{% assign phaseslidername = mutor_patch_pfx | append: "phaseslider" %}
 {% assign scopename = mutor_patch_pfx | append: "scope" %}
 {% assign scope2name = mutor_patch_pfx | append: "scope2" %}
+{% assign scope3name = mutor_patch_pfx | append: "scope3" %}
 
 {% include p/oscillator name=oscillatorname freq="375." type="sine" %}
 {% include p/oscillator name=oscillator2name freq="375." type="sine" %}
 <table><tr><td>
+{% include p/slider name=phaseslidername min="0" max="360" width="200px" height="20px" %}
+</td></tr><tr><td>
 {% include p/number name=freqnumberboxname max="880" def="375" label="frequency in Hz: " %}
 {% include p/number name=phasenumberboxname def="0" label="phase (0-360): " %}
 </td></tr><tr><td>
@@ -606,16 +610,24 @@ where it can be excited by striking the knee with great force.
 </td></tr><tr><td>
 {% include p/scope name=scope2name samps_per_pixel=1 %}
 </td></tr><tr><td>
+{% include p/scope name=scope3name samps_per_pixel=1 %}
+</td></tr><tr><td>
 {% include p/transport name=transportname %}
 </td></tr></table>
 {% include p/connect outlet=oscillatorname inlet=scopename %}
 {% include p/connect outlet=oscillator2name inlet=scope2name %}
+{% include p/connect outlet=oscillatorname inlet=scope3name %}
+{% include p/connect outlet=oscillator2name inlet=scope3name %}
 <script type="text/javascript">
 {{ freqnumberboxname }}.addEventListener('change', (e)=>{
 	{{ oscillatorname }}.frequency.value = parseFloat(e.target.value);
 });
 {{ phasenumberboxname }}.addEventListener('change', (e)=>{
 	{{ oscillatorname }}.phase = parseFloat(e.target.value);
+});
+{{ phaseslidername }}.addEventListener('mousemove', (e)=>{
+	{{ phasenumberboxname }}.value = {{ phaseslidername }}_value.toString();
+	{{ oscillatorname }}.phase = {{ phaseslidername }}_value;
 });
 </script>
 
