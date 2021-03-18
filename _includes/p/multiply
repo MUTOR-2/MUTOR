@@ -1,0 +1,13 @@
+
+<!-- begin mutor patch multiply -->
+{% if include.factor %}
+{% assign factor = include.factor %}
+{% else %}
+{% assign factor = "1" %}
+{% endif %}
+
+<script type="text/javascript">
+const {{ include.name }} = new Tone.Multiply({{ factor }});
+</script>
+
+<!-- end mutor patch multiply -->

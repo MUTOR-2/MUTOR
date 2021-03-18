@@ -34,6 +34,7 @@ const {{ include.name }} = document.getElementById("{{ include.name }}");
 let {{ include.name }}_value = {{ min }};
 let {{ include.name }}_ctx = {{ include.name }}.getContext("2d");
 let {{ include.name }}_mousestate = 0;
+
 function {{ include.name }}_mousemove(e)
 {
 	if({{ include.name }}_mousestate == 0){
@@ -41,11 +42,11 @@ function {{ include.name }}_mousemove(e)
 	}
 	const width = parseInt("{{ width }}");
 	const height = parseInt("{{ height }}");
+	const min = {{ min }};
+	const max = {{ max }};	
 	const canvasrect = {{ include.name }}.getBoundingClientRect();
 	const mousex = e.clientX - canvasrect.left;
 	const mousey = e.clientY - canvasrect.top;
-	const min = {{ min }};
-	const max = {{ max }};
 	const x = (mousex / width) * (max - min) + min;
 	const y = ((height - mousey) / height) * (max - min) + min;
 	{{ include.name }}_ctx.fillStyle = "#FFFFFF";
@@ -69,8 +70,28 @@ function {{ include.name }}_mouseup(e)
 	{{ include.name }}_mousestate = 0;
 }
 {{ include.name }}.addEventListener('mousedown', {{ include.name }}_mousedown);
-{{ include.name }}.addEventListener('mouseup', {{ include.name }}_mouseup);
+window.addEventListener('mouseup', {{ include.name }}_mouseup);
 {{ include.name }}.addEventListener('mousemove', {{ include.name }}_mousemove);
+
+function {{ include.name }}_set(val)
+{
+	{{ include.name }}_value = val;
+	const width = parseInt("{{ width }}");
+	const height = parseInt("{{ height }}");
+	const min = {{ min }};
+	const max = {{ max }};
+	{{ include.name }}_ctx.fillStyle = "#FFFFFF";
+	{{ include.name }}_ctx.fillRect(0, 0, width, height);
+	{{ include.name }}_ctx.fillStyle = color_{{ mutor_patch_ctr }};
+	const norm = ((val - min) / (max - min));
+	if(width >= height){
+		const x = norm * width;
+		{{ include.name }}_ctx.fillRect(0, 0, x, height);
+	}else{
+		const y = norm * height;
+		{{ include.name }}_ctx.fillRect(0, 0, width, y);
+	}
+}
 </script>
 
 <!-- end mutor patch slider -->
