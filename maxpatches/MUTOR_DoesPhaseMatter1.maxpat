@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 78.0, 1151.0, 645.0 ],
+		"rect" : [ 59.0, 78.0, 1151.0, 662.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -41,6 +41,62 @@
 		"title" : "does phase matter?",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-40",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 291.0, 146.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 296.0, 151.0, 18.0, 20.0 ],
+					"text" : "π",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 516.0, 147.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 512.0, 150.0, 25.0, 20.0 ],
+					"text" : "2π",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-38",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 72.0, 149.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 84.0, 151.0, 18.0, 20.0 ],
+					"text" : "0",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 94.0, 131.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 92.0, 135.0, 433.0, 20.0 ],
+					"text" : "phase (radians)",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Helvetica",
 					"fontsize" : 11.0,
 					"id" : "obj-29",
@@ -50,7 +106,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 88.0, 467.0, 59.0, 39.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 88.0, 467.0, 115.0, 17.0 ],
+					"presentation_rect" : [ 88.0, 481.0, 115.0, 17.0 ],
 					"text" : "sum of both oscilators"
 				}
 
@@ -67,7 +123,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 880.0, 750.0, 154.0, 116.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 89.0, 487.0, 434.0, 139.0 ],
+					"presentation_rect" : [ 89.0, 501.0, 434.0, 139.0 ],
 					"sonomedcolor" : [ 0.0, 0.749019607843137, 0.498039215686275, 1.0 ],
 					"sonomedhicolor" : [ 1.0, 0.749019607843137, 0.0, 1.0 ],
 					"sonomedlocolor" : [ 0.498039215686275, 0.0, 0.498039215686275, 1.0 ]
@@ -86,7 +142,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 722.0, 750.0, 152.0, 116.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 529.0, 487.0, 434.0, 139.0 ],
+					"presentation_rect" : [ 529.0, 501.0, 434.0, 139.0 ],
 					"range" : [ -2.0, 2.0 ]
 				}
 
@@ -125,7 +181,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 319.0, 180.0, 59.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 566.0, 156.0, 59.0, 17.0 ],
+					"presentation_rect" : [ 566.0, 170.0, 59.0, 17.0 ],
 					"text" : "stop audio"
 				}
 
@@ -142,8 +198,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 294.0, 178.5, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 547.0, 153.5, 20.0, 20.0 ],
-					"uncheckedcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
+					"presentation_rect" : [ 547.0, 167.5, 20.0, 20.0 ],
+					"uncheckedcolor" : [ 0.396078431372549, 0.396078431372549, 0.396078431372549, 1.0 ]
 				}
 
 			}
@@ -195,7 +251,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -504,7 +560,7 @@
 					"fontname" : "Helvetica",
 					"fontsize" : 11.0,
 					"id" : "obj-46",
-					"items" : [ "controlable", "phase", "osc", ",", "fixed", "phace", "osc", ",", "both", "oscilators" ],
+					"items" : [ "controlable", "phase", "osc", ",", "fixed", "phase", "osc", ",", "both", "oscilators" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -512,7 +568,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1007.333333333333485, 84.0, 134.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 949.346153557300568, 155.615384936332703, 134.0, 19.0 ]
+					"presentation_rect" : [ 949.346153557300568, 169.615384936332703, 134.0, 19.0 ]
 				}
 
 			}
@@ -752,7 +808,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 809.5, 526.0, 91.0, 102.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 963.03846150636673, 182.0, 103.0, 281.0 ],
+					"presentation_rect" : [ 963.03846150636673, 196.0, 103.0, 281.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~[1]",
@@ -833,7 +889,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 55.0, 147.0, 61.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 91.0, 155.192307531833649, 434.0, 16.0 ],
+					"presentation_rect" : [ 91.0, 169.192307531833649, 434.0, 16.0 ],
 					"size" : 1.0
 				}
 
@@ -874,7 +930,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 517.0, 610.0, 154.0, 116.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 90.0, 324.0, 434.0, 139.0 ],
+					"presentation_rect" : [ 90.0, 338.0, 434.0, 139.0 ],
 					"sonomedcolor" : [ 0.0, 0.749019607843137, 0.498039215686275, 1.0 ],
 					"sonomedhicolor" : [ 1.0, 0.749019607843137, 0.0, 1.0 ],
 					"sonomedlocolor" : [ 0.498039215686275, 0.0, 0.498039215686275, 1.0 ]
@@ -893,7 +949,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 359.0, 610.0, 152.0, 116.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 527.0, 324.0, 434.0, 139.0 ],
+					"presentation_rect" : [ 527.0, 338.0, 434.0, 139.0 ],
 					"range" : [ -2.0, 2.0 ]
 				}
 
@@ -910,7 +966,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 179.0, 610.0, 154.0, 116.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 91.0, 181.0, 433.0, 140.0 ],
+					"presentation_rect" : [ 91.0, 195.0, 433.0, 140.0 ],
 					"sonomedcolor" : [ 0.0, 0.749019607843137, 0.498039215686275, 1.0 ],
 					"sonomedhicolor" : [ 1.0, 0.749019607843137, 0.0, 1.0 ],
 					"sonomedlocolor" : [ 0.498039215686275, 0.0, 0.498039215686275, 1.0 ]
@@ -929,7 +985,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 21.0, 610.0, 152.0, 116.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 527.0, 181.0, 435.0, 140.006711453199387 ],
+					"presentation_rect" : [ 527.0, 195.0, 435.0, 140.006711453199387 ],
 					"range" : [ -2.0, 2.0 ]
 				}
 

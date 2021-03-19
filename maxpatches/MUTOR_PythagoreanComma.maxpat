@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -299,7 +299,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 26.0, 46.0, 532.0, 38.0 ],
-					"text" : "example that demonstrate how pythagorean comma works compearing two sinewave sources",
+					"text" : "example that demonstrates how the pythagorean comma works comparing two sinewave sources",
 					"textcolor" : [ 0.552941176470588, 0.545098039215686, 0.545098039215686, 1.0 ]
 				}
 
