@@ -771,9 +771,12 @@ Phases (0-360):
 {% assign nosc = 2 %}
 
 {% for i in (1..nosc) %}
-{% capture oname %}{{ mutor_patch_pfx }}oscillator{{ i }}{% endcapture %}
-{% capture freq %}{% cycle "344.53125", "2756.25", "1033.59375", "1378.125", "1722.65625", "2067.1875" %}{% endcapture %}
-{% include p/oscillator name=oname freq=freq type="sine" %}
+{% capture o1name %}{{ mutor_patch_pfx }}oscillator1{{ i }}{% endcapture %}
+{% capture o2name %}{{ mutor_patch_pfx }}oscillator2{{ i }}{% endcapture %}
+{% capture freq1 %}{% cycle "344.53125", "400", "344.53125", "2756.25" %}{% endcapture %}
+{% capture freq2 %}{% cycle "344.53125", "400", "344.53125", "2756.25" %}{% endcapture %}
+{% include p/oscillator name=o1name freq=freq1 type="sine" %}
+{% include p/oscillator name=o2name freq=freq2 type="sine" %}
 
 {% capture gname1 %}{{ mutor_patch_pfx }}gain1{{ i }}{% endcapture %}
 {% capture gname2 %}{{ mutor_patch_pfx }}gain2{{ i }}{% endcapture %}
@@ -814,7 +817,8 @@ Phases (0-360):
 let {{ mutor_patch_pfx }}gains = new Array({{ nosc }});
 </script>
 {% for i in (1..nosc) %}
-{% capture oname %}{{ mutor_patch_pfx }}oscillator{{ i }}{% endcapture %}
+{% capture o1name %}{{ mutor_patch_pfx }}oscillator1{{ i }}{% endcapture %}
+{% capture o2name %}{{ mutor_patch_pfx }}oscillator2{{ i }}{% endcapture %}
 {% capture gname1 %}{{ mutor_patch_pfx }}gain1{{ i }}{% endcapture %}
 {% capture gname2 %}{{ mutor_patch_pfx }}gain2{{ i }}{% endcapture %}
 <script type="text/javascript">
@@ -822,11 +826,9 @@ let {{ mutor_patch_pfx }}gains = new Array({{ nosc }});
 </script>
 {% capture scopename %}{{ mutor_patch_pfx }}scope{{ i }}{% endcapture %}
 {% capture spectname %}{{ mutor_patch_pfx }}spect{{ i }}{% endcapture %}
-{% comment %}
-{% capture gsname %}{{ mutor_patch_pfx }}gainslider{{ i }}{% endcapture %}
-{% capture psname %}{{ mutor_patch_pfx }}phaseslider{{ i }}{% endcapture %}
-{% endcomment %}
-{% include p/connect outlet=oname inlet=gname1 %}
+
+{% include p/connect outlet=o1name inlet=gname1 %}
+{% include p/connect outlet=o2name inlet=gname1 %}
 {% include p/connect outlet=gname1 inlet=gname2 %}
 {% include p/connect outlet=gname1 inlet=scopename %}
 {% include p/connect outlet=gname1 inlet=spectname %}
