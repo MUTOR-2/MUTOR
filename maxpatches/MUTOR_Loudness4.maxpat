@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -69,7 +69,7 @@
 					"patching_rect" : [ 61.5, 55.0, 104.0, 116.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 35.0, 26.0, 421.0, 28.0 ],
-					"text" : "loudness 4: are longer sounds louder"
+					"text" : "loudness 4: are longer sounds louder?"
 				}
 
 			}

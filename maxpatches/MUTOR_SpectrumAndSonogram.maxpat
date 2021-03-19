@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -365,7 +365,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -555,7 +555,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1328,7 +1328,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1633,8 +1633,8 @@
 										"followglobaltempo" : 0,
 										"formantcorrection" : 0,
 										"mode" : "basic",
-										"originallength" : [ 29652.480000000028667, "ticks" ],
-										"originaltempo" : 120.000000000000114,
+										"originallength" : [ 2219.080272108843474, "ticks" ],
+										"originaltempo" : 120.0,
 										"pitchcorrection" : 0,
 										"quality" : "basic",
 										"timestretch" : [ 0 ]
@@ -1880,8 +1880,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 324.5, 218.0, 17.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1032.0, 87.0, 18.5, 18.5 ],
-					"uncheckedcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"presentation_rect" : [ 1033.5, 88.5, 17.0, 17.0 ],
+					"uncheckedcolor" : [ 0.396078431372549, 0.396078431372549, 0.396078431372549, 1.0 ],
 					"varname" : "toggle"
 				}
 
@@ -1897,8 +1897,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 560.0, 331.0, 17.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 972.5, 88.5, 17.0, 17.0 ],
-					"uncheckedcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
+					"presentation_rect" : [ 981.5, 88.5, 17.0, 17.0 ],
+					"uncheckedcolor" : [ 0.396078431372549, 0.396078431372549, 0.396078431372549, 1.0 ]
 				}
 
 			}

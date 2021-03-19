@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -216,7 +216,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1156,7 +1156,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1532,7 +1532,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 755.0, 438.5, 145.0, 22.0 ],
-									"text" : "4 6 0 1 2 -3 -1 3 -4 -2 -5 5"
+									"text" : "3 -3 0 4 2 1 5 -4 6 -1 -2 -5"
 								}
 
 							}
@@ -2311,7 +2311,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3376,7 +3376,7 @@
 					"patching_rect" : [ 1026.0, 227.5, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 325.25, 235.0, 59.0, 59.0 ],
-					"uncheckedcolor" : [ 0.873267352581024, 0.873308777809143, 0.87312376499176, 1.0 ]
+					"uncheckedcolor" : [ 0.345098039215686, 0.345098039215686, 0.345098039215686, 1.0 ]
 				}
 
 			}
@@ -3464,7 +3464,7 @@
 					"patching_rect" : [ 425.0, 172.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 239.0, 235.0, 56.0, 56.0 ],
-					"uncheckedcolor" : [ 0.873267352581024, 0.873308777809143, 0.87312376499176, 1.0 ]
+					"uncheckedcolor" : [ 0.345098039215686, 0.345098039215686, 0.345098039215686, 1.0 ]
 				}
 
 			}

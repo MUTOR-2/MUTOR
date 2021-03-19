@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -51,8 +51,8 @@
 					"patching_rect" : [ 43.0, 58.5, 365.0, 54.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 19.0, 49.0, 541.0, 38.0 ],
-					"text" : "Choose between two different dyads to compare loudness. You can control tyhe frequencies of each dyad with the number boxes.",
+					"presentation_rect" : [ 19.0, 49.0, 543.0, 38.0 ],
+					"text" : "Choose between two different dyads to compare loudness. You can control the frequencies of each dyad with the number boxes.",
 					"textcolor" : [ 0.552941176470588, 0.545098039215686, 0.545098039215686, 1.0 ]
 				}
 
@@ -122,7 +122,7 @@
 					"patching_rect" : [ 604.0, 151.5, 19.0, 19.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 920.0, 114.5, 19.0, 19.0 ],
-					"uncheckedcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
+					"uncheckedcolor" : [ 0.396078431372549, 0.396078431372549, 0.396078431372549, 1.0 ]
 				}
 
 			}
@@ -356,7 +356,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -578,7 +578,7 @@
 					"fontname" : "Helvetica",
 					"fontsize" : 11.0,
 					"id" : "obj-46",
-					"items" : [ "diad", 1, ",", "diad", 2 ],
+					"items" : [ "dyad", 1, ",", "dyad", 2 ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
