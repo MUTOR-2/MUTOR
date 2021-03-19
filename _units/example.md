@@ -760,4 +760,96 @@ Phases (0-360):
 {% include p/end %}
 {% include end-figure %}
 
+### loudness 1
+
+{% include begin-figure description="Despite having the same amplitude, we perceive these two frequencies as having different loudness. Which tone sounds louder to you?" %}
+{% include p/begin %}
+
+{% assign rbuttonname = mutor_patch_pfx | append: "rbutton" %}
+{% include p/rbutton name=rbuttonname items="Low Tone (344.53 Hz), High Tone (2756.25 Hz)" values="1,2" %}
+
+{% assign nosc = 2 %}
+
+{% for i in (1..nosc) %}
+{% capture oname %}{{ mutor_patch_pfx }}oscillator{{ i }}{% endcapture %}
+{% capture freq %}{% cycle "344.53125", "2756.25", "1033.59375", "1378.125", "1722.65625", "2067.1875" %}{% endcapture %}
+{% include p/oscillator name=oname freq=freq type="sine" %}
+
+{% capture gname1 %}{{ mutor_patch_pfx }}gain1{{ i }}{% endcapture %}
+{% capture gname2 %}{{ mutor_patch_pfx }}gain2{{ i }}{% endcapture %}
+{% assign gain = 0.5 | divided_by: nosc %}
+{% include p/gain name=gname1 gain=gain %}
+{% include p/gain name=gname2 gain=0.0 %}
+{% endfor %}
+
+{% comment %}
+{% assign scopename = mutor_patch_pfx | append: "scope" %}
+{% assign spectname = mutor_patch_pfx | append: "spect" %}
+{% endcomment %}
+{% assign transportname = mutor_patch_pfx | append: "transport" %}
+
+<table>
+<tr>
+{% for i in (1..nosc) %}
+<td>
+{% capture name %}{{ mutor_patch_pfx }}scope{{ i }}{% endcapture %}
+{% include p/scope name=name samps_per_pixel=1 width="290px" %}
+</td>
+{% endfor %}
+</tr>
+<tr>
+{% for i in (1..nosc) %}
+<td>
+{% capture name %}{{ mutor_patch_pfx }}spect{{ i }}{% endcapture %}
+{% include p/spectroscope name=name gain=2000.0 width="290px" %}
+</td>
+{% endfor %}
+</tr>
+<tr><td colspan="2">
+{% include p/transport name=transportname %}
+</td></tr>
+</table>
+
+<script type="text/javascript">
+let {{ mutor_patch_pfx }}gains = new Array({{ nosc }});
+</script>
+{% for i in (1..nosc) %}
+{% capture oname %}{{ mutor_patch_pfx }}oscillator{{ i }}{% endcapture %}
+{% capture gname1 %}{{ mutor_patch_pfx }}gain1{{ i }}{% endcapture %}
+{% capture gname2 %}{{ mutor_patch_pfx }}gain2{{ i }}{% endcapture %}
+<script type="text/javascript">
+{{ mutor_patch_pfx }}gains[{{ i | minus: 1 }}] = {{ gname2 }};
+</script>
+{% capture scopename %}{{ mutor_patch_pfx }}scope{{ i }}{% endcapture %}
+{% capture spectname %}{{ mutor_patch_pfx }}spect{{ i }}{% endcapture %}
+{% comment %}
+{% capture gsname %}{{ mutor_patch_pfx }}gainslider{{ i }}{% endcapture %}
+{% capture psname %}{{ mutor_patch_pfx }}phaseslider{{ i }}{% endcapture %}
+{% endcomment %}
+{% include p/connect outlet=oname inlet=gname1 %}
+{% include p/connect outlet=gname1 inlet=gname2 %}
+{% include p/connect outlet=gname1 inlet=scopename %}
+{% include p/connect outlet=gname1 inlet=spectname %}
+<script type="text/javascript">
+{{ gname2 }}.toDestination();
+{{ gsname }}_set({{ 0.5 | divided_by: nosc }});
+</script>
+{% endfor %}
+<script type="text/javascript">
+for(i = 0; i < {{ rbuttonname }}.length; i++){
+	{{ rbuttonname }}[i].addEventListener('click', (e)=>{
+		for(i = 0; i < {{ rbuttonname }}.length; i++){
+			if({{ rbuttonname }}[i].value === e.target.value){
+				{{ mutor_patch_pfx }}gains[i].gain.rampTo(1, .05);
+			}else{
+				{{ mutor_patch_pfx }}gains[i].gain.rampTo(0, .05);
+			}
+		}
+	});
+}
+</script>
+
+{% include p/end %}
+{% include end-figure %}
+
 {% include unit_postamble.md %}
