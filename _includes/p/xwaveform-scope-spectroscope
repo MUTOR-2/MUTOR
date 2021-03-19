@@ -1,0 +1,37 @@
+{% include p/begin %}
+
+{% assign buffername = mutor_patch_pfx | append: "buffer" %}
+{% assign playername = mutor_patch_pfx | append: "player" %}
+{% assign waveformname = mutor_patch_pfx | append: "waveform" %}
+{% assign playheadname = mutor_patch_pfx | append: "playhead" %}
+{% assign metername = mutor_patch_pfx | append: "meter" %}
+{% assign transportname = mutor_patch_pfx | append: "transport" %}
+{% assign scopename = mutor_patch_pfx | append: "scope" %}
+{% assign spectroscopename = mutor_patch_pfx | append: "spectroscope" %}
+
+{% if include.gain %}
+{% assign gain = include.gain %}
+{% else %}
+{% assign gain = 1. %}
+{% endif %}
+
+{% include p/buffer name=buffername src=include.src %}
+{% include p/player name=playername buffer= buffername %}
+<table><tr><td>
+{% include p/begin-overlay width="600px" height="200px" %}
+{% include p/waveform name=waveformname buffer=buffername %}
+{% include p/playhead name=playheadname player=playername %}
+{% include p/end-overlay %}
+</td><td>
+{% include p/meter name=metername %}
+</td></tr><tr><td>
+{% include p/scope name=scopename %}
+</td></tr><tr><td>
+{% include p/spectroscope name=spectroscopename gain=gain %}
+</td></tr><tr><td>
+{% include p/connect outlet=playername inlet=scopename %}
+{% include p/connect outlet=playername inlet=spectroscopename %}
+{% include p/connect outlet=playername inlet=metername %}
+{% include p/transport name=transportname %}
+</td></tr></table>
+{% include p/end %}

@@ -585,6 +585,12 @@ where it can be excited by striking the knee with great force.
 {% include p/xwaveform-spectroscope-sonogram src="/MUTOR/assets/audios/trombone.mp3" gain="6000." %}
 {% include end-figure %}
 
+## waveform-scope-spectroscope
+
+{% include begin-figure description="A Waveform (top), a time-domain scope (middle), and a spectroscope (bottom)" %}
+{% include p/xwaveform-scope-spectroscope src="/MUTOR/assets/audios/noisebursts.wav" gain=6000 %}
+{% include end-figure %}
+
 ## testing...
 
 {% include begin-figure description="Two sinusoids, one with variable phase with respect to the other." %}

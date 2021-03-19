@@ -87,6 +87,7 @@
 		  let y = spec[i];
 		  ctx.lineTo(i * pixels_per_samp, height - (y * g));
 	      }
+	      ctx.lineTo(fft.size * pixels_per_samp, height - 1);
 	  }
 	  ctx.closePath();
 	  ctx.fill();
