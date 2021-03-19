@@ -1,0 +1,8 @@
+
+<!-- begin mutor patch gain -->
+
+<script type="text/javascript">
+const {{ include.name }} = new Tone.Gain({{ include.gain }});
+</script>
+
+<!-- end mutor patch gain -->

@@ -587,61 +587,177 @@ where it can be excited by striking the knee with great force.
 
 ## testing...
 
+{% include begin-figure description="Two sinusoids, one with variable phase with respect to the other." %}
 {% include p/begin %}
-{% assign oscillatorname = mutor_patch_pfx | append: "oscillator" %}
-{% assign oscillator2name = mutor_patch_pfx | append: "oscillator2" %}
+{% assign fixedoscillatorname = mutor_patch_pfx | append: "fixedoscillator" %}
+{% assign moveableoscillatorname = mutor_patch_pfx | append: "moveableoscillator" %}
 {% assign transportname = mutor_patch_pfx | append: "transport" %}
 {% assign freqnumberboxname = mutor_patch_pfx | append: "freqnumberbox" %}
 {% assign phasenumberboxname = mutor_patch_pfx | append: "phasenumberbox" %}
 {% assign phaseslidername = mutor_patch_pfx | append: "phaseslider" %}
-{% assign scopename = mutor_patch_pfx | append: "scope" %}
-{% assign scope2name = mutor_patch_pfx | append: "scope2" %}
-{% assign scope3name = mutor_patch_pfx | append: "scope3" %}
-{% assign mult1name = mutor_patch_pfx | append: "mult1" %}
-{% assign mult2name = mutor_patch_pfx | append: "mult2" %}
+{% assign fixedscopename = mutor_patch_pfx | append: "fixedscope" %}
+{% assign moveablescopename = mutor_patch_pfx | append: "moveablescope" %}
+{% assign sumscopename = mutor_patch_pfx | append: "sumscope" %}
+{% assign fixedspectname = mutor_patch_pfx | append: "fixedspect" %}
+{% assign moveablespectname = mutor_patch_pfx | append: "moveablespect" %}
+{% assign sumspectname = mutor_patch_pfx | append: "sumspect" %}
+{% assign fixedmultname = mutor_patch_pfx | append: "fixedmult" %}
+{% assign moveablemultname = mutor_patch_pfx | append: "moveablemult" %}
 
-{% include p/oscillator name=oscillatorname freq="375." type="sine" %}
-{% include p/oscillator name=oscillator2name freq="375." type="sine" %}
-{% include p/multiply name=mult1name factor=".5" %}
-{% include p/multiply name=mult2name factor=".5" %}
-<table><tr><td>
+{% include p/oscillator name=fixedoscillatorname freq="344.53125" type="sine" %}
+{% include p/oscillator name=moveableoscillatorname freq="344.53125" type="sine" %}
+{% include p/multiply name=fixedmultname factor=".5" %}
+{% include p/multiply name=moveablemultname factor=".5" %}
+<table><tr><td style="text-align:left;">
+{% include p/number name=freqnumberboxname max="880" def="344.53125" label="frequency in Hz: " %}
+{% include p/number name=phasenumberboxname def="0" label="phase (0-360): " %}
 {% include p/slider name=phaseslidername min="0" max="360" width="200px" height="20px" %}
 </td></tr><tr><td>
-{% include p/number name=freqnumberboxname max="880" def="375" label="frequency in Hz: " %}
-{% include p/number name=phasenumberboxname def="0" label="phase (0-360): " %}
+{% include p/scope name=fixedscopename samps_per_pixel=1 width="290px" %}
+{% include p/spectroscope name=fixedspectname gain="500." width="290px" %}
 </td></tr><tr><td>
-{% include p/scope name=scopename samps_per_pixel=1 %}
+{% include p/scope name=moveablescopename samps_per_pixel=1 width="290px" %}
+{% include p/spectroscope name=moveablespectname gain="500." width="290px" %}
 </td></tr><tr><td>
-{% include p/scope name=scope2name samps_per_pixel=1 %}
-</td></tr><tr><td>
-{% include p/scope name=scope3name samps_per_pixel=1 %}
+{% include p/scope name=sumscopename samps_per_pixel=1 width="290px" %}
+{% include p/spectroscope name=sumspectname gain="500." width="290px" %}
 </td></tr><tr><td>
 {% include p/transport name=transportname %}
 </td></tr></table>
-{% include p/connect outlet=oscillatorname inlet=mult1name %}
-{% include p/connect outlet=oscillator2name inlet=mult2name %}
-{% include p/connect outlet=mult1name inlet=scopename %}
-{% include p/connect outlet=mult2name inlet=scope2name %}
-{% include p/connect outlet=mult1name inlet=scope3name %}
-{% include p/connect outlet=mult2name inlet=scope3name %}
+{% include p/connect outlet=fixedoscillatorname inlet=fixedmultname %}
+{% include p/connect outlet=moveableoscillatorname inlet=moveablemultname %}
+{% include p/connect outlet=fixedmultname inlet=fixedscopename %}
+{% include p/connect outlet=fixedmultname inlet=fixedspectname %}
+{% include p/connect outlet=moveablemultname inlet=moveablescopename %}
+{% include p/connect outlet=moveablemultname inlet=moveablespectname %}
+{% include p/connect outlet=fixedmultname inlet=sumscopename %}
+{% include p/connect outlet=moveablemultname inlet=sumscopename %}
+{% include p/connect outlet=fixedmultname inlet=sumspectname %}
+{% include p/connect outlet=moveablemultname inlet=sumspectname %}
 <script type="text/javascript">
 {{ freqnumberboxname }}.addEventListener('change', (e)=>{
-	{{ oscillatorname }}.frequency.value = parseFloat(e.target.value);
+	{{ fixedoscillatorname }}.frequency.value = parseFloat(e.target.value);
 });
 {{ phasenumberboxname }}.addEventListener('change', (e)=>{
 	const f = parseFloat(e.target.value);
-	{{ oscillator2name }}.phase = f;
+	{{ moveableoscillatorname }}.phase = f;
 	{{ phaseslidername }}_set(f);
 });
 function phasesliderevent(e)
 {
 	{{ phasenumberboxname }}.value = {{ phaseslidername }}_value.toString();
-	{{ oscillator2name }}.phase = {{ phaseslidername }}_value;
+	{{ moveableoscillatorname }}.phase = {{ phaseslidername }}_value;
 }
 {{ phaseslidername }}.addEventListener('mousedown', phasesliderevent);
 {{ phaseslidername }}.addEventListener('mousemove', phasesliderevent);
 </script>
 
 {% include p/end %}
+{% include end-figure %}
+
+### does phase matter 2
+
+{% include begin-figure description="Changes in phase do not always produce changes in our perception of a sound." %}
+{% include p/begin %}
+
+{% assign nosc = 6 %}
+
+{% for i in (1..nosc) %}
+{% capture oname %}{{ mutor_patch_pfx }}oscillator{{ i }}{% endcapture %}
+{% capture freq %}{% cycle "344.53125", "689.0625", "1033.59375", "1378.125", "1722.65625", "2067.1875" %}{% endcapture %}
+{% include p/oscillator name=oname freq=freq type="sine" %}
+
+{% capture gname %}{{ mutor_patch_pfx }}gain{{ i }}{% endcapture %}
+{% comment %}
+{% capture gain %}{% cycle 1. | divided_by: nosc, "0", "0", "0", "0", "0" %}{% endcapture %}
+{% endcomment %}
+{% assign gain = 0.5 | divided_by: nosc %}
+{% include p/gain name=gname gain=gain type="sine" %}
+{% endfor %}
+
+{% assign scopename = mutor_patch_pfx | append: "scope" %}
+{% assign spectname = mutor_patch_pfx | append: "spect" %}
+{% assign transportname = mutor_patch_pfx | append: "transport" %}
+
+<table>
+<tr><td style="text-align:left;">
+Gains:
+</td><td style="text-align:right;">
+Phases (0-360):
+</td></tr>
+<tr><td style="text-align:left;">
+{% for i in (1..nosc) %}
+{% capture gsname %}{{ mutor_patch_pfx }}gainslider{{ i }}{% endcapture %}
+{% include p/slider name=gsname min="0." max=".16666667" %}
+{% endfor %}
+</td><td style="text-align:right;">
+{% for i in (1..nosc) %}
+{% capture psname %}{{ mutor_patch_pfx }}phaseslider{{ i }}{% endcapture %}
+{% include p/slider name=psname min="0" max="360" %}
+{% endfor %}
+</td></tr>
+<tr><td colspan="2">
+{% include p/scope name=scopename samps_per_pixel=1 %}
+</td></tr><tr><td colspan="2">
+{% include p/spectroscope name=spectname gain=2500.0 %}
+</td></tr><tr><td colspan="2">
+{% include p/transport name=transportname %}
+</td></tr>
+</table>
+
+{% for i in (1..nosc) %}
+{% capture oname %}{{ mutor_patch_pfx }}oscillator{{ i }}{% endcapture %}
+{% capture gname %}{{ mutor_patch_pfx }}gain{{ i }}{% endcapture %}
+{% capture gsname %}{{ mutor_patch_pfx }}gainslider{{ i }}{% endcapture %}
+{% capture psname %}{{ mutor_patch_pfx }}phaseslider{{ i }}{% endcapture %}
+{% include p/connect outlet=oname inlet=gname %}
+{% include p/connect outlet=gname inlet=scopename %}
+{% include p/connect outlet=gname inlet=spectname %}
+<script type="text/javascript">
+{{ gsname }}.addEventListener('mousedown', (e)=>{
+	{{ gname }}.gain.rampTo({{ gsname }}_value, .1);
+});
+{{ gsname }}.addEventListener('mousemove', (e)=>{
+	{{ gname }}.gain.rampTo({{ gsname }}_value, .1);
+});
+
+{{ psname }}.addEventListener('mousedown', (e)=>{
+	{{ oname }}.phase = {{ psname }}_value;
+});
+{{ psname }}.addEventListener('mousemove', (e)=>{
+	{{ oname }}.phase = {{ psname }}_value;
+});
+
+{{ gname }}.toDestination();
+{{ gsname }}_set({{ 0.5 | divided_by: nosc }});
+</script>
+{% endfor %}
+
+<script type="text/javascript">
+// function gainsliderevent(e)
+// {
+// 	// if(e.srcElement.id === "{{ gainslider1name }}"){
+// 	// 	{{ gain1name }}.gain.rampTo({{ gainslider1name }}_value, .1);
+// 	// }
+// }
+// {{ gainslider1name }}.addEventListener('mousedown', gainsliderevent);
+// {{ gainslider1name }}.addEventListener('mousemove', gainsliderevent);
+
+// {{ oscillator1name }}.toDestination();
+
+// {{ gainslider1name }}_set(0.16666667);
+
+// function phasesliderevent(e)
+// {
+// 	if(e.srcElement.id === "{{ phaseslider1name }}"){
+// 		{{ oscillator1name }}.phase = {{ phaseslider1name }}_value;
+// 	}
+// }
+// {{ phaseslider1name }}.addEventListener('mousedown', phasesliderevent);
+// {{ phaseslider1name }}.addEventListener('mousemove', phasesliderevent);
+</script>
+
+{% include p/end %}
+{% include end-figure %}
 
 {% include unit_postamble.md %}

@@ -56,7 +56,7 @@ function {{ include.name }}_mousemove(e)
 		{{ include.name }}_ctx.fillRect(0, 0, mousex, height);
 		{{ include.name }}_value = x;
 	}else{
-		{{ include.name }}_ctx.fillRect(0, height - 1, width, mousex);
+		{{ include.name }}_ctx.fillRect(0, mousey, width, height - mousey);
 		{{ include.name }}_value = y;
 	}
 }
@@ -69,6 +69,7 @@ function {{ include.name }}_mouseup(e)
 {
 	{{ include.name }}_mousestate = 0;
 }
+
 {{ include.name }}.addEventListener('mousedown', {{ include.name }}_mousedown);
 window.addEventListener('mouseup', {{ include.name }}_mouseup);
 {{ include.name }}.addEventListener('mousemove', {{ include.name }}_mousemove);
@@ -89,7 +90,7 @@ function {{ include.name }}_set(val)
 		{{ include.name }}_ctx.fillRect(0, 0, x, height);
 	}else{
 		const y = norm * height;
-		{{ include.name }}_ctx.fillRect(0, 0, width, y);
+		{{ include.name }}_ctx.fillRect(0, height - y - 1, width, y);
 	}
 }
 </script>
