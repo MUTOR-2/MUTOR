@@ -2,15 +2,16 @@
 <!-- begin mutor radio button -->
 {% assign items = include.items | split: ',' %}
 {% assign values = include.values | split: ',' %}
-<div>
+
 {% assign n = items | size %}
 {% for i in (1..n) %}
 {% assign ii = i | minus: 1 %}
 <input type="radio" id="{{ items[ii] }}" name="{{ include.name }}" value="{{ values[ii] }}">
-<label for="{{ items[ii] }}">{{ items[ii] }}</label>
+<label name="{{ include.name }}_label" for="{{ items[ii] }}">{{ items[ii] }}</label>
 {% endfor %}
-</div>
+
 <script type="text/javascript">
 {{ include.name }} = document.getElementsByName("{{ include.name }}");
+{{ include.name }}_label = document.getElementsByName("{{ include.name }}_label");
 </script>
 <!-- end mutor radio button -->

@@ -960,4 +960,16 @@ for(i = 0; i < {{ rbuttonname }}.length; i++){
 {% include p/end %}
 {% include end-figure %}
 
+### Probe Tone
+
+{% include p/begin %}
+{% assign ptsynthname = mutor_patch_pfx | append: "ptsynth" %}
+{% assign transportname = mutor_patch_pfx | append: "transport" %}
+
+{% include p/transport name=transportname width="" height="" %}
+
+{% include p/ptsynth name=ptsynthname %}
+
+{% include p/end %}
+
 {% include unit_postamble.md %}

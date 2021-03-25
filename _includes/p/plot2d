@@ -1,0 +1,53 @@
+
+<!-- begin mutor patch scope -->
+{% if include.width %}
+{% assign width = include.width %}
+{% else %}
+{% assign width = "600px" %}
+{% endif %}
+
+{% if include.height %}
+{% assign height = include.height %}
+{% else %}
+{% assign height = "200px" %}
+{% endif %}
+
+{% if include.xmin %}
+{% assign xmin = include.xmin %}
+{% else %}
+{% assign xmin = -1.0 %}
+{% endif %}
+
+{% if include.xmax %}
+{% assign xmax = include.xmax %}
+{% else %}
+{% assign xmax = 1.0 %}
+{% endif %}
+
+{% if include.ymin %}
+{% assign ymin = include.ymin %}
+{% else %}
+{% assign ymin = -1.0 %}
+{% endif %}
+
+{% if include.ymax %}
+{% assign ymax = include.ymax %}
+{% else %}
+{% assign ymax = 1.0 %}
+{% endif %}
+
+{% if mutor_patch_overlay == true %}
+<canvas class="mutor-patch-plot2d mutor-patch-layer" id="{{ include.name }}" width="{{ width }}" height="{{ height }}"></canvas>
+{% else %}
+<canvas class="mutor-patch-plot2d" id="{{ include.name }}" width="{{ width }}" height="{{ height }}"></canvas>
+{% endif %}
+
+<script type="text/javascript">
+let {{ include.name }} = MUTOR_alib.plot2d(document.getElementById("{{ include.name }}"),
+					   {
+						xmin : {{ xmin }},
+						xmax : {{ xmax }},
+						ymin : {{ ymin }},
+						ymax : {{ ymax }}
+					   });
+</script>

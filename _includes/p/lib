@@ -185,5 +185,111 @@
 	    ctx.stroke();
 	    return y;
 	},
-	};
+	plot2d : (canvas, params = {}) =>
+	{
+		let p = {
+			_canvas : canvas,
+			_xmin : -1.0,
+			_xmax : 1.0,
+			_ymin : -1.0,
+			_ymax : 1.0,
+			_xs : [],
+			_ys : [],
+			_connected : true,
+			_pointsize : 2,
+			_fillpoints : true,
+			_linedash : [],
+			_bgcolor : "#FFFFFF",
+			_pointcolor : "#000000",
+			_linecolor : "#000000",
+			scale : (x, imin, imax, omin, omax) => {
+				return (((x - imin) / (imax - imin)) * (omax - omin)) + omin;
+			},
+			redraw : function()
+			{
+				let c = this._canvas;
+				let ctx = c.getContext("2d");
+				const w = c.width;
+				const h = c.height;
+				ctx.clearRect(0, 0, w, h);
+				ctx.fillStyle = this._bgcolor;
+				ctx.fillRect(0, 0, w, h);
+				const xs = this._xs;
+				const ys = this._ys;
+				const n = xs.length < ys.length ? xs.length : ys.length;
+				if(n <= 0){
+					return;
+				}
+				const xmin = this._xmin;
+				const xmax = this._xmax;
+				const ymin = this._ymin;
+				const ymax = this._ymax;
+				const ps = this._pointsize;
+				const twopi = Math.PI * 2;
+				if(ps > 0){
+					for(i = 0; i < n; i++){
+						const x = this.scale(xs[i], xmin, xmax, 0, w);
+						const y = this.scale(ys[i], ymin, ymax, h, 0);
+						// console.log("xs[" + i + "] = " + xs[i] +
+						// 	    " x = " + x +
+						// 	    " ys[" + i + "] = " + ys[i] +
+						// 	    " y = " + y);
+						ctx.beginPath();
+						ctx.arc(x, y, ps, 0, twopi);
+						if(this._fillpoints){
+							ctx.fillStyle = this._pointcolor;
+							ctx.fill();
+						}else{
+							ctx.strokeStyle = this._pointcolor;
+							ctx.stroke();
+						}
+					}
+					
+				}
+				if(this._connected){
+					let x = this.scale(xs[0], xmin, xmax, 0, w);
+					let y = this.scale(ys[0], ymin, ymax, h, 0);
+					ctx.beginPath();
+					ctx.moveTo(x, y);
+					for(i = 1; i < n; i++){
+						x = this.scale(xs[i], xmin, xmax, 0, w);
+						y = this.scale(ys[i], ymin, ymax, h, 0);
+						// console.log("xs[" + i + "] = " + xs[i] +
+						// 	    " x = " + x +
+						// 	    " ys[" + i + "] = " + ys[i] +
+						// 	    " y = " + y);
+						ctx.lineTo(x, y);
+					}
+					ctx.strokeStyle = this._pointcolor;
+					ctx.stroke();
+				}
+			},
+			accparam : function(param, val = undefined)
+			{
+				if(val == undefined){
+					return this[param];
+				}else{
+					this[param] = val;
+					this.redraw();
+				}
+			},
+			xmin : function(v){return this.accparam('_xmin', v)},
+			xmax : function(v){return this.accparam('_xmax', v)},
+			ymin : function(v){return this.accparam('_ymin', v)},
+			ymax : function(v){return this.accparam('_ymax', v)},
+			xs : function(v){return this.accparam('_xs', v)},
+			ys : function(v){return this.accparam('_ys', v)},
+			connected : function(v){return this.accparam('_connected', v)},
+			linedash : function(v){return this.accparam('_linedash', v)},
+			bgcolor : function(v){return this.accparam('_bgcolor', v)},
+			pointcolor : function(v){return this.accparam('_pointcolor', v)},
+			linecolor : function(v){return this.accparam('_linecolor', v)}
+		};
+		for(const [k, v] of Object.entries(params)){
+			p[k](v);
+		}
+		p.redraw();
+		return p;
+	}
+  };
 </script>

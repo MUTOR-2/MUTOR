@@ -1,0 +1,142 @@
+
+<!-- begin mutor patch probe tone synth -->
+
+{% assign rbuttonname = mutor_patch_pfx | append: "rbutton" %}
+{% assign plotname = mutor_patch_pfx | append: "plot2d" %}
+
+<div>
+{% include p/rbutton name=rbuttonname items="1 (very bad), 2, 3, 4 (moderate), 5, 6, 7 (very good)" values="1,2,3,4,5,6,7" %}
+</div>
+<button type="button" class="mutor-patch-transport" id="{{ include.name }}_ptsubmit">
+submit
+</button>
+{% include p/plot2d name=plotname xmin='0' xmax='12' ymin='0' ymax='8' %}
+
+<script type="text/javascript">
+  let submit_button_{{ mutor_patch_ctr }} = document.getElementById("{{ include.name }}_ptsubmit");
+  let results_button_{{ mutor_patch_ctr }} = document.getElementById("{{ include.name }}_ptresults");
+
+  function enable_rbuttons_{{ mutor_patch_ctr }}()
+  {
+	for(i = 0; i < {{ rbuttonname }}.length; i++){
+		{{ rbuttonname }}[i].disabled = false;
+  	}	
+  }
+  function disable_rbuttons_{{ mutor_patch_ctr }}()
+  {
+	for(i = 0; i < {{ rbuttonname }}.length; i++){
+		{{ rbuttonname }}[i].disabled = true;
+  	}	
+  }
+  function enable_submit_button_{{ mutor_patch_ctr }}()
+  {
+	submit_button_{{ mutor_patch_ctr }}.style['background-color'] = color_{{ mutor_patch_ctr }};
+	submit_button_{{ mutor_patch_ctr }}.style['font-style'] = "normal";
+  }
+  function disable_submit_button_{{ mutor_patch_ctr }}()
+  {
+	submit_button_{{ mutor_patch_ctr }}.style['background-color'] = "#888888";;
+	submit_button_{{ mutor_patch_ctr }}.style['font-style'] = "italic";
+  }
+  
+  disable_rbuttons_{{ mutor_patch_ctr }}();
+  disable_submit_button_{{ mutor_patch_ctr }}();
+
+  for(i = 0; i < {{ rbuttonname }}.length; i++){
+	{{ rbuttonname }}[i].addEventListener('click', (e)=>{
+		enable_submit_button_{{ mutor_patch_ctr }}();		
+	});
+  }
+
+  function get_rating_{{ mutor_patch_ctr }}()
+  {
+	for(i = 0; i < {{ rbuttonname }}.length; i++){
+		if({{ rbuttonname }}[i].checked){
+			return i + 1;
+		}
+	}
+  }
+
+  function reset_{{ mutor_patch_ctr }}()
+  {
+	disable_rbuttons_{{ mutor_patch_ctr }}();
+	disable_submit_button_{{ mutor_patch_ctr }}();
+  }
+
+  const {{ include.name }} = new Tone.Synth().toDestination();
+  const notes_{{ mutor_patch_ctr }} = ["F#3", "G3", "G#3", "A3", "A#3", "B3", "C4", "C#4", "D4", "D#4", "E4", "F4"];
+  let choice_{{ mutor_patch_ctr }} = -1;
+  let hist_sums_{{ mutor_patch_ctr }} = new Array(notes_{{ mutor_patch_ctr }}.length);
+  let hist_counts_{{ mutor_patch_ctr }} = new Array(notes_{{ mutor_patch_ctr }}.length);
+  for(i = 0; i < notes_{{ mutor_patch_ctr }}.length; i++){
+	hist_sums_{{ mutor_patch_ctr }}[i] = 0;
+	hist_counts_{{ mutor_patch_ctr }}[i] = 0;
+  }
+
+  function register_choice_{{ mutor_patch_ctr }}()
+  {
+  	let rating = get_rating_{{ mutor_patch_ctr }}();
+	hist_sums_{{ mutor_patch_ctr }}[choice_{{ mutor_patch_ctr }}] += rating;
+	hist_counts_{{ mutor_patch_ctr }}[choice_{{ mutor_patch_ctr }}]++;
+	// let str = "";
+	// for(i = 0; i < hist_sums_{{ mutor_patch_ctr }}.length; i++){
+	// 	str += hist_sums_{{ mutor_patch_ctr }}[i] + " ";
+	// }
+	// console.log(str);
+	reset_{{ mutor_patch_ctr }}();
+  }
+
+  submit_button_{{ mutor_patch_ctr }}.addEventListener('click', (e)=>{
+	//console.log("choice_{{ mutor_patch_ctr }} = " + choice_{{ mutor_patch_ctr }});
+	register_choice_{{ mutor_patch_ctr }}();
+	let xs = [];
+	let ys = [];
+	for(i = 0; i < notes_{{ mutor_patch_ctr }}.length; ++i){
+		xs.push(i);
+		ys.push(hist_sums_{{ mutor_patch_ctr }}[i] / hist_counts_{{ mutor_patch_ctr }}[i]);
+	}
+	{{ plotname }}.xs(xs);
+	{{ plotname }}.ys(ys);
+  });
+  transport_fns_{{ mutor_patch_ctr }}.play.push(() => {
+	{{ include.name }}.sync();
+	let i = 0;
+	let inc = .5;
+	if(0){
+	{{ include.name }}.triggerAttackRelease("C4", "8t", "+" + i);
+	{{ include.name }}.triggerAttackRelease("C4", "8t", "+" + (i += inc));
+	{{ include.name }}.triggerAttackRelease("G4", "8t", "+" + (i += inc));
+	{{ include.name }}.triggerAttackRelease("G4", "8t", "+" + (i += inc));
+	{{ include.name }}.triggerAttackRelease("A4", "8t", "+" + (i += inc));
+	{{ include.name }}.triggerAttackRelease("A4", "8t", "+" + (i += inc));
+	{{ include.name }}.triggerAttackRelease("G4", "4n", "+" + (i += inc));
+	i += inc;
+	{{ include.name }}.triggerAttackRelease("F4", "8t", "+" + (i += inc));
+	{{ include.name }}.triggerAttackRelease("F4", "8t", "+" + (i += inc));
+	{{ include.name }}.triggerAttackRelease("E4", "8t", "+" + (i += inc));
+	{{ include.name }}.triggerAttackRelease("E4", "8t", "+" + (i += inc));
+	{{ include.name }}.triggerAttackRelease("D4", "8t", "+" + (i += inc));
+	{{ include.name }}.triggerAttackRelease("D4", "8t", "+" + (i += inc));
+	}else{
+	{{ include.name }}.triggerAttackRelease("D4", "8t", "+" + (i += inc));
+	}
+
+	choice_{{ mutor_patch_ctr }} = Math.floor(Math.random() * notes_{{ mutor_patch_ctr }}.length);
+	{{ include.name }}.triggerAttackRelease(notes_{{ mutor_patch_ctr }}[choice_{{ mutor_patch_ctr }}], "4n", "+" + (i += inc));
+	Tone.Transport.scheduleOnce((t) => {
+		//console.log("finito");
+		transport_{{ mutor_patch_ctr }}('stop');
+		enable_rbuttons_{{ mutor_patch_ctr }}();
+	}, "+" + (i += inc));
+	Tone.start();
+	Tone.Transport.start();
+  });
+  transport_fns_{{ mutor_patch_ctr }}.stop.push(() => {
+	Tone.Transport.cancel(0);
+	{{ include.name }}.triggerRelease();
+  });
+  
+  
+  
+</script>
+<!-- end mutor patch probe tone synth -->
