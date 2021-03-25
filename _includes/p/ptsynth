@@ -102,7 +102,7 @@ submit
 	{{ include.name }}.sync();
 	let i = 0;
 	let inc = .5;
-	if(0){
+	if(1){
 	{{ include.name }}.triggerAttackRelease("C4", "8t", "+" + i);
 	{{ include.name }}.triggerAttackRelease("C4", "8t", "+" + (i += inc));
 	{{ include.name }}.triggerAttackRelease("G4", "8t", "+" + (i += inc));
