@@ -195,10 +195,14 @@
 			_ymax : 1.0,
 			_xs : [],
 			_ys : [],
+			_gridx : [],
+			_gridy : [],
+			_gridpx : undefined,
 			_connected : true,
-			_pointsize : 2,
+			_pointsize : 3,
 			_fillpoints : true,
 			_linedash : [],
+			_linewidth : 2,
 			_bgcolor : "#FFFFFF",
 			_pointcolor : "#000000",
 			_linecolor : "#000000",
@@ -214,6 +218,9 @@
 				ctx.clearRect(0, 0, w, h);
 				ctx.fillStyle = this._bgcolor;
 				ctx.fillRect(0, 0, w, h);
+				if(this._gridpx != undefined){
+					ctx.putImageData(this._gridpx, 0, 0);
+				}
 				const xs = this._xs;
 				const ys = this._ys;
 				const n = xs.length < ys.length ? xs.length : ys.length;
@@ -260,9 +267,43 @@
 						// 	    " y = " + y);
 						ctx.lineTo(x, y);
 					}
+					ctx.lineWidth = this._linewidth;
 					ctx.strokeStyle = this._pointcolor;
 					ctx.stroke();
 				}
+			},
+			updategrid : function()
+			{
+				let c = this._canvas;
+				let ctx = c.getContext("2d");
+				const w = c.width;
+				const h = c.height;
+				ctx.clearRect(0, 0, w, h);
+				ctx.fillStyle = this._bgcolor;
+				ctx.fillRect(0, 0, w, h);
+				ctx.strokeStyle = this._linecolor;
+				const gridx = this._gridx;
+				const gridy = this._gridy;
+				const xmin = this._xmin;
+				const xmax = this._xmax;
+				const ymin = this._ymin;
+				const ymax = this._ymax;
+				for(i = 0; i < gridx.length; i++){
+					const x = this.scale(gridx[i], xmin, xmax, 0, w);
+					ctx.beginPath();
+					ctx.moveTo(x, h);
+					ctx.lineTo(x, 0);
+					ctx.stroke();
+				}
+				for(i = 0; i < gridy.length; i++){
+					const y = this.scale(gridy[i], ymin, ymax, h, 0);
+					ctx.beginPath();
+					ctx.moveTo(0, y);
+					ctx.lineTo(w, y);
+					ctx.stroke();
+				}
+				this._gridpx = ctx.getImageData(0, 0, w, h);
+				ctx.clearRect(0, 0, w, h);
 			},
 			accparam : function(param, val = undefined)
 			{
@@ -279,6 +320,18 @@
 			ymax : function(v){return this.accparam('_ymax', v)},
 			xs : function(v){return this.accparam('_xs', v)},
 			ys : function(v){return this.accparam('_ys', v)},
+			gridx : function(v){
+				const ret = this.accparam('_gridx', v);
+				this.updategrid();
+				this.redraw();
+				return ret;
+			},
+			gridy : function(v){
+				const ret = this.accparam('_gridy', v);
+				this.updategrid();
+				this.redraw();
+				return ret;
+			},
 			connected : function(v){return this.accparam('_connected', v)},
 			linedash : function(v){return this.accparam('_linedash', v)},
 			bgcolor : function(v){return this.accparam('_bgcolor', v)},
@@ -287,6 +340,9 @@
 		};
 		for(const [k, v] of Object.entries(params)){
 			p[k](v);
+		}
+		if(p.gridx().length || p.gridy().length){
+			p.updategrid();
 		}
 		p.redraw();
 		return p;

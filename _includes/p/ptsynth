@@ -1,18 +1,26 @@
 
 <!-- begin mutor patch probe tone synth -->
 
+{% assign transportname = mutor_patch_pfx | append: "transport" %}
 {% assign rbuttonname = mutor_patch_pfx | append: "rbutton" %}
 {% assign plotname = mutor_patch_pfx | append: "plot2d" %}
 
+<span><span style="text-align: left">
+{% include p/transport name=transportname width="290px" %}
+</span><span style="text-align: left">
+<button type="button" class="mutor-patch-transport" id="{{ include.name }}_ptsubmit" style="width:290px; height: 20px" >
+submit
+</button>
+</span></span>
 <div>
 {% include p/rbutton name=rbuttonname items="1 (very bad), 2, 3, 4 (moderate), 5, 6, 7 (very good)" values="1,2,3,4,5,6,7" %}
 </div>
-<button type="button" class="mutor-patch-transport" id="{{ include.name }}_ptsubmit">
-submit
-</button>
-{% include p/plot2d name=plotname xmin='0' xmax='12' ymin='0' ymax='8' %}
+
+{% include p/plot2d name=plotname xmin='0' xmax='13' ymin='0' ymax='8' %}
 
 <script type="text/javascript">
+  {{ plotname }}.gridx([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]);
+  {{ plotname }}.gridy([1, 2, 3, 4, 5, 6, 7, 8]);
   let submit_button_{{ mutor_patch_ctr }} = document.getElementById("{{ include.name }}_ptsubmit");
   let results_button_{{ mutor_patch_ctr }} = document.getElementById("{{ include.name }}_ptresults");
 
@@ -76,6 +84,7 @@ submit
   function register_choice_{{ mutor_patch_ctr }}()
   {
   	let rating = get_rating_{{ mutor_patch_ctr }}();
+	//console.log("rating = " + rating);
 	hist_sums_{{ mutor_patch_ctr }}[choice_{{ mutor_patch_ctr }}] += rating;
 	hist_counts_{{ mutor_patch_ctr }}[choice_{{ mutor_patch_ctr }}]++;
 	// let str = "";
@@ -92,7 +101,7 @@ submit
 	let xs = [];
 	let ys = [];
 	for(i = 0; i < notes_{{ mutor_patch_ctr }}.length; ++i){
-		xs.push(i);
+		xs.push(i + 1);
 		ys.push(hist_sums_{{ mutor_patch_ctr }}[i] / hist_counts_{{ mutor_patch_ctr }}[i]);
 	}
 	{{ plotname }}.xs(xs);
@@ -122,6 +131,7 @@ submit
 	}
 
 	choice_{{ mutor_patch_ctr }} = Math.floor(Math.random() * notes_{{ mutor_patch_ctr }}.length);
+	//console.log("choice = " + choice_{{ mutor_patch_ctr }});
 	{{ include.name }}.triggerAttackRelease(notes_{{ mutor_patch_ctr }}[choice_{{ mutor_patch_ctr }}], "4n", "+" + (i += inc));
 	Tone.Transport.scheduleOnce((t) => {
 		//console.log("finito");
