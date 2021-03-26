@@ -1,0 +1,4 @@
+<form method="get" action="http://www.google.com/search" target="_blank">
+<input type="hidden" name="sitesearch" value="MUTOR-2.github.io/MUTOR" />
+<input type="text" name="q" maxlength="255" placeholder="Search" class="mutor-search" />
+</form>
