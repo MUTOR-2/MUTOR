@@ -9,6 +9,8 @@
 {%- assign refs_page = my_page -%}
 {%- elsif my_page.title == "Discussion Questions" -%}
 {%- assign disq_page = my_page -%}
+{%- elsif my_page.title == "Team" -%}
+{%- assign team_page = my_page -%}
 {%- endif -%}
 {%- endfor -%}
 
@@ -32,13 +34,7 @@
 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 	<div class="overlay-content">
 	  <ul class="top-level-menu">
-    	    <li><a class="page-link" href="/MUTOR{{ refs_page.url }}">{{ refs_page.title }}</a></li>
-	    <li class="sep"><span class="sep-space"></span><span class="sep-line"></span><span class="sep-space"></span></li>
-    	    <li><a class="page-link" href="/MUTOR{{ disq_page.url }}">{{ disq_page.title }}</a></li>
-	    <li class="sep"><span class="sep-space"></span><span class="sep-line"></span><span class="sep-space"></span></li>
-    	    <li><a class="page-link" href="/MUTOR{{ about_page.url }}">{{ about_page.title }}</a></li>
-	    <li class="sep"><span class="sep-space"></span><span class="sep-line"></span><span class="sep-space"></span></li>
-    	    <li>
+	    <li>
 	      <a class="page-link" href="">Units</a>
     	      <ul class="second-level-menu" id="third-level-menu">
     		{% for u in site.units %}
@@ -48,6 +44,14 @@
     		{% endfor %}
     	      </ul>
     	    </li>
+	    <li class="sep"><span class="sep-space"></span><span class="sep-line"></span><span class="sep-space"></span></li>
+    	    <li><a class="page-link" href="/MUTOR{{ refs_page.url }}">{{ refs_page.title }}</a></li>
+	    <li class="sep"><span class="sep-space"></span><span class="sep-line"></span><span class="sep-space"></span></li>
+    	    <li><a class="page-link" href="/MUTOR{{ disq_page.url }}">{{ disq_page.title }}</a></li>
+	    <li class="sep"><span class="sep-space"></span><span class="sep-line"></span><span class="sep-space"></span></li>
+    	    <li><a class="page-link" href="/MUTOR{{ about_page.url }}">{{ about_page.title }}</a></li>
+	    <li class="sep"><span class="sep-space"></span><span class="sep-line"></span><span class="sep-space"></span></li>
+	    <li><a class="page-link" href="/MUTOR{{ team_page.url }}">{{ team_page.title }}</a></li>
 	    <li class="sep"><span class="sep-space"></span><span class="sep-line"></span><span class="sep-space"></span></li>
     	  </ul>
 	</div>

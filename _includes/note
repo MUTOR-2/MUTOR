@@ -1,3 +1,5 @@
+{% if false %}
+
 {%- if include.author == "jm" or include.author == "JM" -%}
 <span class="note" style="color: blue">
 [{{ include.author | upcase }}: {{ include.text }}]
@@ -20,3 +22,4 @@
 </span>
 {%- endif -%}
 
+{% endif %}
