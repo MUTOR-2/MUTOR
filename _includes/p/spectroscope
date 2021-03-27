@@ -25,7 +25,7 @@
 {% endif %}
 <script type="text/javascript">
     const {{ include.name }} = new Tone.FFT(512);
-    {{ include.name }}.normalRange = true;
+    // {{ include.name }}.normalRange = true;
     const {{ include.name }}_canvas = document.getElementById("{{ include.name }}");
     draw_fns_{{ mutor_patch_ctr }}.push(function(){
       MUTOR_alib.draw_spectroscope( {{ include.name }}, {{ gain }}, {{ include.name }}_canvas, color_{{ mutor_patch_ctr }});

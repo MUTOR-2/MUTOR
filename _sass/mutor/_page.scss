@@ -7,4 +7,12 @@
     font-weight: $global-font-weight;
 
     position: relative;
+
+    .page-content {
+	padding-left: 100px;
+    }
+    .page-content h1, h2, h3, h4, h5, h6 {
+	font-style: oblique;
+	
+    }
 }

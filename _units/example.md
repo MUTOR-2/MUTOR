@@ -548,7 +548,7 @@ where it can be excited by striking the knee with great force.
 ## xspectroscope
 
 {% include begin-figure description="A spectrum" %}
-{% include p/xspectroscope src="/MUTOR/assets/audios/trombone.mp3" gain="6000." %}
+{% include p/xspectroscope src="/MUTOR/assets/audios/trombone.mp3" gain="1.0" %}
 {% include end-figure %}
 
 ## xsonogram
@@ -560,7 +560,7 @@ where it can be excited by striking the knee with great force.
 ## xwaveform-spectroscope
 
 {% include begin-figure description="A waveform (top) and a spectrum (bottom)" %}
-{% include p/xwaveform-spectroscope src="/MUTOR/assets/audios/trombone.mp3" gain="6000." %}
+{% include p/xwaveform-spectroscope src="/MUTOR/assets/audios/trombone.mp3" gain="1.0" %}
 {% include end-figure %}
 
 ## xwaveform-sonogram
@@ -572,14 +572,18 @@ where it can be excited by striking the knee with great force.
 ## xwaveform-spectrogram-sonogram
 
 {% include begin-figure description="A waveform (top), a spectrum (bottom left), and a sonogram (bottom right)" %}
-{% include p/xwaveform-spectroscope-sonogram src="/MUTOR/assets/audios/trombone.mp3" gain="6000." %}
+{% include p/xwaveform-spectroscope-sonogram src="/MUTOR/assets/audios/trombone.mp3" gain="1.0" %}
 {% include end-figure %}
 
 ## waveform-scope-spectroscope
 
 {% include begin-figure description="A Waveform (top), a time-domain scope (middle), and a spectroscope (bottom)" %}
-{% include p/xwaveform-scope-spectroscope src="/MUTOR/assets/audios/noisebursts.wav" gain=6000 %}
+{% include p/xwaveform-scope-spectroscope src="/MUTOR/assets/audios/noisebursts.wav" gain="1.0" %}
 {% include end-figure %}
+
+## xwaveform-spectroscope-small
+
+{% include p/xwaveform-spectroscope-small src="/MUTOR/assets/audios/trombone.mp3" gain="1.0" %}
 
 ## testing...
 
@@ -610,13 +614,13 @@ where it can be excited by striking the knee with great force.
 {% include p/slider name=phaseslidername min="0" max="360" width="200px" height="20px" %}
 </td></tr><tr><td>
 {% include p/scope name=fixedscopename samps_per_pixel=1 width="290px" %}
-{% include p/spectroscope name=fixedspectname gain="500." width="290px" %}
+{% include p/spectroscope name=fixedspectname gain="1.0" width="290px" %}
 </td></tr><tr><td>
 {% include p/scope name=moveablescopename samps_per_pixel=1 width="290px" %}
-{% include p/spectroscope name=moveablespectname gain="500." width="290px" %}
+{% include p/spectroscope name=moveablespectname gain="1.0" width="290px" %}
 </td></tr><tr><td>
 {% include p/scope name=sumscopename samps_per_pixel=1 width="290px" %}
-{% include p/spectroscope name=sumspectname gain="500." width="290px" %}
+{% include p/spectroscope name=sumspectname gain="1.0" width="290px" %}
 </td></tr><tr><td>
 {% include p/transport name=transportname %}
 </td></tr></table>
@@ -695,7 +699,7 @@ Phases (0-360):
 <tr><td colspan="2">
 {% include p/scope name=scopename samps_per_pixel=1 %}
 </td></tr><tr><td colspan="2">
-{% include p/spectroscope name=spectname gain=2500.0 %}
+{% include p/spectroscope name=spectname gain="1.0" %}
 </td></tr><tr><td colspan="2">
 {% include p/transport name=transportname %}
 </td></tr>
@@ -800,7 +804,7 @@ Phases (0-360):
 {% for i in (1..nosc) %}
 <td>
 {% capture name %}{{ mutor_patch_pfx }}spect{{ i }}{% endcapture %}
-{% include p/spectroscope name=name gain=2000.0 width="290px" %}
+{% include p/spectroscope name=name gain="1.0" width="290px" %}
 </td>
 {% endfor %}
 </tr>
@@ -899,7 +903,7 @@ for(i = 0; i < 50; i++){
 {% for i in (1..nosc) %}
 <td>
 {% capture name %}{{ mutor_patch_pfx }}spect{{ i }}{% endcapture %}
-{% include p/spectroscope name=name gain=2000.0 width="290px" %}
+{% include p/spectroscope name=name gain="1.0" width="290px" %}
 </td>
 {% endfor %}
 </tr>
