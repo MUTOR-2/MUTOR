@@ -24,7 +24,7 @@
 {% include p/end-overlay %}
 </td><td>
 {% include p/spectroscope name=spectroscopename gain=gain width="200px" height="50px" %}
-</td></tr><tr><td colspan=2>
+</td></tr><tr><td colspan=2 style="text-align:center">
 {% include p/transport name=transportname width="400px" %}
 </td></tr></table>
 
