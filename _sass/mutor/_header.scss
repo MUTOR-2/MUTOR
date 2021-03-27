@@ -14,134 +14,171 @@
     font-size: $global-font-size;
     font-weight: $global-font-weight;
     font-style: oblique;
+    display: table;
+    table-layout: fixed;
 
     // Positioning context for the mobile navigation icon
     position: relative;
     
-    div.wrapper {
-	display: table;
-	width: auto;
-	table-layout: fixed;
+    div.header-left {
+	display: table-cell;
+	width: 80%;
+	//table-layout: fixed;
 	height: auto;
-    }
 
-    div.wrapper span.mutor-logo {
-	display: table-cell;
-	text-align: left;
-    }
-
-    /**
-     * nav / dropdown
-     */
-    .site-nav {
-	float: center;
-	position: relative;
-	display: table-cell;
-	vertical-align: middle;
-	padding: 0 0 2px 50px;
-
-	.burger-menu {
-	    font-size: 42px;
-	    cursor: pointer;
-	    font-style: normal;
-	    display: table-cell;
-	    padding-bottom: 12px;
-	    
-	}
-
-	ul {
-	    list-style: none;
-	    padding: 0px;
-	    margin: 0px;
-	}
-
-	.sep {
+	span.header-left-content {
 	    display: table;
-	    table-layout: fixed;
 	    width: 100%;
-	    position: absolute;
-	}
-	
-	.sep-space {
-	    display: table-cell;
-	    position: relative;
-	}
-	
-	.sep-line {
-	    display: table-cell;
-	    border-top: 3px solid #000000;
-	    position: relative;
-	}
+	    table-layout: auto;
 
-	.overlay {
-	    height: 0%;
-	    width: 100%;
-	    position: fixed;
-	    z-index: 1;
-	    top: 0;
-	    left: 0;
-	    overflow-y: hidden;
-	    transition: 0.5s;
-	}
-
-	.overlay-content {
-	    position: relative;
-	    top: 25%;
-	    width: 100%;
-	    text-align: center;
-	    margin-top: 30px;
-	}
-
-	.overlay a {
-	    padding: 8px;
-	    text-decoration: none;
-	    font-size: 36px;
-	    color: #000000;
-	    display: block;
-	    transition: 0.3s;
-	}
-
-	.overlay a:hover, .overlay a:focus {
-	    color: #A8B6C5;
-	}
-
-	.overlay .closebtn {
-	    position: absolute;
-	    top: 20px;
-	    right: 45px;
-	    font-size: 60px;
-	}
-
-	.closebtn {
-	    font-style: normal;
-	}
-
-	@media screen and (max-height: 450px) {
-	    .overlay {overflow-y: auto;}
-	    .overlay a {font-size: 20px}
-	    .overlay .closebtn {
-		font-size: 40px;
-		top: 15px;
-		right: 35px;
+	    span.mutor-logo {
+		display: table-cell;
+		width: 1px;
+		white-space: nowrap;
 	    }
-	}
 
-	.top-level-menu > li:hover {
-	    .second-level-menu {
-	    	display: inline-block;
-		max-height: 1000px;
-		transition: max-height .3s ease-in;
+	    span.menu {
+		display: table-cell;
+		width: 100%;
+		vertical-align: middle;
+		// float: center;
+		// position: relative;
+		// padding: 0 0 2px 50px;
 	    }
-	}
+	    /**
+	     * nav / dropdown
+	     */
+	    .site-nav {
+		float: center;
+		position: relative;
+		//width: 100%;
+		text-align: left;
+		//display: table-cell;
+		
+		padding: 0 0 2px 50px;
 
-	.second-level-menu {
-	    max-height: 0;
-	    transition: max-height 0.15s ease-out;
-	    overflow: hidden;
-	    background: #d5d5d5;
-	    li > a {
-		font-size: 24px;
+		.burger-menu {
+		    font-size: 42px;
+		    cursor: pointer;
+		    font-style: normal;
+		    //display: table-cell;
+		    padding-bottom: 12px;
+		}
+
+		ul {
+		    list-style: none;
+		    padding: 0px;
+		    margin: 0px;
+		}
+
+		.sep {
+		    display: table;
+		    table-layout: fixed;
+		    width: 100%;
+		    position: absolute;
+		}
+		
+		.sep-space {
+		    display: table-cell;
+		    position: relative;
+		}
+		
+		.sep-line {
+		    display: table-cell;
+		    border-top: 3px solid #000000;
+		    position: relative;
+		}
+
+		.overlay {
+		    height: 0%;
+		    width: 100%;
+		    position: fixed;
+		    z-index: 1;
+		    top: 0;
+		    left: 0;
+		    overflow-y: hidden;
+		    transition: 0.5s;
+		}
+
+		.overlay-content {
+		    position: relative;
+		    top: 25%;
+		    width: 100%;
+		    text-align: center;
+		    margin-top: 30px;
+		}
+
+		.overlay a {
+		    padding: 8px;
+		    text-decoration: none;
+		    font-size: 36px;
+		    color: #000000;
+		    display: block;
+		    transition: 0.3s;
+		}
+
+		.overlay a:hover, .overlay a:focus {
+		    color: #A8B6C5;
+		}
+
+		.overlay .closebtn {
+		    position: absolute;
+		    top: 20px;
+		    right: 45px;
+		    font-size: 60px;
+		}
+
+		.closebtn {
+		    font-style: normal;
+		}
+
+		@media screen and (max-height: 450px) {
+		    .overlay {overflow-y: auto;}
+		    .overlay a {font-size: 20px}
+		    .overlay .closebtn {
+			font-size: 40px;
+			top: 15px;
+			right: 35px;
+		    }
+		}
+
+		.top-level-menu > li:hover {
+		    .second-level-menu {
+	    		display: inline-block;
+			max-height: 1000px;
+			transition: max-height .3s ease-in;
+		    }
+		}
+
+		.second-level-menu {
+		    max-height: 0;
+		    transition: max-height 0.15s ease-out;
+		    overflow: hidden;
+		    background: #d5d5d5;
+		    li > a {
+			font-size: 24px;
+		    }
+		}
+	    }	    
+	}
+    }
+
+    div.header-right {
+	display: table-cell;
+	width: 20%;
+	//table-layout: fixed;
+	//height: auto;
+
+	span.header-right-content {
+	    display: table;
+	    table-layout: auto;
+
+	    span.mutor-search-field {
+		display: table-cell;
+		
 	    }
 	}
     }
+
+    
 }
