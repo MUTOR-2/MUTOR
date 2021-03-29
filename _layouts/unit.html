@@ -15,8 +15,15 @@ layout: default
     </header>
 
     <div class="unit-preamble">
+      <div class="synopsis">
       <h1>Synopsis</h1>
       {{ page.summary | markdownify }}
+      </div>
+      {% if page.animation %}
+      <div class="animation">
+	{{ page.animation }}
+      </div>
+      {% endif %}
     </div>
     <div class="unit-main">
       <div class="unit-content">
