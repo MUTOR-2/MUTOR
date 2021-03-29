@@ -13,7 +13,11 @@ layout: default
       <span class="header-post-wrapper"><span class="header-post"></span></span
       <span class="header-post-post-wrapper"><span class="header-post-post"></span></span>
     </header>
-    
+
+    <div class="unit-preamble">
+      <h1>Synopsis</h1>
+      {{ page.summary | markdownify }}
+    </div>
     <div class="unit-main">
       <div class="unit-content">
 	<a id="unit-top"></a>
@@ -26,7 +30,7 @@ layout: default
 	  for(i = 0; i < h1s.length; i++){
 	      if(pasttitle == 0){
 		  if(h1s[i].getAttribute("class") == "unit-title"){
-		      i += 2;
+		      i += 3;
 		      pasttitle = 1;
 		  }else{
 		      continue;

@@ -4,7 +4,22 @@
 # Quiz
 <ol>
 {% for q in page.test_questions %}
-<li>{{ q }}</li>
+
+{% if false %}
+
+{%- assign arr = q | markdownify | strip | split: "<p>" -%}
+{%- if arr.size > 2 -%}
+{{ arr | join: "<p>" | prepend: "<p>" }}
+{%- else -%}
+<li>{{ arr[1] | remove: "</p>" }}</li>
+{%- endif -%}
+
+{% else %}
+
+<li>{{ q | markdownify }}</li>
+
+{% endif %}
+
 {% endfor %}
 </ol>
 </div>

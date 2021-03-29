@@ -18,6 +18,29 @@ body {
 	display: none;
     }
 
+    .unit-preamble {
+	max-width: $global-max-width / 1.5;
+	padding-right: 10px;
+	padding-left: 50px;
+	font-family: $global-font-family;
+	font-size: $global-font-size;
+	font-weight: $global-font-weight;
+	font-style: oblique;
+
+	em {
+	    font-style: normal;
+	}
+
+	position: relative;
+
+	// .page-content {
+	//     padding-left: 100px;
+	// }
+	h1, h2, h3, h4, h5, h6 {
+	    font-style: oblique;
+	}
+    }
+
     .unit-main {
 	display: table;
 	width: 100%;
