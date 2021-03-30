@@ -5,6 +5,7 @@
     //height: $global-footer-height;
     padding-right: 10px;
     padding-left: 10px;
+    margin-top: 25px;
     font-family: $global-font-family;
     font-size: $global-font-size;
     font-weight: $global-font-weight;
@@ -12,50 +13,62 @@
 
     // Positioning context for the mobile navigation icon
     //position: relative;
-
-    .wrapper {
+    border-top: 1px solid $global-delim-color;
+    .legal {
 	//border-top: 1px solid $global-delim-color;
 	display: table;
 	width: 100%;
 	table-layout: fixed;
 	//height: auto;
-    }
 
-    div.wrapper span.links {
-	display: table-cell;
-	//width: 100%;
-	text-align: left;
-	vertical-align: middle;
-	padding: 50px 0 0 0;
+	span.links {
+	    display: table-cell;
+	    //width: 100%;
+	    text-align: center;
+	    vertical-align: middle;
+	    padding: 25px 0 25px 0;
 
-	a {
-	    background-color: #000000;
-	    color: #FFFFFF;
-	    padding: 5px 10px 5px 10px;
+	    a {
+		background-color: #000000;
+		color: #FFFFFF;
+		padding: 5px 10px 5px 10px;
+	    }
 	}
     }
 
-    div.wrapper span.affiliation-logos {
-	display: table-cell;
-	//width: 100%;
-	text-align: right;
-	vertical-align: middle;
-	padding: 50px 0 0 0;
+    
 
-	.wrapper {
-	    display: table;
+    .affiliates {
+	//border-top: 1px solid $global-delim-color;
+	width: 100%;
+	table-layout: fixed;
+	//height: auto;
+	display: table;
+	padding-bottom: 25px;
+
+	.affiliation-logos {
+	    display: table-row;
 	    width: 100%;
-	    table-layout: auto;
-	    //height: 100%;
-	    margin: 0;
-	    padding: 0;
-	    
-	    span.affiliation-logo {
-		display: table-cell;
-		text-align: center;
-		padding: 0;
-		margin: 0;
-	    }
+	    //text-align: center;
+	    vertical-align: middle;
+	    // padding: 50px 0 0 0;
+
+	    // .wrapper {
+	    // 	display: table;
+	    // 	width: 100%;
+	    // 	table-layout: auto;
+	    // 	//height: 100%;
+	    // 	margin: 0;
+	    // 	padding: 0;
+		
+		.affiliation-logo {
+		    display: table-cell;
+		    text-align: center;
+		    //width: 100%;
+		    // padding: 0;
+		    // margin: 0;
+		}
+	    // }
 	}
     }
 }
