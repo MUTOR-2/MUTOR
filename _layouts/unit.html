@@ -3,6 +3,10 @@ layout: default
 ---
 {% include mathjax.html %}
 
+<script type="text/javascript">
+  let mutor_unit_color = MUTOR.rbright();
+</script>
+
 <article class="unit">
   <div class="wrapper">
     <header class="unit-header">
@@ -11,13 +15,13 @@ layout: default
       <span class="header-pre-wrapper"><span class="header-pre"><div class="arrow-right"></div></span></span>
       <span class="header"><h1 class="unit-title">Unit {{ page.number }}: {{ page.title | escape }}</h1></span>
       <span class="header-post-wrapper"><span class="header-post"></span></span
-      <span class="header-post-post-wrapper"><span class="header-post-post"></span></span>
+									   <span class="header-post-post-wrapper"><span class="header-post-post"></span></span>
     </header>
 
     <div class="unit-preamble">
       <div class="synopsis">
-      <h1>Synopsis</h1>
-      {{ page.summary | markdownify }}
+	<h1>Synopsis</h1>
+	{{ page.summary | markdownify }}
       </div>
       {% if page.animation %}
       <div class="animation">
@@ -28,7 +32,21 @@ layout: default
     <div class="unit-main">
       <div class="unit-content">
 	<a id="unit-top"></a>
-	{{ content }}
+	<div class="unit-transcluded-content" id="unit-transcluded-content">
+	  {{ content }}
+	</div>
+	<script type="text/javascript">
+	  {
+	      let c = document.getElementById('unit-transcluded-content');
+	      let as = c.getElementsByTagName('a');
+	      for(i = 0; i < as.length; ++i){
+		  let a = as[i];
+		  if(!a.id.includes('markdown-toc-')){
+		      a.style['background-color'] = mutor_unit_color;
+		  }
+	      }
+	  }
+	</script>
 	<script type="text/javascript">
 	  let pasttitle = 0;
 	  let toplink = document.createElement("a");
@@ -62,10 +80,10 @@ layout: default
 	
 	<!-- <h1 class="unit-info-header">Summary</h1> -->
 	<!-- <span class="unit-info-content" id="unit-info-summary"> -->
-	<!--   <ul> -->
-	<!--     <li>{{ page.short_description }}</li> -->
-	<!--   </ul> -->
-	<!-- </span> -->
+	  <!--   <ul> -->
+	    <!--     <li>{{ page.short_description }}</li> -->
+	    <!--   </ul> -->
+	  <!-- </span> -->
 	
 	<h1 class="unit-info-header">Topics</h1>
 	<span class="unit-info-content" id="unit-info-topics">
@@ -79,10 +97,20 @@ layout: default
 	<h1 class="unit-info-header" id="unit-toc-header">Contents</h1>
 	<span class="unit-info-content" id="unit-toc-content"></span>
 	<script type="text/javascript">
-	  var toc = document.querySelector("#unit-toc");
-	  var copy = toc.cloneNode(true);
+	  let toc = document.querySelector("#unit-toc");
+	  let copy = toc.cloneNode(true);
+	  let links = copy.getElementsByTagName('a');
+	  for(i = 0; i < links.length; i++){
+	      let a = links[i];
+	      a.addEventListener('mouseenter', function(){
+		  this.style.background = mutor_unit_color;
+	      });
+	      a.addEventListener('mouseout', function(){
+		  this.style.background = '#FFFFFF';
+	      });
+	  }
 	  copy.setAttribute('class', "unit-info-toc");
-	  var dest = document.querySelector("#unit-toc-content");
+	  let dest = document.querySelector("#unit-toc-content");
 	  dest.appendChild(copy);
 	</script>
       </div>
