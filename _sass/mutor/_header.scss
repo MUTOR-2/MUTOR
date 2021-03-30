@@ -166,16 +166,12 @@
     div.header-right {
 	display: table-cell;
 	width: 20%;
-	//table-layout: fixed;
-	//height: auto;
-
+	table-layout: fixed;
+	vertical-align: middle;
 	span.header-right-content {
 	    display: table;
-	    table-layout: auto;
-
 	    span.mutor-search-field {
 		display: table-cell;
-		
 	    }
 	}
     }
