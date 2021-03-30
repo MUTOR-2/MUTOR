@@ -17,10 +17,8 @@ We are hoping that this class on music perception and cognition will only be the
 
 We are also delighted about the AR and VR contributions that the [Multimedia Kontor Hamburg](https://www.mmkh.de) (MMKH), a Hamburg-based multimedia production studio, will make. 
 
-<div style="display: block; text-align: center; float: center">
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=Tp6-iKqM06U" 
-frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
-picture-in-picture" allowfullscreen></iframe>
+<div style="text-align: center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Tp6-iKqM06U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 # Chapter 2
