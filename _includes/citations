@@ -1,0 +1,16 @@
+{% assign citations = citations | split: "," | uniq %}
+{% assign nc = citations | size %}
+{% if nc > 0 %}
+<div class="unit-references" id="unit-references" markdown="1">
+# Citations
+<ol>
+{% for c in citations %}
+{% for r in site.references %}
+{% if c == r.ref %}
+<li>{% include format_reference ref=r %}</li>
+{% endif %}
+{% endfor %}
+{% endfor %}
+</ol>
+</div>
+{% endif %}

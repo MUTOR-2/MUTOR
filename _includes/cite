@@ -1,10 +1,13 @@
+{% for r in page.references %}
+{% if r[0] == include.ref %}
+{% assign r = r[1] %}
+{% endif %}
+{% endfor %}
+
 {%- assign citations = citations | append: include.ref | append: "," -%}
-{%- for r in site.references -%}
-{%- if include.ref == r.ref -%}
+
 {%- if r.authors.size == 1 -%}
-<a href="#{{ r.ref }}">({{ r.authors[0].lastname }}, {{ r.year }})</a>
+<a href="#{{ include.ref }}">({{ r.authors[0].lastname }}, {{ r.year }})</a>
 {%- else -%}
-<a href="#{{ r.ref }}">({{ r.authors[0].lastname }} et al., {{ r.year }})</a>
+<a href="#{{ include.ref }}">({{ r.authors[0].lastname }} et al., {{ r.year }})</a>
 {%- endif -%}
-{%- endif -%}
-{%- endfor -%}

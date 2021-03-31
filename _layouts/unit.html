@@ -63,6 +63,12 @@ layout: default
 	      }
 	      let clone = toplink.cloneNode();
 	      clone.innerHTML = "(return to top)";
+	      clone.addEventListener('mouseenter', function(){
+		  this.style.background = mutor_unit_color;
+	      });
+	      clone.addEventListener('mouseout', function(){
+		  this.style.background = '#FFFFFF';
+	      });	      
 	      let parent = h1s[i].parentNode;
 	      parent.insertBefore(clone, h1s[i]);
 	  }
